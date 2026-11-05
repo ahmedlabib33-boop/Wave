@@ -1,0 +1,26 @@
+{
+  "verified_at": "2026-11-05T07:08:05.759807+00:00",
+  "scope": "Disposable copy of the baseline; no camera test data in the operational DB",
+  "health_http": 200,
+  "frontend_http": 200,
+  "radar_settings_preserved": true,
+  "scene_records_preserved": true,
+  "all_original_api_paths_preserved": true,
+  "greater_cairo_inventory": {
+    "http_status": 502,
+    "result": {
+      "detail": "ReadTimeout; previously stored candidates were preserved"
+    }
+  },
+  "authorized_public_test_media": {
+    "http_status": 200,
+    "status": "frame_verified",
+    "width": 1280,
+    "height": 720,
+    "integrated": true,
+    "geographic_object_positions": 0,
+    "detector_events_created": 0,
+    "scope": "Temporary DB only; frame decode test, not Cairo detections"
+  },
+  "model_sha256": "c789161ed43c8269fcd4e67c67eeeb4e80c622da2eb296a20bc6007bd18a0b7d"
+}

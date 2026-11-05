@@ -1,5 +1,7 @@
 # Nile Observer
 
+**Incremental continuation:** Greater Cairo camera investigation now lives inside Live Cameras, with permission evidence, real frame checks and integration into the same hub. OpenAQ ingestion and a mapped Frigate event bridge extend the existing sources. See [current continuation status](docs/CONTINUATION_VALIDATION.md), [camera investigation](docs/GREATER_CAIRO.md), [repository comparison](docs/REPOSITORY_REVIEW.md), and the [combined requirements ledger](docs/REQUIREMENTS_STATUS.md). The original architecture, endpoints, records and dated verification reports are retained.
+
 A working, free-first sensor hub for **30.0878597, 31.3413867**, Heliopolis / El Nozha, Cairo. Python 3.12 + FastAPI, React + TypeScript + MapLibre, SQLite or PostgreSQL/PostGIS. English and Arabic with RTL, an installable PWA, and optional native iOS companion source.
 
 **This is an observation aggregator, not a new 5 km radar sensor.** Nothing is seeded as a live detection. Aircraft and environmental queries can legitimately return zero observations. Satellite products are historical. Cameras require explicit authorized configuration; uncalibrated detections have no object map coordinates or physical speed.
@@ -89,7 +91,7 @@ npm exec playwright -- install --with-deps chromium webkit
 npm run test:e2e
 ```
 
-Browser tests need a running backend and frontend, the default area and radius, and real satellite metadata previously searched/stored. They read the generated local token or `TEST_API_TOKEN`. `UI_URL` selects a running production server. The tests use an iPhone 15 Pro Max WebKit profile and desktop Chromium; this is not a physical-device certification. Network tests may fail when a public service changes or is down. Unit-test fixtures are isolated from the operational database.
+Browser tests need a running backend and frontend, the default area and radius, and real satellite metadata previously searched/stored. **Use a disposable database/server for browser tests:** the new regional cases save an investigation area and create explicitly labeled metadata candidates. They read the generated local token or `TEST_API_TOKEN`; `UI_URL` selects that test server. The continuation validation used an isolated copy, leaving the operational database free of test candidates. The tests use an iPhone 15 Pro Max WebKit profile and desktop Chromium; this is not a physical-device certification. Network tests may fail when a public service changes or is down. Unit-test fixtures are isolated from the operational database.
 
 `requirements.lock.txt` records the validated Python environment. `frontend/package-lock.json` pins npm dependencies. Optional extras keep geospatial raster and video dependencies separate for lightweight installations.
 

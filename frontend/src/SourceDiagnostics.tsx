@@ -3,7 +3,14 @@ import { api } from "./api";
 import { date, number, useT } from "./i18n";
 import type { Source } from "./types";
 import { Action, Notice } from "./ui";
-const polling = ["adsb_lol", "asf", "copernicus", "tomtom", "sensor_community"];
+const polling = [
+  "adsb_lol",
+  "asf",
+  "copernicus",
+  "tomtom",
+  "sensor_community",
+  "openaq",
+];
 export default function SourceDiagnostics({
   sources,
   reload,

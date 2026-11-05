@@ -1,0 +1,21 @@
+
+> nile-observer-ui@0.1.0 build
+> tsc -b && vite build --outDir dist-continuation
+
+vite v6.4.5 building for production...
+transforming...
+✓ 1594 modules transformed.
+rendering chunks...
+computing gzip size...
+dist-continuation/index.html                                0.66 kB │ gzip:   0.39 kB
+dist-continuation/assets/index-DU88ok7J.css                22.24 kB │ gzip:   5.73 kB
+dist-continuation/assets/RadarMap-B-YMMjus.css             69.94 kB │ gzip:  10.06 kB
+dist-continuation/assets/History-BpmXFdK1.js                1.67 kB │ gzip:   0.74 kB
+dist-continuation/assets/Hub-CyWHONDO.js                    1.80 kB │ gzip:   0.75 kB
+dist-continuation/assets/SourceDiagnostics-xknWzf8U.js      2.28 kB │ gzip:   0.85 kB
+dist-continuation/assets/RadarMap-CWOiYnCu.js               4.55 kB │ gzip:   1.82 kB
+dist-continuation/assets/Satellite-Duo8iXJG.js              5.87 kB │ gzip:   2.06 kB
+dist-continuation/assets/Cameras-BGDs7LGB.js               10.09 kB │ gzip:   2.83 kB
+dist-continuation/assets/index-C7s6c80N.js                281.90 kB │ gzip:  88.13 kB
+dist-continuation/assets/maplibre-ChAaPfnC.js           1,055.24 kB │ gzip: 285.08 kB
+✓ built in 8.04s

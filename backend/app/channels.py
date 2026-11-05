@@ -154,6 +154,8 @@ async def mqtt_worker():
     def connected(client, userdata, flags, reason, properties):
         if not reason.is_failure:
             client.subscribe(cfg.mqtt_topic, qos=1)
+            if cfg.frigate_mqtt_topic:
+                client.subscribe(cfg.frigate_mqtt_topic, qos=1)
             channel_state("mqtt", "connected")
         else:
             channel_state("mqtt", "unavailable", "Broker rejected connection")
@@ -161,18 +163,26 @@ async def mqtt_worker():
     def message(client, userdata, msg):
         if len(msg.payload) <= 131072:
             try:
-                messages.put_nowait(msg.payload)
+                messages.put_nowait((msg.topic, msg.payload))
             except queue.Full:
                 channel_state("mqtt", "unavailable", "MQTT ingestion queue full")
 
     client.on_connect, client.on_message = connected, message
+    client.on_connect_fail = lambda client, userdata: channel_state(
+        "mqtt", "unavailable", "Broker TCP/TLS connection failed; check reachability and credentials"
+    )
     client.connect_async(cfg.mqtt_host, cfg.mqtt_port, keepalive=45)
     client.loop_start()
     try:
         while True:
             try:
-                payload = messages.get_nowait()
-                accept_channel(json.loads(payload), "mqtt")
+                topic, payload = messages.get_nowait()
+                if cfg.frigate_mqtt_topic and topic == cfg.frigate_mqtt_topic:
+                    from .frigate import accept_frigate
+
+                    accept_frigate(json.loads(payload))
+                else:
+                    accept_channel(json.loads(payload), "mqtt")
             except queue.Empty:
                 await asyncio.sleep(0.2)
             except (ValueError, json.JSONDecodeError):

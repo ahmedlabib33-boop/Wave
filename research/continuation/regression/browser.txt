@@ -1,0 +1,64 @@
+
+Running 14 tests using 1 worker
+
+(node:36322) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+  ✓   1 [desktop-chromium] › tests/discovery.spec.ts:27:1 › regional scope preserves radar and metadata cannot become a feed without permission (3.5s)
+  ✓   2 [desktop-chromium] › tests/discovery.spec.ts:83:1 › regional camera investigation supports Arabic RTL (3.1s)
+  ✘   3 [desktop-chromium] › tests/platform.spec.ts:52:1 › real workspace and geographic map render without invented objects (18.0s)
+(node:36612) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+  ✓   4 [desktop-chromium] › tests/platform.spec.ts:89:1 › all ten pages and complete RTL layout (8.3s)
+  ✓   5 [desktop-chromium] › tests/platform.spec.ts:141:1 › radius settings persist from 1 to 5 km (2.4s)
+  ✓   6 [desktop-chromium] › tests/platform.spec.ts:167:1 › historical satellite metadata is browsable and labelled (2.9s)
+  ✓   7 [desktop-chromium] › tests/platform.spec.ts:186:1 › bad access token is rejected (355ms)
+(node:36818) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+  ✓   8 [iphone-webkit] › tests/discovery.spec.ts:27:1 › regional scope preserves radar and metadata cannot become a feed without permission (3.0s)
+  ✓   9 [iphone-webkit] › tests/discovery.spec.ts:83:1 › regional camera investigation supports Arabic RTL (3.8s)
+  ✓  10 [iphone-webkit] › tests/platform.spec.ts:52:1 › real workspace and geographic map render without invented objects (4.6s)
+  ✓  11 [iphone-webkit] › tests/platform.spec.ts:89:1 › all ten pages and complete RTL layout (17.4s)
+  ✓  12 [iphone-webkit] › tests/platform.spec.ts:141:1 › radius settings persist from 1 to 5 km (2.2s)
+  ✓  13 [iphone-webkit] › tests/platform.spec.ts:167:1 › historical satellite metadata is browsable and labelled (2.7s)
+  ✓  14 [iphone-webkit] › tests/platform.spec.ts:186:1 › bad access token is rejected (721ms)
+
+
+  1) [desktop-chromium] › tests/platform.spec.ts:52:1 › real workspace and geographic map render without invented objects 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('heading', { name: 'Egypt enforcement cameras', exact: true })
+    Expected: visible
+    Timeout: 15000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('heading', { name: 'Egypt enforcement cameras', exact: true }) with timeout 15000ms
+      - waiting for getByRole('heading', { name: 'Egypt enforcement cameras', exact: true })
+
+
+      84 |       exact: true,
+      85 |     }),
+    > 86 |   ).toBeVisible();
+         |     ^
+      87 | });
+      88 |
+      89 | test("all ten pages and complete RTL layout", async ({
+        at /workspace/nile-observer/frontend/tests/platform.spec.ts:86:5
+
+    Error Context: ../research/continuation/regression/browser-artifacts/platform-real-workspace-an-32f6d-er-without-invented-objects-desktop-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../research/continuation/regression/browser-artifacts/platform-real-workspace-an-32f6d-er-without-invented-objects-desktop-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace ../research/continuation/regression/browser-artifacts/platform-real-workspace-an-32f6d-er-without-invented-objects-desktop-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [desktop-chromium] › tests/platform.spec.ts:52:1 › real workspace and geographic map render without invented objects 
+  13 passed (1.3m)

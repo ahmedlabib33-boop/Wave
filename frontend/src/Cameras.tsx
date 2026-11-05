@@ -4,6 +4,7 @@ import { api, fileURL } from "./api";
 import { useT } from "./i18n";
 import type { Camera } from "./types";
 import { Action, Empty, Notice } from "./ui";
+import CameraDiscovery from "./CameraDiscovery";
 
 function CameraCard({
   camera,
@@ -120,6 +121,7 @@ export default function Cameras() {
   return (
     <>
       <Notice>{t("cameraNote")}</Notice>
+      <CameraDiscovery onIntegrated={reload} />
       {error && (
         <p role="alert" className="inline-error">
           {error}

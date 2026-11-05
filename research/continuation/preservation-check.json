@@ -1,0 +1,25 @@
+{
+  "app_config": {
+    "baseline_records": 1,
+    "preserved": true
+  },
+  "scenes": {
+    "baseline_records": 35,
+    "preserved": true
+  },
+  "observations": {
+    "baseline_records": 0,
+    "preserved": true
+  },
+  "cameras": {
+    "baseline_records": 0,
+    "preserved": true
+  },
+  "downloads": {
+    "baseline_records": 0,
+    "preserved": true
+  },
+  "source_ids_preserved": true,
+  "migration_version": "3_discovery",
+  "private_environment_unchanged": true
+}

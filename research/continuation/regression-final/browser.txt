@@ -1,0 +1,86 @@
+
+Running 14 tests using 1 worker
+
+(node:40626) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+  ✓   1 [desktop-chromium] › tests/discovery.spec.ts:27:1 › regional scope preserves radar and metadata cannot become a feed without permission (2.6s)
+  ✓   2 [desktop-chromium] › tests/discovery.spec.ts:83:1 › regional camera investigation supports Arabic RTL (2.6s)
+  ✓   3 [desktop-chromium] › tests/platform.spec.ts:52:1 › real workspace and geographic map render without invented objects (2.5s)
+  ✓   4 [desktop-chromium] › tests/platform.spec.ts:89:1 › all ten pages and complete RTL layout (7.6s)
+  ✓   5 [desktop-chromium] › tests/platform.spec.ts:141:1 › radius settings persist from 1 to 5 km (2.1s)
+  ✓   6 [desktop-chromium] › tests/platform.spec.ts:167:1 › historical satellite metadata is browsable and labelled (2.7s)
+  ✓   7 [desktop-chromium] › tests/platform.spec.ts:186:1 › bad access token is rejected (310ms)
+(node:41017) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+  ✓   8 [iphone-webkit] › tests/discovery.spec.ts:27:1 › regional scope preserves radar and metadata cannot become a feed without permission (3.1s)
+  ✓   9 [iphone-webkit] › tests/discovery.spec.ts:83:1 › regional camera investigation supports Arabic RTL (3.9s)
+  ✓  10 [iphone-webkit] › tests/platform.spec.ts:52:1 › real workspace and geographic map render without invented objects (3.8s)
+  ✘  11 [iphone-webkit] › tests/platform.spec.ts:89:1 › all ten pages and complete RTL layout (1.0m)
+(node:41653) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+  ✓  12 [iphone-webkit] › tests/platform.spec.ts:141:1 › radius settings persist from 1 to 5 km (2.3s)
+  ✓  13 [iphone-webkit] › tests/platform.spec.ts:167:1 › historical satellite metadata is browsable and labelled (3.2s)
+  ✓  14 [iphone-webkit] › tests/platform.spec.ts:186:1 › bad access token is rejected (519ms)
+
+
+  1) [iphone-webkit] › tests/platform.spec.ts:89:1 › all ten pages and complete RTL layout ─────────
+
+    Test timeout of 60000ms exceeded.
+
+    Error: locator.click: Test timeout of 60000ms exceeded.
+    Call log:
+      - waiting for locator('.sidebar nav').getByRole('button', { name: 'الكاميرات المباشرة', exact: true })
+        - locator resolved to <button class="">…</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - element is outside of the viewport
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is visible, enabled and stable
+          - scrolling into view if needed
+          - done scrolling
+          - element is outside of the viewport
+        - retrying click action
+          - waiting 100ms
+        93 × waiting for element to be visible, enabled and stable
+           - element is visible, enabled and stable
+           - scrolling into view if needed
+           - done scrolling
+           - element is outside of the viewport
+         - retrying click action
+           - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+        - element is visible, enabled and stable
+        - scrolling into view if needed
+        - done scrolling
+
+
+      113 |       .locator(".sidebar nav")
+      114 |       .getByRole("button", { name, exact: true })
+    > 115 |       .click();
+          |        ^
+      116 |     expect(
+      117 |       await page.evaluate(
+      118 |         () => document.documentElement.scrollWidth <= innerWidth,
+        at /workspace/nile-observer/frontend/tests/platform.spec.ts:115:8
+
+    Error Context: ../research/continuation/regression-final/browser-artifacts/platform-all-ten-pages-and-complete-RTL-layout-iphone-webkit/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../research/continuation/regression-final/browser-artifacts/platform-all-ten-pages-and-complete-RTL-layout-iphone-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace ../research/continuation/regression-final/browser-artifacts/platform-all-ten-pages-and-complete-RTL-layout-iphone-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [iphone-webkit] › tests/platform.spec.ts:89:1 › all ten pages and complete RTL layout ──────────
+  13 passed (1.7m)

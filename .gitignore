@@ -12,3 +12,10 @@ __pycache__/
 frontend/test-results/
 frontend/playwright-report/
 .DS_Store
+frontend/dist-continuation/
+research/continuation/**/browser-artifacts/
+research/continuation/upstream/*.txt
+research/continuation/openaq_openapi.txt
+research/continuation/openaq_latest.txt
+research/continuation/frigate_mqtt.txt
+research/continuation/greater_cairo_overpass.txt

@@ -1,0 +1,37 @@
+{
+  "at": "2026-11-05T07:47:25.734276+00:00",
+  "http_statuses": {
+    "/api/health": 200,
+    "/": 200,
+    "/api/settings": 200,
+    "/api/sources": 200,
+    "/api/discovery/area": 200,
+    "/api/discovery/candidates": 200,
+    "/api/discovery/runs": 200,
+    "/api/scenes": 200
+  },
+  "settings": {
+    "latitude": 30.0878597,
+    "longitude": 31.3413867,
+    "radius_m": 5000,
+    "coordinate_system": "WGS84",
+    "timezone": "Africa/Cairo",
+    "live_thresholds_seconds": {
+      "adsb": 60,
+      "ais": 180,
+      "camera": 30,
+      "phone": 30,
+      "traffic": 300
+    }
+  },
+  "baseline_scenes_preserved": 35,
+  "current_scene_records": 35,
+  "sources": 15,
+  "camera_candidates": 0,
+  "discovery_runs": 0,
+  "original_archive_sha256": "d7be2655e091e341f4deaa3ffe49262d9a818e7de7d919d2da71929cbe37fc93",
+  "original_rows_preserved": true,
+  "revision": "3_discovery",
+  "observations": 0,
+  "cameras": 0
+}

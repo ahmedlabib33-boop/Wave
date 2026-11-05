@@ -13,6 +13,27 @@ from .schemas import ObservationIn
 CAMERA_LOCKS = {}
 
 
+def create_registered_camera(db, data):
+    """Shared registration path; callers own the transaction and authorization check."""
+    identifier = "camera_" + uuid.uuid4().hex[:12]
+    db.add(
+        Source(
+            id=identifier,
+            name=data.name,
+            source_type="camera",
+            status="unconfigured",
+            auth_state="operator_env_reference",
+            update_interval=60,
+            coverage="Authorized camera; geographical object coverage depends on calibration",
+        )
+    )
+    db.flush()
+    camera = Camera(id=identifier, authorized_at=utcnow(), **data.model_dump(exclude={"authorized"}))
+    db.add(camera)
+    db.flush()
+    return camera
+
+
 async def run_camera(identifier, process=False):
     lock = CAMERA_LOCKS.setdefault(identifier, asyncio.Lock())
     async with lock:

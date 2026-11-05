@@ -3,6 +3,7 @@ import {
   Suspense,
   useCallback,
   useEffect,
+  useRef,
   useState,
   type FormEvent,
 } from "react";
@@ -248,6 +249,7 @@ function Workspace({
     [connection, setConnection] = useState("connecting"),
     [error, setError] = useState(""),
     [, setTick] = useState(0);
+  const currentPage = useRef(page);
   const reload = useCallback(async () => {
     try {
       const [a, s, o, sc, r] = await Promise.all([
@@ -325,7 +327,8 @@ function Workspace({
   useEffect(() => {
     const onHash = () => {
       const p = location.hash.slice(1);
-      if (pages.some(([s]) => s === p)) {
+      if (pages.some(([s]) => s === p) && currentPage.current !== p) {
+        currentPage.current = p;
         setPage(p);
         setNav(false);
       }
@@ -334,6 +337,9 @@ function Workspace({
     return () => window.removeEventListener("hashchange", onHash);
   }, []);
   function navigate(p: string) {
+    // Ignore the later hashchange for this already-applied route. Otherwise it can
+    // close a mobile menu that the user reopened immediately after navigation.
+    currentPage.current = p;
     setPage(p);
     location.hash = p;
     setNav(false);
@@ -563,6 +569,7 @@ function Workspace({
                                   "asf",
                                   "copernicus",
                                   "sensor_community",
+                                  "openaq",
                                   "tomtom",
                                 ].includes(s.id),
                             )

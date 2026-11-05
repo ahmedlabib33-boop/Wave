@@ -1,0 +1,16 @@
+{
+  "checkpoint_at": "20261105T063654Z",
+  "location": "/workspace/private-backups/20261105T063654Z",
+  "archive_files": 210,
+  "archive_sha256": "98c5b7bfc8b79e9aa04156722731415a68ac4cf2363310f9b7238e6f3bbfba01",
+  "sqlite_integrity": "ok",
+  "database_counts": {
+    "alembic_version": 1,
+    "app_config": 1,
+    "cameras": 0,
+    "downloads": 0,
+    "observations": 0,
+    "scenes": 35,
+    "sources": 14
+  }
+}

@@ -1,0 +1,1 @@
+{"engine": "PostgreSQL/PostGIS", "restored_from_private_backup": true, "existing_tables_unchanged": true, "baseline_counts": {"app_config": 1, "sources": 14, "scenes": 15, "observations": 0, "cameras": 0, "downloads": 0}, "revision": "3_discovery", "new_tables_empty": true}

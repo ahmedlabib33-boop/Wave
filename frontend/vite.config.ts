@@ -10,6 +10,8 @@ export default defineConfig({
     },
   },
   build: {
+    // Retain previously served hashed assets while clients finish an earlier session.
+    emptyOutDir: false,
     chunkSizeWarningLimit: 1200,
     rollupOptions: { output: { manualChunks: { maplibre: ["maplibre-gl"] } } },
   },

@@ -9,6 +9,7 @@ from .config import get_settings
 from .connectors.adsb import ADSBConnector
 from .connectors.base import AccessBlocked, RateLimited
 from .connectors.environment import CommunityConnector
+from .connectors.openaq import OpenAQConnector
 from .connectors.satellite import ASFConnector, CopernicusConnector
 from .connectors.traffic import TomTomConnector
 from .db import Session, Scene, Source, aware, source_availability, utcnow
@@ -16,7 +17,15 @@ from .hub import area_from_db, ingest
 
 log = logging.getLogger("nile.sources")
 CONNECTORS = {
-    c.id: c for c in [ADSBConnector(), TomTomConnector(), ASFConnector(), CopernicusConnector(), CommunityConnector()]
+    c.id: c
+    for c in [
+        ADSBConnector(),
+        TomTomConnector(),
+        ASFConnector(),
+        CopernicusConnector(),
+        CommunityConnector(),
+        OpenAQConnector(),
+    ]
 }
 LOCKS = {}
 
@@ -77,7 +86,15 @@ CATALOG = [
         "Volunteer station coverage; none guaranteed in AOI",
         "https://github.com/opendata-stuttgart/meta/wiki/APIs",
     ),
-    ("openaq", "OpenAQ", "environment", None, "Local coverage unverified; key required", "https://docs.openaq.org/"),
+    ("openaq", "OpenAQ", "environment", 900, "Local coverage unverified; key required", "https://docs.openaq.org/"),
+    (
+        "overpass_inventory",
+        "Greater Cairo camera metadata",
+        "camera",
+        None,
+        "Mapped sites only; no public stream access or complete coverage implied",
+        "https://wiki.openstreetmap.org/wiki/Overpass_API",
+    ),
     (
         "government_cameras",
         "Egypt enforcement cameras",
@@ -137,8 +154,8 @@ def seed_sources(db):
                 "unverified",
                 "Use the bounded STAC inventory search; complete Cairo coverage not established",
             )
-        if identifier == "openaq" and configured:
-            status, error = "unavailable", "OpenAQ live-data adapter is not implemented in this release"
+        if identifier == "overpass_inventory":
+            status, error = "pending", "No regional camera metadata query has been run"
         db.add(
             Source(
                 id=identifier,

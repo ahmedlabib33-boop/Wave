@@ -1,0 +1,4 @@
+{
+  "backup": "/workspace/private-backups/20261105T063654Z/pre-rollout-074234.sqlite",
+  "method": "Graceful code reload; additive migration; original DB retained; previous hashed assets retained"
+}

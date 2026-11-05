@@ -19,10 +19,12 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, model_validator
 from sqlalchemy import select, text
 from sqlalchemy.orm import Session as DBSession
-from .camera_service import camera_worker, run_camera
+from .camera_service import camera_worker, create_registered_camera, run_camera
 from .calibration import fit_calibration
 from .channels import accept_channel, ais_worker, mqtt_worker, serial_worker
 from .config import get_settings
+from .discovery import router as discovery_router
+from .frigate import accept_frigate
 from .connectors.satellite import ASFConnector
 from .connectors.umbra import UmbraConnector
 from .db import AppConfig, Camera, Download, Observation, Scene, Session, Source, aware, get_db, utcnow
@@ -129,6 +131,15 @@ app.add_middleware(
     allow_headers=["Authorization", "Content-Type"],
 )
 AUTH = [Depends(authorized)]
+app.include_router(discovery_router, dependencies=AUTH)
+
+
+@app.post("/api/integrations/frigate", dependencies=AUTH, status_code=201)
+def frigate_event(payload: dict = Body(...)):
+    try:
+        return accept_frigate(payload)
+    except ValueError as error:
+        raise HTTPException(422, str(error)) from None
 
 
 @app.middleware("http")
@@ -517,23 +528,9 @@ def cameras(db: DBSession = Depends(get_db)):
 
 @app.post("/api/cameras", dependencies=AUTH, status_code=201)
 def register_camera(data: CameraIn, db: DBSession = Depends(get_db)):
-    identifier = "camera_" + uuid.uuid4().hex[:12]
-    db.add(
-        Source(
-            id=identifier,
-            name=data.name,
-            source_type="camera",
-            status="unconfigured",
-            auth_state="operator_env_reference",
-            update_interval=60,
-            coverage="Authorized camera; geographical object coverage depends on calibration",
-        )
-    )
-    db.flush()
-    camera = Camera(id=identifier, authorized_at=utcnow(), **data.model_dump(exclude={"authorized"}))
-    db.add(camera)
+    camera = create_registered_camera(db, data)
     db.commit()
-    return {"id": identifier, "name": camera.name, "url_env": camera.url_env}
+    return {"id": camera.id, "name": camera.name, "url_env": camera.url_env}
 
 
 @app.put("/api/cameras/{identifier}/calibration", dependencies=AUTH)
@@ -571,6 +568,6 @@ async def process_camera(identifier: str):
     return {k: v for k, v in result.items() if k != "jpeg"}
 
 
-FRONTEND = Path("frontend/dist").resolve()
+FRONTEND = get_settings().frontend_dir.resolve()
 if FRONTEND.is_dir():
     app.mount("/", StaticFiles(directory=FRONTEND, html=True), name="frontend")

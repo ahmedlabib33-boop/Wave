@@ -1,0 +1,4 @@
+Known credential and private-file exclusion checks: passed
+{"result": "passed", "imported_packaged_source": true, "new_database_migration": "3_discovery", "frontend_http": 200, "health_http": 200, "sources": 15, "unseeded_observations": 0, "discovery_auth_required": true}
+/workspace/nile-observer/.venv/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+  from starlette.testclient import TestClient as TestClient  # noqa

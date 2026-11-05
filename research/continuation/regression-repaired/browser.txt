@@ -1,0 +1,25 @@
+
+Running 14 tests using 1 worker
+
+(node:45550) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+  ✓   1 [desktop-chromium] › tests/discovery.spec.ts:27:1 › regional scope preserves radar and metadata cannot become a feed without permission (2.4s)
+  ✓   2 [desktop-chromium] › tests/discovery.spec.ts:83:1 › regional camera investigation supports Arabic RTL (2.6s)
+  ✓   3 [desktop-chromium] › tests/platform.spec.ts:52:1 › real workspace and geographic map render without invented objects (2.5s)
+  ✓   4 [desktop-chromium] › tests/platform.spec.ts:89:1 › all ten pages and complete RTL layout (8.0s)
+  ✓   5 [desktop-chromium] › tests/platform.spec.ts:141:1 › radius settings persist from 1 to 5 km (2.1s)
+  ✓   6 [desktop-chromium] › tests/platform.spec.ts:167:1 › historical satellite metadata is browsable and labelled (2.9s)
+  ✓   7 [desktop-chromium] › tests/platform.spec.ts:186:1 › bad access token is rejected (376ms)
+(node:45837) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+  ✓   8 [iphone-webkit] › tests/discovery.spec.ts:27:1 › regional scope preserves radar and metadata cannot become a feed without permission (3.7s)
+  ✓   9 [iphone-webkit] › tests/discovery.spec.ts:83:1 › regional camera investigation supports Arabic RTL (4.2s)
+  ✓  10 [iphone-webkit] › tests/platform.spec.ts:52:1 › real workspace and geographic map render without invented objects (3.6s)
+  ✓  11 [iphone-webkit] › tests/platform.spec.ts:89:1 › all ten pages and complete RTL layout (16.7s)
+  ✓  12 [iphone-webkit] › tests/platform.spec.ts:141:1 › radius settings persist from 1 to 5 km (2.0s)
+  ✓  13 [iphone-webkit] › tests/platform.spec.ts:167:1 › historical satellite metadata is browsable and labelled (3.1s)
+  ✓  14 [iphone-webkit] › tests/platform.spec.ts:186:1 › bad access token is rejected (753ms)
+
+  14 passed (56.4s)

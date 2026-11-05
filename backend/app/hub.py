@@ -111,18 +111,20 @@ def query_observations(
     offset=0,
 ):
     q = select(Observation).order_by(
-        func.coalesce(Observation.observed_at, Observation.received_at).desc(), Observation.observation_id
+        func.coalesce(Observation.observed_at, Observation.received_at).desc(),
+        Observation.received_at.desc(),
+        Observation.observation_id,
     )
     if source_id:
         q = q.where(Observation.source_id == source_id)
-    if object_type:
+    if object_type and not live:
         q = q.where(Observation.object_type == object_type)
     if since:
         q = q.where(Observation.observed_at >= since)
     if until:
         q = q.where(Observation.observed_at <= until)
     now = utcnow()
-    if db.bind.dialect.name == "postgresql":
+    if db.bind.dialect.name == "postgresql" and not live:
         q = q.where(
             text(
                 "(geom IS NULL OR ST_DWithin(geom, ST_SetSRID(ST_MakePoint(:center_lon,:center_lat),4326)::geography,:radius))"
@@ -142,9 +144,19 @@ def query_observations(
         )
     sources = {s.id: s for s in db.scalars(select(Source))}
     results = []
+    seen_tracks = set()
     matched = 0
     # Stream to avoid truncating the candidate set before geodesic radius filtering.
     for row in db.scalars(q.execution_options(yield_per=500)):
+        # Select the latest source-local state before spatial/class filters. Otherwise an
+        # older in-area position can reappear after the latest position moved outside.
+        if live and row.track_id:
+            key = (row.source_id, row.track_id)
+            if key in seen_tracks:
+                continue
+            seen_tracks.add(key)
+        if live and (row.details.get("event_ended") is True or (object_type and row.object_type != object_type)):
+            continue
         item = observation_out(row, area, sources.get(row.source_id), now)
         if item["distance_m"] is None:
             if not include_unlocated:
@@ -156,12 +168,6 @@ def query_observations(
             and item["freshness_seconds"] is not None
             and item["freshness_seconds"]
             > {"adsb": 60, "ais": 180, "camera": 30, "phone": 30, "radar": 30, "traffic": 300}.get(row.source_type, 300)
-        ):
-            continue
-        if (
-            live
-            and row.track_id
-            and any(x["source_id"] == row.source_id and x["track_id"] == row.track_id for x in results)
         ):
             continue
         if matched >= offset:

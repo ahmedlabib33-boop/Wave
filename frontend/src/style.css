@@ -1565,6 +1565,54 @@ pre {
     scroll-behavior: auto !important;
   }
 }
+.discovery-bbox {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.regional-discovery > .actions {
+  margin-bottom: 24px;
+}
+.manual-candidate {
+  border-top: 1px solid #303235;
+  padding-top: 20px;
+  margin-block: 25px;
+}
+.candidate-grid {
+  margin-top: 24px;
+}
+.candidate-card {
+  margin-bottom: 0;
+}
+.candidate-card > p {
+  margin-top: 12px;
+}
+.permission-editor {
+  border-top: 1px solid #303235;
+  padding-top: 16px;
+  margin: 20px 0;
+}
+.permission-editor > .notice {
+  margin-top: 18px;
+}
+.permission-editor textarea {
+  margin-bottom: 18px;
+}
+.candidate-card .actions {
+  margin-top: 18px;
+}
+.regional-discovery > details:last-child {
+  margin-top: 22px;
+}
+@media (max-width: 760px) {
+  .discovery-bbox {
+    grid-template-columns: 1fr 1fr;
+  }
+  .candidate-card {
+    padding: 16px;
+  }
+  .regional-discovery .actions .action-wrap {
+    max-width: 100%;
+  }
+}
 
 .cardinal {
   position: absolute;

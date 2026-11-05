@@ -3,6 +3,7 @@ import { readFileSync } from "node:fs";
 const token =
   process.env.TEST_API_TOKEN ||
   readFileSync("../data/access-token", "utf8").trim();
+const evidenceRoot = process.env.EVIDENCE_ROOT || "../research";
 const names = [
   "Radar Overview",
   "Live Cameras",
@@ -72,7 +73,7 @@ test("real workspace and geographic map render without invented objects", async 
     "true",
   );
   await page.screenshot({
-    path: `../research/screenshots/${testInfo.project.name}-radar.png`,
+    path: `${evidenceRoot}/screenshots/${testInfo.project.name}-radar.png`,
     fullPage: true,
   });
   expect(errors).toEqual([]);
@@ -132,7 +133,7 @@ test("all ten pages and complete RTL layout", async ({
     "true",
   );
   await page.screenshot({
-    path: `../research/screenshots/${testInfo.project.name}-arabic.png`,
+    path: `${evidenceRoot}/screenshots/${testInfo.project.name}-arabic.png`,
     fullPage: true,
   });
 });

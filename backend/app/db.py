@@ -133,6 +133,45 @@ class Download(Base):
     error: Mapped[str | None] = mapped_column(Text)
 
 
+class CameraCandidate(Base):
+    __tablename__ = "camera_candidates"
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    discovery_key: Mapped[str] = mapped_column(String(160), unique=True)
+    provider: Mapped[str] = mapped_column(String(100))
+    name: Mapped[str] = mapped_column(String(200))
+    source_ref: Mapped[str | None] = mapped_column(Text)
+    latitude: Mapped[float | None] = mapped_column(Float)
+    longitude: Mapped[float | None] = mapped_column(Float)
+    discovered_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+    details: Mapped[dict] = mapped_column(JSON, default=dict)
+    permission_state: Mapped[str] = mapped_column(String(40), default="unknown")
+    permission_evidence: Mapped[str | None] = mapped_column(Text)
+    permission_recorded_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    url_env: Mapped[str | None] = mapped_column(String(100))
+    protocol: Mapped[str | None] = mapped_column(String(20))
+    checked_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    verification_status: Mapped[str] = mapped_column(String(40), default="not_checked")
+    error: Mapped[str | None] = mapped_column(Text)
+    latency_ms: Mapped[float | None] = mapped_column(Float)
+    frame_width: Mapped[int | None] = mapped_column(Integer)
+    frame_height: Mapped[int | None] = mapped_column(Integer)
+    stream_fingerprint: Mapped[str | None] = mapped_column(String(64))
+    camera_id: Mapped[str | None] = mapped_column(ForeignKey("cameras.id"))
+
+
+class DiscoveryRun(Base):
+    __tablename__ = "discovery_runs"
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    kind: Mapped[str] = mapped_column(String(30))
+    candidate_id: Mapped[str | None] = mapped_column(ForeignKey("camera_candidates.id"))
+    started_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+    finished_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    status: Mapped[str] = mapped_column(String(40))
+    returned_count: Mapped[int | None] = mapped_column(Integer)
+    error: Mapped[str | None] = mapped_column(Text)
+    details: Mapped[dict] = mapped_column(JSON, default=dict)
+
+
 def make_engine(url):
     kwargs = (
         {"connect_args": {"check_same_thread": False, "timeout": 30, "autocommit": False}}

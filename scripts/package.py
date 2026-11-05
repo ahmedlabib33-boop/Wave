@@ -1,13 +1,18 @@
 """Create a reviewable source package; exclude credentials, runtime data, traces and dependencies."""
 
 from pathlib import Path
+import argparse
 import hashlib
 import json
 import os
 import zipfile
 
 root = Path(__file__).resolve().parents[1]
-output = root.parent / "nile-observer.zip"
+parser = argparse.ArgumentParser(description="Package the project without overwriting an earlier delivery")
+parser.add_argument("--output", type=Path, default=root.parent / "nile-observer.zip")
+output = parser.parse_args().output.resolve()
+if output.exists() or output.with_suffix(output.suffix + ".json").exists():
+    parser.error("Delivery already exists; choose a new --output path to preserve earlier work")
 excluded = {
     ".venv",
     "node_modules",
@@ -18,6 +23,8 @@ excluded = {
     "data",
     "test-results",
     "playwright-report",
+    "browser-artifacts",
+    "dist-continuation",
 }
 evidence = {
     "verify_sources.py",
@@ -63,8 +70,17 @@ for folder, dirs, names in os.walk(root):
         rel = path.relative_to(root)
         if name == ".env" or name.endswith((".pyc", ".tsbuildinfo")):
             continue
-        if rel.parts[0] == "research" and not (name in evidence or "screenshots" in rel.parts):
-            continue
+        if rel.parts[0] == "research":
+            continuation = "continuation" in rel.parts
+            if continuation:
+                if "upstream" in rel.parts and name.endswith(".txt"):
+                    continue
+                if name in {"openaq_openapi.txt", "openaq_latest.txt", "frigate_mqtt.txt", "greater_cairo_overpass.txt"}:
+                    continue
+                if path.suffix not in {".json", ".md", ".xml", ".txt", ".png", ".log", ".py"}:
+                    continue
+            elif not (name in evidence or "screenshots" in rel.parts):
+                continue
         files.append((path, rel))
 with zipfile.ZipFile(output, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=6) as archive:
     for path, rel in sorted(files):
