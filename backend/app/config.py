@@ -22,6 +22,9 @@ class Settings(BaseSettings):
     openaq_api_key: SecretStr = SecretStr("")
     asf_bearer_token: SecretStr = SecretStr("")
     copernicus_access_token: SecretStr = SecretStr("")
+    groq_api_key: SecretStr = SecretStr("")
+    groq_model: str = "openai/gpt-oss-20b"
+    groq_max_tokens: int = Field(350, ge=64, le=2048)
     camera_allowed_hosts: str = "test-streams.mux.dev"
     yolox_model_path: str = ""
     camera_processing_enabled: bool = False

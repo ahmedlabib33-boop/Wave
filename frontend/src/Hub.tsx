@@ -9,7 +9,9 @@ export default function Hub({ reload }: { reload: () => Promise<void> }) {
     [type, setType] = useState("rest"),
     [coverage, setCoverage] = useState(""),
     [payload, setPayload] = useState("[]"),
-    [result, setResult] = useState("");
+    [result, setResult] = useState(""),
+    [aiQuestion, setAiQuestion] = useState("Summarize the currently stored source availability and observation limits."),
+    [aiResult, setAiResult] = useState("");
   return (
     <>
       <Notice>{t("hubNote")}</Notice>
@@ -95,6 +97,30 @@ export default function Hub({ reload }: { reload: () => Promise<void> }) {
           {result && <pre dir="ltr">{result}</pre>}
         </section>
       </div>
+      <section className="panel padded ai-brief">
+        <h2>{t("aiBrief")}</h2>
+        <Notice>{t("aiBriefNote")}</Notice>
+        <label>
+          {t("aiQuestion")}
+          <textarea rows={3} value={aiQuestion} onChange={(e) => setAiQuestion(e.target.value)} />
+        </label>
+        <Action
+          run={async () => {
+            const response = await api<{ analysis: string }>("/ai/brief", {
+              method: "POST",
+              body: JSON.stringify({
+                question: aiQuestion,
+                language: document.documentElement.lang === "ar" ? "ar" : "en",
+              }),
+            });
+            setAiResult(response.analysis);
+            await reload();
+          }}
+        >
+          {t("generateBrief")}
+        </Action>
+        {aiResult && <pre className="ai-result">{aiResult}</pre>}
+      </section>
     </>
   );
 }

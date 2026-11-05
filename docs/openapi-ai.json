@@ -1,0 +1,78 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Nile Observer API",
+    "description": "Attributed observations. Historical SAR metadata is separate from live objects. WGS84, UTC, SI units.",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/api/ai/status": {
+      "get": {
+        "tags": [
+          "Optional AI analysis"
+        ],
+        "summary": "Status",
+        "operationId": "status_api_ai_status_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ]
+      }
+    },
+    "/api/ai/brief": {
+      "post": {
+        "tags": [
+          "Optional AI analysis"
+        ],
+        "summary": "Brief",
+        "operationId": "brief_api_ai_brief_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BriefIn"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ]
+      }
+    }
+  }
+}

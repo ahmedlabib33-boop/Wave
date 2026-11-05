@@ -1765,6 +1765,10 @@ select {
 .street-video .actions { align-items: flex-end; }
 .street-video .actions label { width: 170px; }
 .street-video .muted { font-size: 10px; line-height: 1.7; margin-top: 15px; }
+.ai-brief { margin-top: 20px; max-width: 980px; }
+.ai-brief > .notice { margin-top: 8px; }
+.ai-brief .action-wrap { margin-top: 14px; }
+.ai-result { white-space: pre-wrap; font-family: inherit; font-size: 12px; line-height: 1.8; color: #dfe4e8; }
 @media (max-width: 760px) {
   .street-viewer-head, .street-camera-grid { grid-template-columns: 1fr; }
   .street-viewer-head > div { border-inline-end: 0; border-bottom: 1px solid #303840; }

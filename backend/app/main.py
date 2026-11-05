@@ -23,6 +23,7 @@ from .camera_service import camera_worker, create_registered_camera, run_camera
 from .calibration import fit_calibration
 from .channels import accept_channel, ais_worker, mqtt_worker, serial_worker
 from .config import get_settings
+from .ai import router as ai_router
 from .discovery import router as discovery_router
 from .street_viewer import router as street_viewer_router, socket_router as street_viewer_socket_router, street_worker
 from .frigate import accept_frigate
@@ -134,6 +135,7 @@ app.add_middleware(
 AUTH = [Depends(authorized)]
 app.include_router(discovery_router, dependencies=AUTH)
 app.include_router(street_viewer_router, dependencies=AUTH)
+app.include_router(ai_router, dependencies=AUTH)
 app.include_router(street_viewer_socket_router)
 
 

@@ -322,6 +322,11 @@ const en = {
   detected: "detected",
   streamEvidence:
     "Frames are decoded on this server from an authorized source. Object boxes come from the selected engine; browser receipt is recorded separately from human viewing.",
+  aiBrief: "AI analysis brief",
+  aiBriefNote:
+    "Optional Groq analysis reads only stored, attributed source metadata and recent observations. It does not create detections, positions, camera coverage or source verification.",
+  aiQuestion: "Question about the stored hub records",
+  generateBrief: "Generate analysis brief",
 };
 type Key = keyof typeof en;
 const ar: Record<Key, string> = {
@@ -638,6 +643,11 @@ const ar: Record<Key, string> = {
   detected: "كائنات مكتشفة",
   streamEvidence:
     "تُفك الإطارات على هذا الخادم من مصدر مصرح به. مربعات الكائنات من المحرك المحدد؛ ويُسجل استلام المتصفح منفصلاً عن مشاهدة الشخص.",
+  aiBrief: "موجز تحليل بالذكاء الاصطناعي",
+  aiBriefNote:
+    "يقرأ تحليل Groq الاختياري بيانات المصادر المخزنة والمنسوبة والأرصاد الحديثة فقط. لا ينشئ كشفًا أو مواقع أو تغطية كاميرا أو تحققًا من مصدر.",
+  aiQuestion: "سؤال عن سجلات المركز المخزنة",
+  generateBrief: "إنشاء موجز تحليلي",
 };
 export const LanguageContext = createContext<"en" | "ar">("en");
 export function useT() {

@@ -88,6 +88,14 @@ CATALOG = [
     ),
     ("openaq", "OpenAQ", "environment", 900, "Local coverage unverified; key required", "https://docs.openaq.org/"),
     (
+        "groq_ai",
+        "Groq AI analysis",
+        "rest",
+        None,
+        "Optional server-side summary of attributed hub records; it is not a sensor or detector",
+        "https://console.groq.com/docs/overview",
+    ),
+    (
         "overpass_inventory",
         "Greater Cairo camera metadata",
         "camera",
@@ -141,8 +149,9 @@ def seed_sources(db):
                 existing.update_interval = CONNECTORS[identifier].interval
             continue
         status, auth, error = "pending", "not_required", None
-        if identifier in ("tomtom", "aisstream", "openaq"):
-            configured = bool(getattr(cfg, identifier + "_api_key").get_secret_value())
+        if identifier in ("tomtom", "aisstream", "openaq", "groq_ai"):
+            key_name = "groq_api_key" if identifier == "groq_ai" else identifier + "_api_key"
+            configured = bool(getattr(cfg, key_name).get_secret_value())
             status, auth = ("pending", "configured_unverified") if configured else ("needs_credentials", "missing")
             error = None if configured else "Provider API key is not configured"
         elif identifier not in CONNECTORS:

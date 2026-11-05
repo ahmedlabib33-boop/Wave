@@ -22,6 +22,7 @@ Both the original multi-sensor platform and the camera/upstream investigation re
 | iPhone native sensor companion | Existing source retained; Xcode/signing/physical-device validation still pending; no LiDAR/UWB 5 km claim |
 | REST / WebSocket / MQTT / serial / plugins | Existing channels retained; optional mapped Frigate MQTT topic added; hardware/broker-specific checks remain prerequisites |
 | Fusion | Source-attributed aggregation and local-track state selection operational; cross-source identity/covariance fusion remains pending adequate evidence |
+| Optional AI analysis | Groq-backed server-side brief of bounded stored source metadata and normalized observations is operational; it is explicitly not a detection, sensor-fusion, or verification source |
 | Deployment, Windows/macOS instructions, remote-access guidance | Existing scripts/configurations retained; no new runtime dependencies required |
 | Free-first and authorized inputs | Maintained; no purchases, private-camera scans, credential guesses or fabricated detections |
 | Regression/preservation evidence | Baseline, private backups, Git checkpoint, record-comparison checks and new test evidence retained separately |

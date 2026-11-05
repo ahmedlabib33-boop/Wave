@@ -58,6 +58,7 @@ Health checks cover the database and application. Named volumes persist observat
 * **AISstream** WebSocket subscriber behind a configured API key; AIS unavailable-value codes are handled. No keyed live verification was possible.
 * Authorized **RTSP, HTTP video, HLS and ONVIF media-service** registration, time-bounded decoding in a subprocess, real YOLOX inference, conservative local tracking, independent ground-plane calibration validation and timestamp-gated physical speed estimates.
 * **Greater Cairo Street Viewer**: actual OpenStreetMap street metadata is loaded on demand; only authorized cameras with recorded street/view evidence may open an authenticated server-side video session. OpenCV/YOLOX overlays actual decoded frames and mapped Frigate cameras can supply annotated frames. Initial verified Greater Cairo live-feed count: **0**. See [street-viewer sources](docs/STREET_VIEWER_SOURCES.md) and [laptop/phone setup](docs/LOCAL_LAPTOP_MOBILE.md).
+* Optional server-side **Groq AI analysis brief** for stored, attributed hub metadata. It is not a sensor or detector and cannot create observations or geographic positions. See [AI analysis setup](docs/AI_ANALYSIS.md).
 * Authenticated REST and WebSocket ingestion, optional MQTT/TLS and serial JSONL workers, source plugins, deduplication, persistent history, data freshness and failure diagnostics.
 * Ten responsive PWA pages, English / Arabic, full RTL layout, honest empty states and a geographically positioned map.
 

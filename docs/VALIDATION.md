@@ -65,3 +65,7 @@ The additive Street Viewer checks used a separate SQLite copy with an explicitly
 The actual street-metadata flow was also called against the disposable application: the public OSM map API returned 300 road segments around 30.0878597, 31.3413867, including an El Nozha Street record. It created zero camera records and marked coverage incomplete (`research/street-viewer/live-map-flow.json`). This establishes the real map integration only; it does not establish camera coverage.
 
 The managed sandbox could no longer launch a fresh Playwright WebKit process because the host's `libGLESv2.so.2` library was absent. The failure is recorded in the local browser artifacts. It did not prevent the responsive mobile Chromium validation, but a physical iPhone/Safari or a host with the WebKit dependency remains required for final Safari-engine confirmation.
+
+## Groq AI analysis — 5 November 2026 UTC
+
+The supplied server-only Groq key was accepted by the official models endpoint. An end-to-end request with `openai/gpt-oss-20b` returned HTTP 200 and a non-empty brief from an isolated empty hub, with zero observations included. The response did not create any observation. Two mocked API tests cover absent-key and successful bounded-context behavior; they do not make a network request. The key is stored only in the ignored local `.env` file and is not present in this repository, archive, API response, or frontend bundle.
