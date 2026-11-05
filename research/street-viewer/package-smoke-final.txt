@@ -1,0 +1,13 @@
+{
+  "scope": "fresh extracted archive with temporary SQLite database",
+  "health_http": 200,
+  "frontend_http": 200,
+  "street_state_http": 200,
+  "street_openapi": true,
+  "default_center": [
+    30.0878597,
+    31.3413867,
+    5000
+  ]
+}
+archive secret/data exclusion: passed

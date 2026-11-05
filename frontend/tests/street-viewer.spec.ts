@@ -17,6 +17,9 @@ test("street viewer selects real cached street metadata without inventing covera
   await page.locator(".sidebar nav").getByRole("button", { name: "Greater Cairo Street Viewer", exact: true }).click();
   await expect(page.getByRole("heading", { name: "Greater Cairo Street Viewer", exact: true })).toBeVisible();
   await expect(page.getByTestId("street-map").locator("canvas")).toBeVisible();
+  await page.getByRole("button", { name: "Full-screen map", exact: true }).click();
+  await expect(page.locator(".street-map-full")).toBeVisible();
+  await page.getByRole("button", { name: "Exit full-screen map", exact: true }).click();
   await page.getByRole("button", { name: "Browser fixture street", exact: true }).click();
   await expect(page.getByText("Selected street", { exact: true })).toBeVisible();
   await expect(page.getByText("No recent browser playback evidence", { exact: true })).toBeVisible();

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
-import { MapPin, Play, Search, Square, Video, X } from "lucide-react";
+import { MapPin, Maximize, Minimize, Play, Search, Square, Video, X } from "lucide-react";
 import { api } from "./api";
 import { useT } from "./i18n";
 import type { Street, StreetCamera, StreetViewerState } from "./types";
@@ -104,6 +104,7 @@ function StreetMap({ state, streets, selected, choose, nearby }: { state: Street
   const map = useRef<maplibregl.Map | null>(null);
   const latest = useRef({ choose, nearby, streets });
   const [loaded, setLoaded] = useState(false);
+  const [fullMap, setFullMap] = useState(false);
   latest.current = { choose, nearby, streets };
   useEffect(() => {
     if (!target.current) return;
@@ -141,7 +142,20 @@ function StreetMap({ state, streets, selected, choose, nearby }: { state: Street
     const sites = [...state.cameras, ...state.candidates].filter((item) => item.latitude !== null && item.longitude !== null);
     (instance.getSource("street-cameras") as maplibregl.GeoJSONSource).setData({ type: "FeatureCollection", features: sites.map((item) => ({ type: "Feature", geometry: { type: "Point", coordinates: [item.longitude!, item.latitude!] }, properties: { name: item.name } })) });
   }, [loaded, state, streets, selected]);
-  return <div className="street-map"><div ref={target} className="map" data-testid="street-map" /><span className="street-map-hint"><MapPin size={14}/>{t("clickStreet")}</span></div>;
+  useEffect(() => {
+    // CSS full-screen mode also works on iPhone Safari, where arbitrary-element
+    // browser fullscreen support is not consistently available.
+    const timer = window.setTimeout(() => map.current?.resize(), 0);
+    return () => window.clearTimeout(timer);
+  }, [fullMap]);
+  const fullMapLabel = t(fullMap ? "exitFullMap" : "fullMap");
+  return <div className={fullMap ? "street-map street-map-full" : "street-map"}>
+    <div ref={target} className="map" data-testid="street-map" />
+    <button className="street-map-full-toggle" onClick={() => setFullMap((value) => !value)} aria-label={fullMapLabel} title={fullMapLabel}>
+      {fullMap ? <Minimize size={17}/> : <Maximize size={17}/>}<span>{fullMapLabel}</span>
+    </button>
+    <span className="street-map-hint"><MapPin size={14}/>{t("clickStreet")}</span>
+  </div>;
 }
 
 export default function StreetViewer() {

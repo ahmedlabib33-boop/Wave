@@ -8,16 +8,16 @@ transforming...
 rendering chunks...
 computing gzip size...
 dist/index.html                                0.66 kB │ gzip:   0.38 kB
-dist/assets/index-DafSCCNs.css                25.90 kB │ gzip:   6.46 kB
+dist/assets/index-CEhOh3md.css                26.24 kB │ gzip:   6.53 kB
 dist/assets/maplibre-gl-B-YMMjus.css          69.94 kB │ gzip:  10.06 kB
 dist/assets/maplibre-gl-Qa9GN37F.js            0.09 kB │ gzip:   0.10 kB
-dist/assets/History-DytdWkQb.js                1.67 kB │ gzip:   0.74 kB
-dist/assets/Hub-BvM7qUuo.js                    1.80 kB │ gzip:   0.74 kB
-dist/assets/SourceDiagnostics-8aohtQ6W.js      2.28 kB │ gzip:   0.85 kB
-dist/assets/RadarMap-jaHlgZ-B.js               4.55 kB │ gzip:   1.82 kB
-dist/assets/Satellite-5cdbBVFG.js              5.91 kB │ gzip:   2.07 kB
-dist/assets/Cameras-BBMekwAp.js               10.09 kB │ gzip:   2.83 kB
-dist/assets/StreetViewer-C5W-Rl7B.js          11.97 kB │ gzip:   4.22 kB
-dist/assets/index-sg2_OhAa.js                286.82 kB │ gzip:  89.60 kB
+dist/assets/History-fo0aAOkq.js                1.67 kB │ gzip:   0.74 kB
+dist/assets/Hub-Bubvoe95.js                    1.80 kB │ gzip:   0.75 kB
+dist/assets/SourceDiagnostics-CEuIeUiu.js      2.28 kB │ gzip:   0.85 kB
+dist/assets/RadarMap-BneBWI0P.js               4.55 kB │ gzip:   1.82 kB
+dist/assets/Satellite-DK9CakLV.js              5.91 kB │ gzip:   2.07 kB
+dist/assets/Cameras-DSaf8vf1.js               10.09 kB │ gzip:   2.83 kB
+dist/assets/StreetViewer-DN1GMfuA.js          13.19 kB │ gzip:   4.51 kB
+dist/assets/index-BYobebOs.js                286.97 kB │ gzip:  89.65 kB
 dist/assets/maplibre-ChAaPfnC.js           1,055.24 kB │ gzip: 285.08 kB
-✓ built in 5.96s
+✓ built in 6.12s
