@@ -1,0 +1,21 @@
+
+Running 10 tests using 1 worker
+
+(node:18318) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+  ✓   1 [desktop-chromium] › tests/platform.spec.ts:51:1 › real workspace and geographic map render without invented objects (3.5s)
+  ✓   2 [desktop-chromium] › tests/platform.spec.ts:88:1 › all ten pages and complete RTL layout (11.6s)
+  ✓   3 [desktop-chromium] › tests/platform.spec.ts:140:1 › radius settings persist from 1 to 5 km (3.0s)
+  ✓   4 [desktop-chromium] › tests/platform.spec.ts:166:1 › historical satellite metadata is browsable and labelled (2.9s)
+  ✓   5 [desktop-chromium] › tests/platform.spec.ts:185:1 › bad access token is rejected (362ms)
+(node:18816) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+  ✓   6 [iphone-webkit] › tests/platform.spec.ts:51:1 › real workspace and geographic map render without invented objects (5.2s)
+  ✓   7 [iphone-webkit] › tests/platform.spec.ts:88:1 › all ten pages and complete RTL layout (19.8s)
+  ✓   8 [iphone-webkit] › tests/platform.spec.ts:140:1 › radius settings persist from 1 to 5 km (2.1s)
+  ✓   9 [iphone-webkit] › tests/platform.spec.ts:166:1 › historical satellite metadata is browsable and labelled (4.3s)
+  ✓  10 [iphone-webkit] › tests/platform.spec.ts:185:1 › bad access token is rejected (716ms)
+
+  10 passed (55.8s)

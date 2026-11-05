@@ -1,0 +1,154 @@
+
+Running 10 tests using 1 worker
+
+(node:2863) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [desktop-chromium] › tests/platform.spec.ts:9:1 › real workspace and geographic map render without invented objects (2.5s)
+  ✓   2 [desktop-chromium] › tests/platform.spec.ts:21:1 › all ten pages and complete RTL layout (5.5s)
+  ✓   3 [desktop-chromium] › tests/platform.spec.ts:36:1 › radius settings persist from 1 to 5 km (1.9s)
+  ✓   4 [desktop-chromium] › tests/platform.spec.ts:44:1 › historical satellite metadata is browsable and labelled (2.2s)
+  ✓   5 [desktop-chromium] › tests/platform.spec.ts:51:1 › bad access token is rejected (387ms)
+(node:3023) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   6 [iphone-webkit] › tests/platform.spec.ts:9:1 › real workspace and geographic map render without invented objects (3ms)
+(node:3220) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   7 [iphone-webkit] › tests/platform.spec.ts:21:1 › all ten pages and complete RTL layout (3ms)
+(node:3417) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   8 [iphone-webkit] › tests/platform.spec.ts:36:1 › radius settings persist from 1 to 5 km (2ms)
+(node:3614) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   9 [iphone-webkit] › tests/platform.spec.ts:44:1 › historical satellite metadata is browsable and labelled (2ms)
+(node:3811) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  10 [iphone-webkit] › tests/platform.spec.ts:51:1 › bad access token is rejected (2ms)
+
+
+  1) [iphone-webkit] › tests/platform.spec.ts:9:1 › real workspace and geographic map render without invented objects 
+
+    Error: browserType.launch: 
+    ╔══════════════════════════════════════════════════════╗
+    ║ Host system is missing dependencies to run browsers. ║
+    ║ Missing libraries:                                   ║
+    ║     libgtk-4.so.1                                    ║
+    ║     libgraphene-1.0.so.0                             ║
+    ║     libharfbuzz-icu.so.0                             ║
+    ║     libmanette-0.2.so.0                              ║
+    ║     libhyphen.so.0                                   ║
+    ║     libGLESv2.so.2                                   ║
+    ╚══════════════════════════════════════════════════════╝
+
+    Error Context: test-results/platform-real-workspace-an-32f6d-er-without-invented-objects-iphone-webkit/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/platform-real-workspace-an-32f6d-er-without-invented-objects-iphone-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/platform-real-workspace-an-32f6d-er-without-invented-objects-iphone-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [iphone-webkit] › tests/platform.spec.ts:21:1 › all ten pages and complete RTL layout ─────────
+
+    Error: browserType.launch: 
+    ╔══════════════════════════════════════════════════════╗
+    ║ Host system is missing dependencies to run browsers. ║
+    ║ Missing libraries:                                   ║
+    ║     libgtk-4.so.1                                    ║
+    ║     libgraphene-1.0.so.0                             ║
+    ║     libharfbuzz-icu.so.0                             ║
+    ║     libmanette-0.2.so.0                              ║
+    ║     libhyphen.so.0                                   ║
+    ║     libGLESv2.so.2                                   ║
+    ╚══════════════════════════════════════════════════════╝
+
+    Error Context: test-results/platform-all-ten-pages-and-complete-RTL-layout-iphone-webkit/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/platform-all-ten-pages-and-complete-RTL-layout-iphone-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/platform-all-ten-pages-and-complete-RTL-layout-iphone-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [iphone-webkit] › tests/platform.spec.ts:36:1 › radius settings persist from 1 to 5 km ────────
+
+    Error: browserType.launch: 
+    ╔══════════════════════════════════════════════════════╗
+    ║ Host system is missing dependencies to run browsers. ║
+    ║ Missing libraries:                                   ║
+    ║     libgtk-4.so.1                                    ║
+    ║     libgraphene-1.0.so.0                             ║
+    ║     libharfbuzz-icu.so.0                             ║
+    ║     libmanette-0.2.so.0                              ║
+    ║     libhyphen.so.0                                   ║
+    ║     libGLESv2.so.2                                   ║
+    ╚══════════════════════════════════════════════════════╝
+
+    Error Context: test-results/platform-radius-settings-persist-from-1-to-5-km-iphone-webkit/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/platform-radius-settings-persist-from-1-to-5-km-iphone-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/platform-radius-settings-persist-from-1-to-5-km-iphone-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [iphone-webkit] › tests/platform.spec.ts:44:1 › historical satellite metadata is browsable and labelled 
+
+    Error: browserType.launch: 
+    ╔══════════════════════════════════════════════════════╗
+    ║ Host system is missing dependencies to run browsers. ║
+    ║ Missing libraries:                                   ║
+    ║     libgtk-4.so.1                                    ║
+    ║     libgraphene-1.0.so.0                             ║
+    ║     libharfbuzz-icu.so.0                             ║
+    ║     libmanette-0.2.so.0                              ║
+    ║     libhyphen.so.0                                   ║
+    ║     libGLESv2.so.2                                   ║
+    ╚══════════════════════════════════════════════════════╝
+
+    Error Context: test-results/platform-historical-satell-e8a10-a-is-browsable-and-labelled-iphone-webkit/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/platform-historical-satell-e8a10-a-is-browsable-and-labelled-iphone-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/platform-historical-satell-e8a10-a-is-browsable-and-labelled-iphone-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [iphone-webkit] › tests/platform.spec.ts:51:1 › bad access token is rejected ──────────────────
+
+    Error: browserType.launch: 
+    ╔══════════════════════════════════════════════════════╗
+    ║ Host system is missing dependencies to run browsers. ║
+    ║ Missing libraries:                                   ║
+    ║     libgtk-4.so.1                                    ║
+    ║     libgraphene-1.0.so.0                             ║
+    ║     libharfbuzz-icu.so.0                             ║
+    ║     libmanette-0.2.so.0                              ║
+    ║     libhyphen.so.0                                   ║
+    ║     libGLESv2.so.2                                   ║
+    ╚══════════════════════════════════════════════════════╝
+
+    Error Context: test-results/platform-bad-access-token-is-rejected-iphone-webkit/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/platform-bad-access-token-is-rejected-iphone-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/platform-bad-access-token-is-rejected-iphone-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5 failed
+    [iphone-webkit] › tests/platform.spec.ts:9:1 › real workspace and geographic map render without invented objects 
+    [iphone-webkit] › tests/platform.spec.ts:21:1 › all ten pages and complete RTL layout ──────────
+    [iphone-webkit] › tests/platform.spec.ts:36:1 › radius settings persist from 1 to 5 km ─────────
+    [iphone-webkit] › tests/platform.spec.ts:44:1 › historical satellite metadata is browsable and labelled 
+    [iphone-webkit] › tests/platform.spec.ts:51:1 › bad access token is rejected ───────────────────
+  5 passed (16.5s)

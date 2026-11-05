@@ -1,0 +1,8 @@
+{
+  "status_code": 200,
+  "frames_read": 90,
+  "inference_events": 0,
+  "map_positions": 0,
+  "pts_monotonic": true,
+  "data_scope": "Temporary verification database only; test media has no Cairo coordinates"
+}

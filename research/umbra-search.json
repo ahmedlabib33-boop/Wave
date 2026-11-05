@@ -1,0 +1,10 @@
+{
+  "quality": "Historical open SAR STAC catalogue; bounded traversal cannot establish complete AOI coverage",
+  "details": {
+    "documents_checked": 60,
+    "truncated": true,
+    "coverage_complete": false,
+    "coverage_statement": "Only catalogue contents searched; a negative result does not rule out other Umbra holdings"
+  },
+  "scene_count": 0
+}

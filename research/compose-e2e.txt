@@ -1,0 +1,6 @@
+health 200
+frontend 200
+aircraft empty
+sar 15
+settings 5000
+geoquery 200

@@ -1,0 +1,2042 @@
+[
+  {
+    "id": "cdse:32f55981-5a4e-4991-8647-cf71b469c058",
+    "source_id": "copernicus",
+    "name": "S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_BE63.SAFE",
+    "platform": "S1C",
+    "acquired_at": "2026-10-31T15:55:47.910545+00:00",
+    "footprint": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            30.053148,
+            30.437395
+          ],
+          [
+            30.39081,
+            28.93059
+          ],
+          [
+            33.07832,
+            29.357668
+          ],
+          [
+            32.781944,
+            30.861784
+          ],
+          [
+            30.053148,
+            30.437395
+          ]
+        ]
+      ]
+    },
+    "product_type": "Sentinel-1",
+    "resolution_m": null,
+    "preview_url": null,
+    "download_url": "https://download.dataspace.copernicus.eu/odata/v1/Products(32f55981-5a4e-4991-8647-cf71b469c058)/$value",
+    "details": {
+      "online": true,
+      "size_bytes": 1781709658,
+      "content_date": {
+        "Start": "2026-10-31T15:55:47.910545Z",
+        "End": "2026-10-31T15:56:12.909348Z"
+      },
+      "download_auth": "Copernicus access token required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "cdse:30faa462-7bd0-49c6-9021-cd3368c6c533",
+    "source_id": "copernicus",
+    "name": "S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_B99E_COG.SAFE",
+    "platform": "S1C",
+    "acquired_at": "2026-10-31T15:55:47.910545+00:00",
+    "footprint": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            30.053148,
+            30.437395
+          ],
+          [
+            30.39081,
+            28.93059
+          ],
+          [
+            33.07832,
+            29.357668
+          ],
+          [
+            32.781944,
+            30.861784
+          ],
+          [
+            30.053148,
+            30.437395
+          ]
+        ]
+      ]
+    },
+    "product_type": "Sentinel-1",
+    "resolution_m": null,
+    "preview_url": null,
+    "download_url": "https://download.dataspace.copernicus.eu/odata/v1/Products(30faa462-7bd0-49c6-9021-cd3368c6c533)/$value",
+    "details": {
+      "online": true,
+      "size_bytes": 1135721568,
+      "content_date": {
+        "Start": "2026-10-31T15:55:47.910545Z",
+        "End": "2026-10-31T15:56:12.909348Z"
+      },
+      "download_auth": "Copernicus access token required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "asf:S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_BE63-GRD_HD",
+    "source_id": "asf",
+    "name": "S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_BE63",
+    "platform": "Sentinel-1C",
+    "acquired_at": "2026-10-31T15:55:47+00:00",
+    "footprint": {
+      "coordinates": [
+        [
+          [
+            30.39081,
+            28.93059
+          ],
+          [
+            33.07832,
+            29.357668
+          ],
+          [
+            32.781944,
+            30.861784
+          ],
+          [
+            30.053148,
+            30.437395
+          ],
+          [
+            30.39081,
+            28.93059
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "product_type": "GRD_HD",
+    "resolution_m": null,
+    "preview_url": "https://datapool.asf.alaska.edu/BROWSE/SC/S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_BE63.jpg",
+    "download_url": "https://datapool.asf.alaska.edu/GRD_HD/SC/S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_BE63.zip",
+    "details": {
+      "centerLat": 29.9036,
+      "centerLon": 31.573,
+      "stopTime": "2026-10-31T15:56:12Z",
+      "fileID": "S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_BE63-GRD_HD",
+      "flightDirection": "ASCENDING",
+      "pathNumber": 58,
+      "processingLevel": "GRD_HD",
+      "url": "https://datapool.asf.alaska.edu/GRD_HD/SC/S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_BE63.zip",
+      "startTime": "2026-10-31T15:55:47Z",
+      "sceneName": "S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_BE63",
+      "browse": [
+        "https://datapool.asf.alaska.edu/BROWSE/SC/S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_BE63.jpg"
+      ],
+      "platform": "Sentinel-1C",
+      "bytes": 973741618,
+      "md5sum": "71be74c6fccac48ca56c6adff1396703",
+      "frameNumber": 93,
+      "granuleType": "SENTINEL_1C_FRAME",
+      "orbit": 10131,
+      "polarization": "VV+VH",
+      "processingDate": "2026-10-31T15:55:47Z",
+      "sensor": "C-SAR",
+      "groupID": "S1C_IWDV_0093_0098_010131_058",
+      "pgeVersion": "004.03",
+      "fileName": "S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_BE63.zip",
+      "beamModeType": "IW",
+      "s3Urls": [
+        "s3://asf-ngap2w-p-s1-grd-7d1b4348/S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_BE63.zip"
+      ],
+      "resolution_note": "Catalogue does not supply spatial resolution; pixel spacing is not resolution",
+      "download_auth": "NASA Earthdata account/token may be required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "cdse:6d62aba5-cb34-41a9-a5fd-b2d0cf0a76ef",
+    "source_id": "copernicus",
+    "name": "S1C_IW_SLC__1SDV_20261031T155546_20261031T155614_010131_014387_0E98.SAFE",
+    "platform": "S1C",
+    "acquired_at": "2026-10-31T15:55:46.436265+00:00",
+    "footprint": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            30.035738,
+            30.525391
+          ],
+          [
+            30.411383,
+            28.841841
+          ],
+          [
+            33.030552,
+            29.259251
+          ],
+          [
+            32.701565,
+            30.940119
+          ],
+          [
+            30.035738,
+            30.525391
+          ]
+        ]
+      ]
+    },
+    "product_type": "Sentinel-1",
+    "resolution_m": null,
+    "preview_url": null,
+    "download_url": "https://download.dataspace.copernicus.eu/odata/v1/Products(6d62aba5-cb34-41a9-a5fd-b2d0cf0a76ef)/$value",
+    "details": {
+      "online": true,
+      "size_bytes": 8634772634,
+      "content_date": {
+        "Start": "2026-10-31T15:55:46.436265Z",
+        "End": "2026-10-31T15:56:14.363053Z"
+      },
+      "download_auth": "Copernicus access token required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "cdse:86fde847-9bc9-4a30-a9f7-02be55b044c5",
+    "source_id": "copernicus",
+    "name": "S1C_IW_RAW__0SDV_20261031T155544_20261031T155616_010131_014387_D06E.SAFE",
+    "platform": "S1C",
+    "acquired_at": "2026-10-31T15:55:44.212349+00:00",
+    "footprint": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            32.857,
+            28.7778
+          ],
+          [
+            32.4756,
+            30.7352
+          ],
+          [
+            29.931,
+            30.4666
+          ],
+          [
+            30.3624,
+            28.5087
+          ],
+          [
+            32.857,
+            28.7778
+          ]
+        ]
+      ]
+    },
+    "product_type": "Sentinel-1",
+    "resolution_m": null,
+    "preview_url": null,
+    "download_url": "https://download.dataspace.copernicus.eu/odata/v1/Products(86fde847-9bc9-4a30-a9f7-02be55b044c5)/$value",
+    "details": {
+      "online": true,
+      "size_bytes": 1715210530,
+      "content_date": {
+        "Start": "2026-10-31T15:55:44.212349Z",
+        "End": "2026-10-31T15:56:16.611855Z"
+      },
+      "download_auth": "Copernicus access token required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "cdse:ac9f8b8f-f855-4b9d-8601-04dabc34b074",
+    "source_id": "copernicus",
+    "name": "S1D_IW_RAW__0SDV_20261025T155622_20261025T155654_005174_009D10_E5A7.SAFE",
+    "platform": "S1D",
+    "acquired_at": "2026-10-25T15:56:22.107765+00:00",
+    "footprint": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            32.5697,
+            30.2567
+          ],
+          [
+            32.1866,
+            32.2138
+          ],
+          [
+            29.601,
+            31.9454
+          ],
+          [
+            30.0378,
+            29.9881
+          ],
+          [
+            32.5697,
+            30.2567
+          ]
+        ]
+      ]
+    },
+    "product_type": "Sentinel-1",
+    "resolution_m": null,
+    "preview_url": null,
+    "download_url": "https://download.dataspace.copernicus.eu/odata/v1/Products(ac9f8b8f-f855-4b9d-8601-04dabc34b074)/$value",
+    "details": {
+      "online": true,
+      "size_bytes": 1676610828,
+      "content_date": {
+        "Start": "2026-10-25T15:56:22.107765Z",
+        "End": "2026-10-25T15:56:54.507256Z"
+      },
+      "download_auth": "Copernicus access token required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "cdse:971980f8-bf4d-4ad2-8095-80b8108258b5",
+    "source_id": "copernicus",
+    "name": "S1D_IW_GRDH_1SDV_20261025T155600_20261025T155625_005174_009D10_693E.SAFE",
+    "platform": "S1D",
+    "acquired_at": "2026-10-25T15:56:00.807062+00:00",
+    "footprint": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            30.067087,
+            30.406725
+          ],
+          [
+            30.404394,
+            28.899889
+          ],
+          [
+            33.083313,
+            29.325691
+          ],
+          [
+            32.787132,
+            30.829836
+          ],
+          [
+            30.067087,
+            30.406725
+          ]
+        ]
+      ]
+    },
+    "product_type": "Sentinel-1",
+    "resolution_m": null,
+    "preview_url": null,
+    "download_url": "https://download.dataspace.copernicus.eu/odata/v1/Products(971980f8-bf4d-4ad2-8095-80b8108258b5)/$value",
+    "details": {
+      "online": true,
+      "size_bytes": 1775694237,
+      "content_date": {
+        "Start": "2026-10-25T15:56:00.807062Z",
+        "End": "2026-10-25T15:56:25.805753Z"
+      },
+      "download_auth": "Copernicus access token required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "cdse:93182242-b0c9-4c00-be02-a912f43e057c",
+    "source_id": "copernicus",
+    "name": "S1D_IW_GRDH_1SDV_20261025T155600_20261025T155625_005174_009D10_2EE0_COG.SAFE",
+    "platform": "S1D",
+    "acquired_at": "2026-10-25T15:56:00.807062+00:00",
+    "footprint": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            30.067087,
+            30.406725
+          ],
+          [
+            30.404394,
+            28.899889
+          ],
+          [
+            33.083313,
+            29.325691
+          ],
+          [
+            32.787132,
+            30.829836
+          ],
+          [
+            30.067087,
+            30.406725
+          ]
+        ]
+      ]
+    },
+    "product_type": "Sentinel-1",
+    "resolution_m": null,
+    "preview_url": null,
+    "download_url": "https://download.dataspace.copernicus.eu/odata/v1/Products(93182242-b0c9-4c00-be02-a912f43e057c)/$value",
+    "details": {
+      "online": true,
+      "size_bytes": 1159073835,
+      "content_date": {
+        "Start": "2026-10-25T15:56:00.807062Z",
+        "End": "2026-10-25T15:56:25.805753Z"
+      },
+      "download_auth": "Copernicus access token required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "asf:S1D_IW_GRDH_1SDV_20261025T155600_20261025T155625_005174_009D10_693E-GRD_HD",
+    "source_id": "asf",
+    "name": "S1D_IW_GRDH_1SDV_20261025T155600_20261025T155625_005174_009D10_693E",
+    "platform": "Sentinel-1D",
+    "acquired_at": "2026-10-25T15:56:00+00:00",
+    "footprint": {
+      "coordinates": [
+        [
+          [
+            30.404394,
+            28.899889
+          ],
+          [
+            33.083313,
+            29.325691
+          ],
+          [
+            32.787132,
+            30.829836
+          ],
+          [
+            30.067087,
+            30.406725
+          ],
+          [
+            30.404394,
+            28.899889
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "product_type": "GRD_HD",
+    "resolution_m": null,
+    "preview_url": "https://datapool.asf.alaska.edu/BROWSE/SD/S1D_IW_GRDH_1SDV_20261025T155600_20261025T155625_005174_009D10_693E.jpg",
+    "download_url": "https://datapool.asf.alaska.edu/GRD_HD/SD/S1D_IW_GRDH_1SDV_20261025T155600_20261025T155625_005174_009D10_693E.zip",
+    "details": {
+      "centerLat": 29.8723,
+      "centerLon": 31.5824,
+      "stopTime": "2026-10-25T15:56:25Z",
+      "fileID": "S1D_IW_GRDH_1SDV_20261025T155600_20261025T155625_005174_009D10_693E-GRD_HD",
+      "flightDirection": "ASCENDING",
+      "pathNumber": 58,
+      "processingLevel": "GRD_HD",
+      "url": "https://datapool.asf.alaska.edu/GRD_HD/SD/S1D_IW_GRDH_1SDV_20261025T155600_20261025T155625_005174_009D10_693E.zip",
+      "startTime": "2026-10-25T15:56:00Z",
+      "sceneName": "S1D_IW_GRDH_1SDV_20261025T155600_20261025T155625_005174_009D10_693E",
+      "browse": [
+        "https://datapool.asf.alaska.edu/BROWSE/SD/S1D_IW_GRDH_1SDV_20261025T155600_20261025T155625_005174_009D10_693E.jpg"
+      ],
+      "platform": "Sentinel-1D",
+      "bytes": 976074209,
+      "md5sum": "84637219fd61f2d1c5bcf04287a6f945",
+      "frameNumber": 93,
+      "granuleType": "SENTINEL_1D_FRAME",
+      "orbit": 5174,
+      "polarization": "VV+VH",
+      "processingDate": "2026-10-25T15:56:00Z",
+      "sensor": "C-SAR",
+      "groupID": "S1D_IWDV_0092_0099_005174_058",
+      "pgeVersion": "004.11",
+      "fileName": "S1D_IW_GRDH_1SDV_20261025T155600_20261025T155625_005174_009D10_693E.zip",
+      "beamModeType": "IW",
+      "s3Urls": [
+        "s3://asf-ngap2w-p-s1-grd-7d1b4348/S1D_IW_GRDH_1SDV_20261025T155600_20261025T155625_005174_009D10_693E.zip"
+      ],
+      "resolution_note": "Catalogue does not supply spatial resolution; pixel spacing is not resolution",
+      "download_auth": "NASA Earthdata account/token may be required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "cdse:59fdbd98-6f5a-47a3-a3ea-f0af4ff48721",
+    "source_id": "copernicus",
+    "name": "S1D_IW_SLC__1SDV_20261025T155559_20261025T155626_005174_009D10_8506.SAFE",
+    "platform": "S1D",
+    "acquired_at": "2026-10-25T15:55:59.849330+00:00",
+    "footprint": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            30.055683,
+            30.467615
+          ],
+          [
+            30.418081,
+            28.842291
+          ],
+          [
+            33.031284,
+            29.258633
+          ],
+          [
+            32.713757,
+            30.881367
+          ],
+          [
+            30.055683,
+            30.467615
+          ]
+        ]
+      ]
+    },
+    "product_type": "Sentinel-1",
+    "resolution_m": null,
+    "preview_url": null,
+    "download_url": "https://download.dataspace.copernicus.eu/odata/v1/Products(59fdbd98-6f5a-47a3-a3ea-f0af4ff48721)/$value",
+    "details": {
+      "online": true,
+      "size_bytes": 8270993961,
+      "content_date": {
+        "Start": "2026-10-25T15:55:59.849330Z",
+        "End": "2026-10-25T15:56:26.810006Z"
+      },
+      "download_auth": "Copernicus access token required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "cdse:c165f4bf-33ab-4b32-a7d0-ca5ebeceaee2",
+    "source_id": "copernicus",
+    "name": "S1D_IW_ETA__AXDV_20261025T155559_20261025T155626_005174_009D10_F831.SAFE",
+    "platform": "S1D",
+    "acquired_at": "2026-10-25T15:55:59.794721+00:00",
+    "footprint": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            30.4144,
+            28.8383
+          ],
+          [
+            33.0352,
+            29.2558
+          ],
+          [
+            32.7142,
+            30.8846
+          ],
+          [
+            30.0488,
+            30.4697
+          ],
+          [
+            30.4144,
+            28.8383
+          ]
+        ]
+      ]
+    },
+    "product_type": "Sentinel-1",
+    "resolution_m": null,
+    "preview_url": null,
+    "download_url": "https://download.dataspace.copernicus.eu/odata/v1/Products(c165f4bf-33ab-4b32-a7d0-ca5ebeceaee2)/$value",
+    "details": {
+      "online": true,
+      "size_bytes": 60892983,
+      "content_date": {
+        "Start": "2026-10-25T15:55:59.794721Z",
+        "End": "2026-10-25T15:56:26.862170Z"
+      },
+      "download_auth": "Copernicus access token required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "cdse:a797fa87-82db-44f3-bfb8-e4a2ccb91ea3",
+    "source_id": "copernicus",
+    "name": "S1D_IW_RAW__0SDV_20261025T155557_20261025T155629_005174_009D10_BBE5.SAFE",
+    "platform": "S1D",
+    "acquired_at": "2026-10-25T15:55:57.107231+00:00",
+    "footprint": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            32.8637,
+            28.7463
+          ],
+          [
+            32.4824,
+            30.7037
+          ],
+          [
+            29.9387,
+            30.4352
+          ],
+          [
+            30.3699,
+            28.4773
+          ],
+          [
+            32.8637,
+            28.7463
+          ]
+        ]
+      ]
+    },
+    "product_type": "Sentinel-1",
+    "resolution_m": null,
+    "preview_url": null,
+    "download_url": "https://download.dataspace.copernicus.eu/odata/v1/Products(a797fa87-82db-44f3-bfb8-e4a2ccb91ea3)/$value",
+    "details": {
+      "online": true,
+      "size_bytes": 1648552171,
+      "content_date": {
+        "Start": "2026-10-25T15:55:57.107231Z",
+        "End": "2026-10-25T15:56:29.506904Z"
+      },
+      "download_auth": "Copernicus access token required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "cdse:6cc67f3e-b9c2-412c-816c-4edb675e527e",
+    "source_id": "copernicus",
+    "name": "S1C_IW_GRDH_1SDV_20261019T155548_20261019T155613_009956_013D93_9201_COG.SAFE",
+    "platform": "S1C",
+    "acquired_at": "2026-10-19T15:55:48.265292+00:00",
+    "footprint": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            30.052887,
+            30.437315
+          ],
+          [
+            30.390549,
+            28.93051
+          ],
+          [
+            33.07795,
+            29.357582
+          ],
+          [
+            32.781578,
+            30.861696
+          ],
+          [
+            30.052887,
+            30.437315
+          ]
+        ]
+      ]
+    },
+    "product_type": "Sentinel-1",
+    "resolution_m": null,
+    "preview_url": null,
+    "download_url": "https://download.dataspace.copernicus.eu/odata/v1/Products(6cc67f3e-b9c2-412c-816c-4edb675e527e)/$value",
+    "details": {
+      "online": true,
+      "size_bytes": 1133858109,
+      "content_date": {
+        "Start": "2026-10-19T15:55:48.265292Z",
+        "End": "2026-10-19T15:56:13.264110Z"
+      },
+      "download_auth": "Copernicus access token required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "cdse:40bfa0b9-c3b1-4963-8bec-9299cca8397a",
+    "source_id": "copernicus",
+    "name": "S1C_IW_GRDH_1SDV_20261019T155548_20261019T155613_009956_013D93_7377.SAFE",
+    "platform": "S1C",
+    "acquired_at": "2026-10-19T15:55:48.265292+00:00",
+    "footprint": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            30.052887,
+            30.437315
+          ],
+          [
+            30.390549,
+            28.93051
+          ],
+          [
+            33.07795,
+            29.357582
+          ],
+          [
+            32.781578,
+            30.861696
+          ],
+          [
+            30.052887,
+            30.437315
+          ]
+        ]
+      ]
+    },
+    "product_type": "Sentinel-1",
+    "resolution_m": null,
+    "preview_url": null,
+    "download_url": "https://download.dataspace.copernicus.eu/odata/v1/Products(40bfa0b9-c3b1-4963-8bec-9299cca8397a)/$value",
+    "details": {
+      "online": true,
+      "size_bytes": 1781641937,
+      "content_date": {
+        "Start": "2026-10-19T15:55:48.265292Z",
+        "End": "2026-10-19T15:56:13.264110Z"
+      },
+      "download_auth": "Copernicus access token required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "asf:S1C_IW_GRDH_1SDV_20261019T155548_20261019T155613_009956_013D93_7377-GRD_HD",
+    "source_id": "asf",
+    "name": "S1C_IW_GRDH_1SDV_20261019T155548_20261019T155613_009956_013D93_7377",
+    "platform": "Sentinel-1C",
+    "acquired_at": "2026-10-19T15:55:48+00:00",
+    "footprint": {
+      "coordinates": [
+        [
+          [
+            30.390549,
+            28.93051
+          ],
+          [
+            33.07795,
+            29.357582
+          ],
+          [
+            32.781578,
+            30.861696
+          ],
+          [
+            30.052887,
+            30.437315
+          ],
+          [
+            30.390549,
+            28.93051
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "product_type": "GRD_HD",
+    "resolution_m": null,
+    "preview_url": "https://datapool.asf.alaska.edu/BROWSE/SC/S1C_IW_GRDH_1SDV_20261019T155548_20261019T155613_009956_013D93_7377.jpg",
+    "download_url": "https://datapool.asf.alaska.edu/GRD_HD/SC/S1C_IW_GRDH_1SDV_20261019T155548_20261019T155613_009956_013D93_7377.zip",
+    "details": {
+      "centerLat": 29.9036,
+      "centerLon": 31.5727,
+      "stopTime": "2026-10-19T15:56:13Z",
+      "fileID": "S1C_IW_GRDH_1SDV_20261019T155548_20261019T155613_009956_013D93_7377-GRD_HD",
+      "flightDirection": "ASCENDING",
+      "pathNumber": 58,
+      "processingLevel": "GRD_HD",
+      "url": "https://datapool.asf.alaska.edu/GRD_HD/SC/S1C_IW_GRDH_1SDV_20261019T155548_20261019T155613_009956_013D93_7377.zip",
+      "startTime": "2026-10-19T15:55:48Z",
+      "sceneName": "S1C_IW_GRDH_1SDV_20261019T155548_20261019T155613_009956_013D93_7377",
+      "browse": [
+        "https://datapool.asf.alaska.edu/BROWSE/SC/S1C_IW_GRDH_1SDV_20261019T155548_20261019T155613_009956_013D93_7377.jpg"
+      ],
+      "platform": "Sentinel-1C",
+      "bytes": 973959034,
+      "md5sum": "5f41f0e3d633639fa543cc2ce4b7cd62",
+      "frameNumber": 93,
+      "granuleType": "SENTINEL_1C_FRAME",
+      "orbit": 9956,
+      "polarization": "VV+VH",
+      "processingDate": "2026-10-19T15:55:48Z",
+      "sensor": "C-SAR",
+      "groupID": "S1C_IWDV_0092_0099_009956_058",
+      "pgeVersion": "004.03",
+      "fileName": "S1C_IW_GRDH_1SDV_20261019T155548_20261019T155613_009956_013D93_7377.zip",
+      "beamModeType": "IW",
+      "s3Urls": [
+        "s3://asf-ngap2w-p-s1-grd-7d1b4348/S1C_IW_GRDH_1SDV_20261019T155548_20261019T155613_009956_013D93_7377.zip"
+      ],
+      "resolution_note": "Catalogue does not supply spatial resolution; pixel spacing is not resolution",
+      "download_auth": "NASA Earthdata account/token may be required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "cdse:d1d112e0-9351-43f5-93a9-7de31b5c864a",
+    "source_id": "copernicus",
+    "name": "S1C_IW_SLC__1SDV_20261019T155546_20261019T155614_009956_013D93_552D.SAFE",
+    "platform": "S1C",
+    "acquired_at": "2026-10-19T15:55:46.790940+00:00",
+    "footprint": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            30.035536,
+            30.525057
+          ],
+          [
+            30.411123,
+            28.841757
+          ],
+          [
+            33.030342,
+            29.259182
+          ],
+          [
+            32.701401,
+            30.9398
+          ],
+          [
+            30.035536,
+            30.525057
+          ]
+        ]
+      ]
+    },
+    "product_type": "Sentinel-1",
+    "resolution_m": null,
+    "preview_url": null,
+    "download_url": "https://download.dataspace.copernicus.eu/odata/v1/Products(d1d112e0-9351-43f5-93a9-7de31b5c864a)/$value",
+    "details": {
+      "online": true,
+      "size_bytes": 8634520036,
+      "content_date": {
+        "Start": "2026-10-19T15:55:46.790940Z",
+        "End": "2026-10-19T15:56:14.713616Z"
+      },
+      "download_auth": "Copernicus access token required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "cdse:38589b91-4dcc-4baa-b428-2a1d53c66bcd",
+    "source_id": "copernicus",
+    "name": "S1C_IW_ETA__AXDV_20261019T155546_20261019T155614_009956_013D93_8216.SAFE",
+    "platform": "S1C",
+    "acquired_at": "2026-10-19T15:55:46.744868+00:00",
+    "footprint": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            30.4061,
+            28.838
+          ],
+          [
+            33.0346,
+            29.2569
+          ],
+          [
+            32.702,
+            30.9422
+          ],
+          [
+            30.0274,
+            30.526
+          ],
+          [
+            30.4061,
+            28.838
+          ]
+        ]
+      ]
+    },
+    "product_type": "Sentinel-1",
+    "resolution_m": null,
+    "preview_url": null,
+    "download_url": "https://download.dataspace.copernicus.eu/odata/v1/Products(38589b91-4dcc-4baa-b428-2a1d53c66bcd)/$value",
+    "details": {
+      "online": true,
+      "size_bytes": 62126925,
+      "content_date": {
+        "Start": "2026-10-19T15:55:46.744868Z",
+        "End": "2026-10-19T15:56:14.750733Z"
+      },
+      "download_auth": "Copernicus access token required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "cdse:4b030572-520f-49b7-9302-ec79ed6c4afa",
+    "source_id": "copernicus",
+    "name": "S1C_IW_RAW__0SDV_20261019T155544_20261019T155616_009956_013D93_0F06.SAFE",
+    "platform": "S1C",
+    "acquired_at": "2026-10-19T15:55:44.567024+00:00",
+    "footprint": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            32.8569,
+            28.7783
+          ],
+          [
+            32.4755,
+            30.7356
+          ],
+          [
+            29.9309,
+            30.467
+          ],
+          [
+            30.3623,
+            28.5091
+          ],
+          [
+            32.8569,
+            28.7783
+          ]
+        ]
+      ]
+    },
+    "product_type": "Sentinel-1",
+    "resolution_m": null,
+    "preview_url": null,
+    "download_url": "https://download.dataspace.copernicus.eu/odata/v1/Products(4b030572-520f-49b7-9302-ec79ed6c4afa)/$value",
+    "details": {
+      "online": true,
+      "size_bytes": 1714850697,
+      "content_date": {
+        "Start": "2026-10-19T15:55:44.567024Z",
+        "End": "2026-10-19T15:56:16.966530Z"
+      },
+      "download_auth": "Copernicus access token required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "cdse:ce65a96b-4a8f-4f5f-98b9-ffaf68d82e33",
+    "source_id": "copernicus",
+    "name": "S1D_IW_RAW__0SDV_20261013T155621_20261013T155654_004999_00970F_202A.SAFE",
+    "platform": "S1D",
+    "acquired_at": "2026-10-13T15:56:21.999824+00:00",
+    "footprint": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            32.57,
+            30.2567
+          ],
+          [
+            32.1869,
+            32.2138
+          ],
+          [
+            29.6013,
+            31.9453
+          ],
+          [
+            30.0381,
+            29.9881
+          ],
+          [
+            32.57,
+            30.2567
+          ]
+        ]
+      ]
+    },
+    "product_type": "Sentinel-1",
+    "resolution_m": null,
+    "preview_url": null,
+    "download_url": "https://download.dataspace.copernicus.eu/odata/v1/Products(ce65a96b-4a8f-4f5f-98b9-ffaf68d82e33)/$value",
+    "details": {
+      "online": true,
+      "size_bytes": 1684176928,
+      "content_date": {
+        "Start": "2026-10-13T15:56:21.999824Z",
+        "End": "2026-10-13T15:56:54.399315Z"
+      },
+      "download_auth": "Copernicus access token required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "cdse:f19a5982-dfbf-4f22-9088-daaa6484ffb5",
+    "source_id": "copernicus",
+    "name": "S1D_IW_GRDH_1SDV_20261013T155600_20261013T155625_004999_00970F_9304.SAFE",
+    "platform": "S1D",
+    "acquired_at": "2026-10-13T15:56:00.699068+00:00",
+    "footprint": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            30.067366,
+            30.406719
+          ],
+          [
+            30.404682,
+            28.899887
+          ],
+          [
+            33.083595,
+            29.325706
+          ],
+          [
+            32.787411,
+            30.829849
+          ],
+          [
+            30.067366,
+            30.406719
+          ]
+        ]
+      ]
+    },
+    "product_type": "Sentinel-1",
+    "resolution_m": null,
+    "preview_url": null,
+    "download_url": "https://download.dataspace.copernicus.eu/odata/v1/Products(f19a5982-dfbf-4f22-9088-daaa6484ffb5)/$value",
+    "details": {
+      "online": true,
+      "size_bytes": 1775828705,
+      "content_date": {
+        "Start": "2026-10-13T15:56:00.699068Z",
+        "End": "2026-10-13T15:56:25.697734Z"
+      },
+      "download_auth": "Copernicus access token required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "cdse:7cd5d2e8-fafc-4d96-9fa3-8ec7917cfc95",
+    "source_id": "copernicus",
+    "name": "S1D_IW_GRDH_1SDV_20261013T155600_20261013T155625_004999_00970F_C0BD_COG.SAFE",
+    "platform": "S1D",
+    "acquired_at": "2026-10-13T15:56:00.699068+00:00",
+    "footprint": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            30.067366,
+            30.406719
+          ],
+          [
+            30.404682,
+            28.899887
+          ],
+          [
+            33.083595,
+            29.325706
+          ],
+          [
+            32.787411,
+            30.829849
+          ],
+          [
+            30.067366,
+            30.406719
+          ]
+        ]
+      ]
+    },
+    "product_type": "Sentinel-1",
+    "resolution_m": null,
+    "preview_url": null,
+    "download_url": "https://download.dataspace.copernicus.eu/odata/v1/Products(7cd5d2e8-fafc-4d96-9fa3-8ec7917cfc95)/$value",
+    "details": {
+      "online": true,
+      "size_bytes": 1163173189,
+      "content_date": {
+        "Start": "2026-10-13T15:56:00.699068Z",
+        "End": "2026-10-13T15:56:25.697734Z"
+      },
+      "download_auth": "Copernicus access token required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "asf:S1D_IW_GRDH_1SDV_20261013T155600_20261013T155625_004999_00970F_9304-GRD_HD",
+    "source_id": "asf",
+    "name": "S1D_IW_GRDH_1SDV_20261013T155600_20261013T155625_004999_00970F_9304",
+    "platform": "Sentinel-1D",
+    "acquired_at": "2026-10-13T15:56:00+00:00",
+    "footprint": {
+      "coordinates": [
+        [
+          [
+            30.404682,
+            28.899887
+          ],
+          [
+            33.083595,
+            29.325706
+          ],
+          [
+            32.787411,
+            30.829849
+          ],
+          [
+            30.067366,
+            30.406719
+          ],
+          [
+            30.404682,
+            28.899887
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "product_type": "GRD_HD",
+    "resolution_m": null,
+    "preview_url": "https://datapool.asf.alaska.edu/BROWSE/SD/S1D_IW_GRDH_1SDV_20261013T155600_20261013T155625_004999_00970F_9304.jpg",
+    "download_url": "https://datapool.asf.alaska.edu/GRD_HD/SD/S1D_IW_GRDH_1SDV_20261013T155600_20261013T155625_004999_00970F_9304.zip",
+    "details": {
+      "centerLat": 29.8723,
+      "centerLon": 31.5827,
+      "stopTime": "2026-10-13T15:56:25Z",
+      "fileID": "S1D_IW_GRDH_1SDV_20261013T155600_20261013T155625_004999_00970F_9304-GRD_HD",
+      "flightDirection": "ASCENDING",
+      "pathNumber": 58,
+      "processingLevel": "GRD_HD",
+      "url": "https://datapool.asf.alaska.edu/GRD_HD/SD/S1D_IW_GRDH_1SDV_20261013T155600_20261013T155625_004999_00970F_9304.zip",
+      "startTime": "2026-10-13T15:56:00Z",
+      "sceneName": "S1D_IW_GRDH_1SDV_20261013T155600_20261013T155625_004999_00970F_9304",
+      "browse": [
+        "https://datapool.asf.alaska.edu/BROWSE/SD/S1D_IW_GRDH_1SDV_20261013T155600_20261013T155625_004999_00970F_9304.jpg"
+      ],
+      "platform": "Sentinel-1D",
+      "bytes": 979935216,
+      "md5sum": "10e498d651e8135ab4cb41af9d1983af",
+      "frameNumber": 93,
+      "granuleType": "SENTINEL_1D_FRAME",
+      "orbit": 4999,
+      "polarization": "VV+VH",
+      "processingDate": "2026-10-13T15:56:00Z",
+      "sensor": "C-SAR",
+      "groupID": "S1D_IWDV_0092_0099_004999_058",
+      "pgeVersion": "004.03",
+      "fileName": "S1D_IW_GRDH_1SDV_20261013T155600_20261013T155625_004999_00970F_9304.zip",
+      "beamModeType": "IW",
+      "s3Urls": [
+        "s3://asf-ngap2w-p-s1-grd-7d1b4348/S1D_IW_GRDH_1SDV_20261013T155600_20261013T155625_004999_00970F_9304.zip"
+      ],
+      "resolution_note": "Catalogue does not supply spatial resolution; pixel spacing is not resolution",
+      "download_auth": "NASA Earthdata account/token may be required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "cdse:875d1231-278c-48b2-a240-4940cbf2a9f3",
+    "source_id": "copernicus",
+    "name": "S1D_IW_SLC__1SDV_20261013T155559_20261013T155626_004999_00970F_E0E5.SAFE",
+    "platform": "S1D",
+    "acquired_at": "2026-10-13T15:55:59.739333+00:00",
+    "footprint": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            30.055988,
+            30.467491
+          ],
+          [
+            30.418398,
+            28.842167
+          ],
+          [
+            33.031586,
+            29.258526
+          ],
+          [
+            32.714046,
+            30.88126
+          ],
+          [
+            30.055988,
+            30.467491
+          ]
+        ]
+      ]
+    },
+    "product_type": "Sentinel-1",
+    "resolution_m": null,
+    "preview_url": null,
+    "download_url": "https://download.dataspace.copernicus.eu/odata/v1/Products(875d1231-278c-48b2-a240-4940cbf2a9f3)/$value",
+    "details": {
+      "online": true,
+      "size_bytes": 8271010403,
+      "content_date": {
+        "Start": "2026-10-13T15:55:59.739333Z",
+        "End": "2026-10-13T15:56:26.700009Z"
+      },
+      "download_auth": "Copernicus access token required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "cdse:16c94a26-e5c1-447b-8a59-399e1c0f2e40",
+    "source_id": "copernicus",
+    "name": "S1D_IW_ETA__AXDV_20261013T155559_20261013T155626_004999_00970F_7E76.SAFE",
+    "platform": "S1D",
+    "acquired_at": "2026-10-13T15:55:59.706745+00:00",
+    "footprint": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            30.4144,
+            28.8395
+          ],
+          [
+            33.0355,
+            29.2571
+          ],
+          [
+            32.7146,
+            30.8841
+          ],
+          [
+            30.0492,
+            30.4692
+          ],
+          [
+            30.4144,
+            28.8395
+          ]
+        ]
+      ]
+    },
+    "product_type": "Sentinel-1",
+    "resolution_m": null,
+    "preview_url": null,
+    "download_url": "https://download.dataspace.copernicus.eu/odata/v1/Products(16c94a26-e5c1-447b-8a59-399e1c0f2e40)/$value",
+    "details": {
+      "online": true,
+      "size_bytes": 61145566,
+      "content_date": {
+        "Start": "2026-10-13T15:55:59.706745Z",
+        "End": "2026-10-13T15:56:26.744868Z"
+      },
+      "download_auth": "Copernicus access token required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "asf:S1C_IW_GRDH_1SDV_20261007T155548_20261007T155613_009781_0137B4_77D8-GRD_HD",
+    "source_id": "asf",
+    "name": "S1C_IW_GRDH_1SDV_20261007T155548_20261007T155613_009781_0137B4_77D8",
+    "platform": "Sentinel-1C",
+    "acquired_at": "2026-10-07T15:55:48+00:00",
+    "footprint": {
+      "coordinates": [
+        [
+          [
+            30.391193,
+            28.930666
+          ],
+          [
+            33.078506,
+            29.357693
+          ],
+          [
+            32.782162,
+            30.861807
+          ],
+          [
+            30.053564,
+            30.437473
+          ],
+          [
+            30.391193,
+            28.930666
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "product_type": "GRD_HD",
+    "resolution_m": null,
+    "preview_url": "https://datapool.asf.alaska.edu/BROWSE/SC/S1C_IW_GRDH_1SDV_20261007T155548_20261007T155613_009781_0137B4_77D8.jpg",
+    "download_url": "https://datapool.asf.alaska.edu/GRD_HD/SC/S1C_IW_GRDH_1SDV_20261007T155548_20261007T155613_009781_0137B4_77D8.zip",
+    "details": {
+      "centerLat": 29.9037,
+      "centerLon": 31.5733,
+      "stopTime": "2026-10-07T15:56:13Z",
+      "fileID": "S1C_IW_GRDH_1SDV_20261007T155548_20261007T155613_009781_0137B4_77D8-GRD_HD",
+      "flightDirection": "ASCENDING",
+      "pathNumber": 58,
+      "processingLevel": "GRD_HD",
+      "url": "https://datapool.asf.alaska.edu/GRD_HD/SC/S1C_IW_GRDH_1SDV_20261007T155548_20261007T155613_009781_0137B4_77D8.zip",
+      "startTime": "2026-10-07T15:55:48Z",
+      "sceneName": "S1C_IW_GRDH_1SDV_20261007T155548_20261007T155613_009781_0137B4_77D8",
+      "browse": [
+        "https://datapool.asf.alaska.edu/BROWSE/SC/S1C_IW_GRDH_1SDV_20261007T155548_20261007T155613_009781_0137B4_77D8.jpg"
+      ],
+      "platform": "Sentinel-1C",
+      "bytes": 977068986,
+      "md5sum": "659e8deb712ad732e6c0cfc1c84dcdd3",
+      "frameNumber": 93,
+      "granuleType": "SENTINEL_1C_FRAME",
+      "orbit": 9781,
+      "polarization": "VV+VH",
+      "processingDate": "2026-10-07T15:55:48Z",
+      "sensor": "C-SAR",
+      "groupID": "S1C_IWDV_0092_0099_009781_058",
+      "pgeVersion": "004.03",
+      "fileName": "S1C_IW_GRDH_1SDV_20261007T155548_20261007T155613_009781_0137B4_77D8.zip",
+      "beamModeType": "IW",
+      "s3Urls": [
+        "s3://asf-ngap2w-p-s1-grd-7d1b4348/S1C_IW_GRDH_1SDV_20261007T155548_20261007T155613_009781_0137B4_77D8.zip"
+      ],
+      "resolution_note": "Catalogue does not supply spatial resolution; pixel spacing is not resolution",
+      "download_auth": "NASA Earthdata account/token may be required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "asf:S1D_IW_GRDH_1SDV_20261001T155600_20261001T155625_004824_0090EF_CCC6-GRD_HD",
+    "source_id": "asf",
+    "name": "S1D_IW_GRDH_1SDV_20261001T155600_20261001T155625_004824_0090EF_CCC6",
+    "platform": "Sentinel-1D",
+    "acquired_at": "2026-10-01T15:56:00+00:00",
+    "footprint": {
+      "coordinates": [
+        [
+          [
+            30.403864,
+            28.899832
+          ],
+          [
+            33.082668,
+            29.325682
+          ],
+          [
+            32.786453,
+            30.829821
+          ],
+          [
+            30.066523,
+            30.406662
+          ],
+          [
+            30.403864,
+            28.899832
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "product_type": "GRD_HD",
+    "resolution_m": null,
+    "preview_url": "https://datapool.asf.alaska.edu/BROWSE/SD/S1D_IW_GRDH_1SDV_20261001T155600_20261001T155625_004824_0090EF_CCC6.jpg",
+    "download_url": "https://datapool.asf.alaska.edu/GRD_HD/SD/S1D_IW_GRDH_1SDV_20261001T155600_20261001T155625_004824_0090EF_CCC6.zip",
+    "details": {
+      "centerLat": 29.8722,
+      "centerLon": 31.5818,
+      "stopTime": "2026-10-01T15:56:25Z",
+      "fileID": "S1D_IW_GRDH_1SDV_20261001T155600_20261001T155625_004824_0090EF_CCC6-GRD_HD",
+      "flightDirection": "ASCENDING",
+      "pathNumber": 58,
+      "processingLevel": "GRD_HD",
+      "url": "https://datapool.asf.alaska.edu/GRD_HD/SD/S1D_IW_GRDH_1SDV_20261001T155600_20261001T155625_004824_0090EF_CCC6.zip",
+      "startTime": "2026-10-01T15:56:00Z",
+      "sceneName": "S1D_IW_GRDH_1SDV_20261001T155600_20261001T155625_004824_0090EF_CCC6",
+      "browse": [
+        "https://datapool.asf.alaska.edu/BROWSE/SD/S1D_IW_GRDH_1SDV_20261001T155600_20261001T155625_004824_0090EF_CCC6.jpg"
+      ],
+      "platform": "Sentinel-1D",
+      "bytes": 980963979,
+      "md5sum": "b5f49c9abbecefc0e8e1e04f698d0a9b",
+      "frameNumber": 93,
+      "granuleType": "SENTINEL_1D_FRAME",
+      "orbit": 4824,
+      "polarization": "VV+VH",
+      "processingDate": "2026-10-01T15:56:00Z",
+      "sensor": "C-SAR",
+      "groupID": "S1D_IWDV_0092_0099_004824_058",
+      "pgeVersion": "004.03",
+      "fileName": "S1D_IW_GRDH_1SDV_20261001T155600_20261001T155625_004824_0090EF_CCC6.zip",
+      "beamModeType": "IW",
+      "s3Urls": [
+        "s3://asf-ngap2w-p-s1-grd-7d1b4348/S1D_IW_GRDH_1SDV_20261001T155600_20261001T155625_004824_0090EF_CCC6.zip"
+      ],
+      "resolution_note": "Catalogue does not supply spatial resolution; pixel spacing is not resolution",
+      "download_auth": "NASA Earthdata account/token may be required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "asf:S1C_IW_GRDH_1SDV_20260925T155548_20260925T155613_009606_0131E0_7A52-GRD_HD",
+    "source_id": "asf",
+    "name": "S1C_IW_GRDH_1SDV_20260925T155548_20260925T155613_009606_0131E0_7A52",
+    "platform": "Sentinel-1C",
+    "acquired_at": "2026-09-25T15:55:48+00:00",
+    "footprint": {
+      "coordinates": [
+        [
+          [
+            30.391397,
+            28.930613
+          ],
+          [
+            33.078609,
+            29.357601
+          ],
+          [
+            32.782288,
+            30.861717
+          ],
+          [
+            30.053789,
+            30.43742
+          ],
+          [
+            30.391397,
+            28.930613
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "product_type": "GRD_HD",
+    "resolution_m": null,
+    "preview_url": "https://datapool.asf.alaska.edu/BROWSE/SC/S1C_IW_GRDH_1SDV_20260925T155548_20260925T155613_009606_0131E0_7A52.jpg",
+    "download_url": "https://datapool.asf.alaska.edu/GRD_HD/SC/S1C_IW_GRDH_1SDV_20260925T155548_20260925T155613_009606_0131E0_7A52.zip",
+    "details": {
+      "centerLat": 29.9036,
+      "centerLon": 31.5735,
+      "stopTime": "2026-09-25T15:56:13Z",
+      "fileID": "S1C_IW_GRDH_1SDV_20260925T155548_20260925T155613_009606_0131E0_7A52-GRD_HD",
+      "flightDirection": "ASCENDING",
+      "pathNumber": 58,
+      "processingLevel": "GRD_HD",
+      "url": "https://datapool.asf.alaska.edu/GRD_HD/SC/S1C_IW_GRDH_1SDV_20260925T155548_20260925T155613_009606_0131E0_7A52.zip",
+      "startTime": "2026-09-25T15:55:48Z",
+      "sceneName": "S1C_IW_GRDH_1SDV_20260925T155548_20260925T155613_009606_0131E0_7A52",
+      "browse": [
+        "https://datapool.asf.alaska.edu/BROWSE/SC/S1C_IW_GRDH_1SDV_20260925T155548_20260925T155613_009606_0131E0_7A52.jpg"
+      ],
+      "platform": "Sentinel-1C",
+      "bytes": 975737742,
+      "md5sum": "a31733b68471201486bfbc7f58579e7e",
+      "frameNumber": 93,
+      "granuleType": "SENTINEL_1C_FRAME",
+      "orbit": 9606,
+      "polarization": "VV+VH",
+      "processingDate": "2026-09-25T15:55:48Z",
+      "sensor": "C-SAR",
+      "groupID": "S1C_IWDV_0092_0099_009606_058",
+      "pgeVersion": "004.03",
+      "fileName": "S1C_IW_GRDH_1SDV_20260925T155548_20260925T155613_009606_0131E0_7A52.zip",
+      "beamModeType": "IW",
+      "s3Urls": [
+        "s3://asf-ngap2w-p-s1-grd-7d1b4348/S1C_IW_GRDH_1SDV_20260925T155548_20260925T155613_009606_0131E0_7A52.zip"
+      ],
+      "resolution_note": "Catalogue does not supply spatial resolution; pixel spacing is not resolution",
+      "download_auth": "NASA Earthdata account/token may be required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "asf:S1D_IW_GRDH_1SDV_20260919T155600_20260919T155625_004649_008AD8_D5A3-GRD_HD",
+    "source_id": "asf",
+    "name": "S1D_IW_GRDH_1SDV_20260919T155600_20260919T155625_004649_008AD8_D5A3",
+    "platform": "Sentinel-1D",
+    "acquired_at": "2026-09-19T15:56:00+00:00",
+    "footprint": {
+      "coordinates": [
+        [
+          [
+            30.40373,
+            28.899895
+          ],
+          [
+            33.082535,
+            29.325748
+          ],
+          [
+            32.786312,
+            30.829889
+          ],
+          [
+            30.066381,
+            30.406725
+          ],
+          [
+            30.40373,
+            28.899895
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "product_type": "GRD_HD",
+    "resolution_m": null,
+    "preview_url": "https://datapool.asf.alaska.edu/BROWSE/SD/S1D_IW_GRDH_1SDV_20260919T155600_20260919T155625_004649_008AD8_D5A3.jpg",
+    "download_url": "https://datapool.asf.alaska.edu/GRD_HD/SD/S1D_IW_GRDH_1SDV_20260919T155600_20260919T155625_004649_008AD8_D5A3.zip",
+    "details": {
+      "centerLat": 29.8723,
+      "centerLon": 31.5817,
+      "stopTime": "2026-09-19T15:56:25Z",
+      "fileID": "S1D_IW_GRDH_1SDV_20260919T155600_20260919T155625_004649_008AD8_D5A3-GRD_HD",
+      "flightDirection": "ASCENDING",
+      "pathNumber": 58,
+      "processingLevel": "GRD_HD",
+      "url": "https://datapool.asf.alaska.edu/GRD_HD/SD/S1D_IW_GRDH_1SDV_20260919T155600_20260919T155625_004649_008AD8_D5A3.zip",
+      "startTime": "2026-09-19T15:56:00Z",
+      "sceneName": "S1D_IW_GRDH_1SDV_20260919T155600_20260919T155625_004649_008AD8_D5A3",
+      "browse": [
+        "https://datapool.asf.alaska.edu/BROWSE/SD/S1D_IW_GRDH_1SDV_20260919T155600_20260919T155625_004649_008AD8_D5A3.jpg"
+      ],
+      "platform": "Sentinel-1D",
+      "bytes": 981708883,
+      "md5sum": "a16db1d114353d8ea82e45d6f6ca6317",
+      "frameNumber": 93,
+      "granuleType": "SENTINEL_1D_FRAME",
+      "orbit": 4649,
+      "polarization": "VV+VH",
+      "processingDate": "2026-09-19T15:56:00Z",
+      "sensor": "C-SAR",
+      "groupID": "S1D_IWDV_0092_0099_004649_058",
+      "pgeVersion": "004.03",
+      "fileName": "S1D_IW_GRDH_1SDV_20260919T155600_20260919T155625_004649_008AD8_D5A3.zip",
+      "beamModeType": "IW",
+      "s3Urls": [
+        "s3://asf-ngap2w-p-s1-grd-7d1b4348/S1D_IW_GRDH_1SDV_20260919T155600_20260919T155625_004649_008AD8_D5A3.zip"
+      ],
+      "resolution_note": "Catalogue does not supply spatial resolution; pixel spacing is not resolution",
+      "download_auth": "NASA Earthdata account/token may be required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "asf:S1C_IW_GRDH_1SDV_20260913T155548_20260913T155613_009431_012C1F_FDDD-GRD_HD",
+    "source_id": "asf",
+    "name": "S1C_IW_GRDH_1SDV_20260913T155548_20260913T155613_009431_012C1F_FDDD",
+    "platform": "Sentinel-1C",
+    "acquired_at": "2026-09-13T15:55:48+00:00",
+    "footprint": {
+      "coordinates": [
+        [
+          [
+            30.391712,
+            28.930593
+          ],
+          [
+            33.078926,
+            29.35758
+          ],
+          [
+            32.782604,
+            30.861696
+          ],
+          [
+            30.054108,
+            30.437403
+          ],
+          [
+            30.391712,
+            28.930593
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "product_type": "GRD_HD",
+    "resolution_m": null,
+    "preview_url": "https://datapool.asf.alaska.edu/BROWSE/SC/S1C_IW_GRDH_1SDV_20260913T155548_20260913T155613_009431_012C1F_FDDD.jpg",
+    "download_url": "https://datapool.asf.alaska.edu/GRD_HD/SC/S1C_IW_GRDH_1SDV_20260913T155548_20260913T155613_009431_012C1F_FDDD.zip",
+    "details": {
+      "centerLat": 29.9036,
+      "centerLon": 31.5738,
+      "stopTime": "2026-09-13T15:56:13Z",
+      "fileID": "S1C_IW_GRDH_1SDV_20260913T155548_20260913T155613_009431_012C1F_FDDD-GRD_HD",
+      "flightDirection": "ASCENDING",
+      "pathNumber": 58,
+      "processingLevel": "GRD_HD",
+      "url": "https://datapool.asf.alaska.edu/GRD_HD/SC/S1C_IW_GRDH_1SDV_20260913T155548_20260913T155613_009431_012C1F_FDDD.zip",
+      "startTime": "2026-09-13T15:55:48Z",
+      "sceneName": "S1C_IW_GRDH_1SDV_20260913T155548_20260913T155613_009431_012C1F_FDDD",
+      "browse": [
+        "https://datapool.asf.alaska.edu/BROWSE/SC/S1C_IW_GRDH_1SDV_20260913T155548_20260913T155613_009431_012C1F_FDDD.jpg"
+      ],
+      "platform": "Sentinel-1C",
+      "bytes": 977605146,
+      "md5sum": "5405ac0bc669ba1a1b7aaa42b22b1970",
+      "frameNumber": 93,
+      "granuleType": "SENTINEL_1C_FRAME",
+      "orbit": 9431,
+      "polarization": "VV+VH",
+      "processingDate": "2026-09-13T15:55:48Z",
+      "sensor": "C-SAR",
+      "groupID": "S1C_IWDV_0092_0099_009431_058",
+      "pgeVersion": "004.03",
+      "fileName": "S1C_IW_GRDH_1SDV_20260913T155548_20260913T155613_009431_012C1F_FDDD.zip",
+      "beamModeType": "IW",
+      "s3Urls": [
+        "s3://asf-ngap2w-p-s1-grd-7d1b4348/S1C_IW_GRDH_1SDV_20260913T155548_20260913T155613_009431_012C1F_FDDD.zip"
+      ],
+      "resolution_note": "Catalogue does not supply spatial resolution; pixel spacing is not resolution",
+      "download_auth": "NASA Earthdata account/token may be required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "asf:S1D_IW_GRDH_1SDV_20260907T155600_20260907T155625_004474_0084CD_8D0F-GRD_HD",
+    "source_id": "asf",
+    "name": "S1D_IW_GRDH_1SDV_20260907T155600_20260907T155625_004474_0084CD_8D0F",
+    "platform": "Sentinel-1D",
+    "acquired_at": "2026-09-07T15:56:00+00:00",
+    "footprint": {
+      "coordinates": [
+        [
+          [
+            30.404711,
+            28.899977
+          ],
+          [
+            33.083317,
+            29.325775
+          ],
+          [
+            32.787121,
+            30.829918
+          ],
+          [
+            30.067389,
+            30.406807
+          ],
+          [
+            30.404711,
+            28.899977
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "product_type": "GRD_HD",
+    "resolution_m": null,
+    "preview_url": "https://datapool.asf.alaska.edu/BROWSE/SD/S1D_IW_GRDH_1SDV_20260907T155600_20260907T155625_004474_0084CD_8D0F.jpg",
+    "download_url": "https://datapool.asf.alaska.edu/GRD_HD/SD/S1D_IW_GRDH_1SDV_20260907T155600_20260907T155625_004474_0084CD_8D0F.zip",
+    "details": {
+      "centerLat": 29.8724,
+      "centerLon": 31.5826,
+      "stopTime": "2026-09-07T15:56:25Z",
+      "fileID": "S1D_IW_GRDH_1SDV_20260907T155600_20260907T155625_004474_0084CD_8D0F-GRD_HD",
+      "flightDirection": "ASCENDING",
+      "pathNumber": 58,
+      "processingLevel": "GRD_HD",
+      "url": "https://datapool.asf.alaska.edu/GRD_HD/SD/S1D_IW_GRDH_1SDV_20260907T155600_20260907T155625_004474_0084CD_8D0F.zip",
+      "startTime": "2026-09-07T15:56:00Z",
+      "sceneName": "S1D_IW_GRDH_1SDV_20260907T155600_20260907T155625_004474_0084CD_8D0F",
+      "browse": [
+        "https://datapool.asf.alaska.edu/BROWSE/SD/S1D_IW_GRDH_1SDV_20260907T155600_20260907T155625_004474_0084CD_8D0F.jpg"
+      ],
+      "platform": "Sentinel-1D",
+      "bytes": 982495908,
+      "md5sum": "e054c309ee3f087065f126a0e02db262",
+      "frameNumber": 93,
+      "granuleType": "SENTINEL_1D_FRAME",
+      "orbit": 4474,
+      "polarization": "VV+VH",
+      "processingDate": "2026-09-07T15:56:00Z",
+      "sensor": "C-SAR",
+      "groupID": "S1D_IWDV_0092_0099_004474_058",
+      "pgeVersion": "004.03",
+      "fileName": "S1D_IW_GRDH_1SDV_20260907T155600_20260907T155625_004474_0084CD_8D0F.zip",
+      "beamModeType": "IW",
+      "s3Urls": [
+        "s3://asf-ngap2w-p-s1-grd-7d1b4348/S1D_IW_GRDH_1SDV_20260907T155600_20260907T155625_004474_0084CD_8D0F.zip"
+      ],
+      "resolution_note": "Catalogue does not supply spatial resolution; pixel spacing is not resolution",
+      "download_auth": "NASA Earthdata account/token may be required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "asf:S1C_IW_GRDH_1SDV_20260901T155547_20260901T155612_009256_012648_411D-GRD_HD",
+    "source_id": "asf",
+    "name": "S1C_IW_GRDH_1SDV_20260901T155547_20260901T155612_009256_012648_411D",
+    "platform": "Sentinel-1C",
+    "acquired_at": "2026-09-01T15:55:47+00:00",
+    "footprint": {
+      "coordinates": [
+        [
+          [
+            30.39164,
+            28.930609
+          ],
+          [
+            33.078743,
+            29.357628
+          ],
+          [
+            32.782387,
+            30.861742
+          ],
+          [
+            30.054003,
+            30.437414
+          ],
+          [
+            30.39164,
+            28.930609
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "product_type": "GRD_HD",
+    "resolution_m": null,
+    "preview_url": "https://datapool.asf.alaska.edu/BROWSE/SC/S1C_IW_GRDH_1SDV_20260901T155547_20260901T155612_009256_012648_411D.jpg",
+    "download_url": "https://datapool.asf.alaska.edu/GRD_HD/SC/S1C_IW_GRDH_1SDV_20260901T155547_20260901T155612_009256_012648_411D.zip",
+    "details": {
+      "centerLat": 29.9036,
+      "centerLon": 31.5736,
+      "stopTime": "2026-09-01T15:56:12Z",
+      "fileID": "S1C_IW_GRDH_1SDV_20260901T155547_20260901T155612_009256_012648_411D-GRD_HD",
+      "flightDirection": "ASCENDING",
+      "pathNumber": 58,
+      "processingLevel": "GRD_HD",
+      "url": "https://datapool.asf.alaska.edu/GRD_HD/SC/S1C_IW_GRDH_1SDV_20260901T155547_20260901T155612_009256_012648_411D.zip",
+      "startTime": "2026-09-01T15:55:47Z",
+      "sceneName": "S1C_IW_GRDH_1SDV_20260901T155547_20260901T155612_009256_012648_411D",
+      "browse": [
+        "https://datapool.asf.alaska.edu/BROWSE/SC/S1C_IW_GRDH_1SDV_20260901T155547_20260901T155612_009256_012648_411D.jpg"
+      ],
+      "platform": "Sentinel-1C",
+      "bytes": 977508391,
+      "md5sum": "50ed1163152464c2561653fff23562f3",
+      "frameNumber": 93,
+      "granuleType": "SENTINEL_1C_FRAME",
+      "orbit": 9256,
+      "polarization": "VV+VH",
+      "processingDate": "2026-09-01T15:55:47Z",
+      "sensor": "C-SAR",
+      "groupID": "S1C_IWDV_0092_0099_009256_058",
+      "pgeVersion": "004.03",
+      "fileName": "S1C_IW_GRDH_1SDV_20260901T155547_20260901T155612_009256_012648_411D.zip",
+      "beamModeType": "IW",
+      "s3Urls": [
+        "s3://asf-ngap2w-p-s1-grd-7d1b4348/S1C_IW_GRDH_1SDV_20260901T155547_20260901T155612_009256_012648_411D.zip"
+      ],
+      "resolution_note": "Catalogue does not supply spatial resolution; pixel spacing is not resolution",
+      "download_auth": "NASA Earthdata account/token may be required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "asf:S1D_IW_GRDH_1SDV_20260826T155600_20260826T155625_004299_007EB0_F804-GRD_HD",
+    "source_id": "asf",
+    "name": "S1D_IW_GRDH_1SDV_20260826T155600_20260826T155625_004299_007EB0_F804",
+    "platform": "Sentinel-1D",
+    "acquired_at": "2026-08-26T15:56:00+00:00",
+    "footprint": {
+      "coordinates": [
+        [
+          [
+            30.404732,
+            28.899979
+          ],
+          [
+            33.083248,
+            29.325716
+          ],
+          [
+            32.78709,
+            30.829859
+          ],
+          [
+            30.067451,
+            30.406815
+          ],
+          [
+            30.404732,
+            28.899979
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "product_type": "GRD_HD",
+    "resolution_m": null,
+    "preview_url": "https://datapool.asf.alaska.edu/BROWSE/SD/S1D_IW_GRDH_1SDV_20260826T155600_20260826T155625_004299_007EB0_F804.jpg",
+    "download_url": "https://datapool.asf.alaska.edu/GRD_HD/SD/S1D_IW_GRDH_1SDV_20260826T155600_20260826T155625_004299_007EB0_F804.zip",
+    "details": {
+      "centerLat": 29.8723,
+      "centerLon": 31.5826,
+      "stopTime": "2026-08-26T15:56:25Z",
+      "fileID": "S1D_IW_GRDH_1SDV_20260826T155600_20260826T155625_004299_007EB0_F804-GRD_HD",
+      "flightDirection": "ASCENDING",
+      "pathNumber": 58,
+      "processingLevel": "GRD_HD",
+      "url": "https://datapool.asf.alaska.edu/GRD_HD/SD/S1D_IW_GRDH_1SDV_20260826T155600_20260826T155625_004299_007EB0_F804.zip",
+      "startTime": "2026-08-26T15:56:00Z",
+      "sceneName": "S1D_IW_GRDH_1SDV_20260826T155600_20260826T155625_004299_007EB0_F804",
+      "browse": [
+        "https://datapool.asf.alaska.edu/BROWSE/SD/S1D_IW_GRDH_1SDV_20260826T155600_20260826T155625_004299_007EB0_F804.jpg"
+      ],
+      "platform": "Sentinel-1D",
+      "bytes": 982715622,
+      "md5sum": "b5e7f1ce10b6b0a3134a771b556fc31f",
+      "frameNumber": 93,
+      "granuleType": "SENTINEL_1D_FRAME",
+      "orbit": 4299,
+      "polarization": "VV+VH",
+      "processingDate": "2026-08-26T15:56:00Z",
+      "sensor": "C-SAR",
+      "groupID": "S1D_IWDV_0092_0099_004299_058",
+      "pgeVersion": "004.03",
+      "fileName": "S1D_IW_GRDH_1SDV_20260826T155600_20260826T155625_004299_007EB0_F804.zip",
+      "beamModeType": "IW",
+      "s3Urls": [
+        "s3://asf-ngap2w-p-s1-grd-7d1b4348/S1D_IW_GRDH_1SDV_20260826T155600_20260826T155625_004299_007EB0_F804.zip"
+      ],
+      "resolution_note": "Catalogue does not supply spatial resolution; pixel spacing is not resolution",
+      "download_auth": "NASA Earthdata account/token may be required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "asf:S1C_IW_GRDH_1SDV_20260820T155547_20260820T155612_009081_012067_06B9-GRD_HD",
+    "source_id": "asf",
+    "name": "S1C_IW_GRDH_1SDV_20260820T155547_20260820T155612_009081_012067_06B9",
+    "platform": "Sentinel-1C",
+    "acquired_at": "2026-08-20T15:55:47+00:00",
+    "footprint": {
+      "coordinates": [
+        [
+          [
+            30.391064,
+            28.930616
+          ],
+          [
+            33.078167,
+            29.357628
+          ],
+          [
+            32.781818,
+            30.861744
+          ],
+          [
+            30.053429,
+            30.437424
+          ],
+          [
+            30.391064,
+            28.930616
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "product_type": "GRD_HD",
+    "resolution_m": null,
+    "preview_url": "https://datapool.asf.alaska.edu/BROWSE/SC/S1C_IW_GRDH_1SDV_20260820T155547_20260820T155612_009081_012067_06B9.jpg",
+    "download_url": "https://datapool.asf.alaska.edu/GRD_HD/SC/S1C_IW_GRDH_1SDV_20260820T155547_20260820T155612_009081_012067_06B9.zip",
+    "details": {
+      "centerLat": 29.9036,
+      "centerLon": 31.5731,
+      "stopTime": "2026-08-20T15:56:12Z",
+      "fileID": "S1C_IW_GRDH_1SDV_20260820T155547_20260820T155612_009081_012067_06B9-GRD_HD",
+      "flightDirection": "ASCENDING",
+      "pathNumber": 58,
+      "processingLevel": "GRD_HD",
+      "url": "https://datapool.asf.alaska.edu/GRD_HD/SC/S1C_IW_GRDH_1SDV_20260820T155547_20260820T155612_009081_012067_06B9.zip",
+      "startTime": "2026-08-20T15:55:47Z",
+      "sceneName": "S1C_IW_GRDH_1SDV_20260820T155547_20260820T155612_009081_012067_06B9",
+      "browse": [
+        "https://datapool.asf.alaska.edu/BROWSE/SC/S1C_IW_GRDH_1SDV_20260820T155547_20260820T155612_009081_012067_06B9.jpg"
+      ],
+      "platform": "Sentinel-1C",
+      "bytes": 976357054,
+      "md5sum": "42da3410d1eb5764e1461398d79463f6",
+      "frameNumber": 93,
+      "granuleType": "SENTINEL_1C_FRAME",
+      "orbit": 9081,
+      "polarization": "VV+VH",
+      "processingDate": "2026-08-20T15:55:47Z",
+      "sensor": "C-SAR",
+      "groupID": "S1C_IWDV_0092_0099_009081_058",
+      "pgeVersion": "004.03",
+      "fileName": "S1C_IW_GRDH_1SDV_20260820T155547_20260820T155612_009081_012067_06B9.zip",
+      "beamModeType": "IW",
+      "s3Urls": [
+        "s3://asf-ngap2w-p-s1-grd-7d1b4348/S1C_IW_GRDH_1SDV_20260820T155547_20260820T155612_009081_012067_06B9.zip"
+      ],
+      "resolution_note": "Catalogue does not supply spatial resolution; pixel spacing is not resolution",
+      "download_auth": "NASA Earthdata account/token may be required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "asf:S1D_IW_GRDH_1SDV_20260814T155559_20260814T155624_004124_007891_62E5-GRD_HD",
+    "source_id": "asf",
+    "name": "S1D_IW_GRDH_1SDV_20260814T155559_20260814T155624_004124_007891_62E5",
+    "platform": "Sentinel-1D",
+    "acquired_at": "2026-08-14T15:55:59+00:00",
+    "footprint": {
+      "coordinates": [
+        [
+          [
+            30.404818,
+            28.899906
+          ],
+          [
+            33.083328,
+            29.325649
+          ],
+          [
+            32.78717,
+            30.829792
+          ],
+          [
+            30.067537,
+            30.406738
+          ],
+          [
+            30.404818,
+            28.899906
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "product_type": "GRD_HD",
+    "resolution_m": null,
+    "preview_url": "https://datapool.asf.alaska.edu/BROWSE/SD/S1D_IW_GRDH_1SDV_20260814T155559_20260814T155624_004124_007891_62E5.jpg",
+    "download_url": "https://datapool.asf.alaska.edu/GRD_HD/SD/S1D_IW_GRDH_1SDV_20260814T155559_20260814T155624_004124_007891_62E5.zip",
+    "details": {
+      "centerLat": 29.8723,
+      "centerLon": 31.5827,
+      "stopTime": "2026-08-14T15:56:24Z",
+      "fileID": "S1D_IW_GRDH_1SDV_20260814T155559_20260814T155624_004124_007891_62E5-GRD_HD",
+      "flightDirection": "ASCENDING",
+      "pathNumber": 58,
+      "processingLevel": "GRD_HD",
+      "url": "https://datapool.asf.alaska.edu/GRD_HD/SD/S1D_IW_GRDH_1SDV_20260814T155559_20260814T155624_004124_007891_62E5.zip",
+      "startTime": "2026-08-14T15:55:59Z",
+      "sceneName": "S1D_IW_GRDH_1SDV_20260814T155559_20260814T155624_004124_007891_62E5",
+      "browse": [
+        "https://datapool.asf.alaska.edu/BROWSE/SD/S1D_IW_GRDH_1SDV_20260814T155559_20260814T155624_004124_007891_62E5.jpg"
+      ],
+      "platform": "Sentinel-1D",
+      "bytes": 983030344,
+      "md5sum": "91884c0cf047230af2ec4584d802e989",
+      "frameNumber": 93,
+      "granuleType": "SENTINEL_1D_FRAME",
+      "orbit": 4124,
+      "polarization": "VV+VH",
+      "processingDate": "2026-08-14T15:55:59Z",
+      "sensor": "C-SAR",
+      "groupID": "S1D_IWDV_0092_0099_004124_058",
+      "pgeVersion": "004.03",
+      "fileName": "S1D_IW_GRDH_1SDV_20260814T155559_20260814T155624_004124_007891_62E5.zip",
+      "beamModeType": "IW",
+      "s3Urls": [
+        "s3://asf-ngap2w-p-s1-grd-7d1b4348/S1D_IW_GRDH_1SDV_20260814T155559_20260814T155624_004124_007891_62E5.zip"
+      ],
+      "resolution_note": "Catalogue does not supply spatial resolution; pixel spacing is not resolution",
+      "download_auth": "NASA Earthdata account/token may be required"
+    },
+    "temporal_class": "historical"
+  },
+  {
+    "id": "asf:S1C_IW_GRDH_1SDV_20260808T155546_20260808T155611_008906_011AA5_ECA3-GRD_HD",
+    "source_id": "asf",
+    "name": "S1C_IW_GRDH_1SDV_20260808T155546_20260808T155611_008906_011AA5_ECA3",
+    "platform": "Sentinel-1C",
+    "acquired_at": "2026-08-08T15:55:46+00:00",
+    "footprint": {
+      "coordinates": [
+        [
+          [
+            30.391388,
+            28.930567
+          ],
+          [
+            33.078487,
+            29.357592
+          ],
+          [
+            32.782131,
+            30.861706
+          ],
+          [
+            30.053747,
+            30.437372
+          ],
+          [
+            30.391388,
+            28.930567
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "product_type": "GRD_HD",
+    "resolution_m": null,
+    "preview_url": "https://datapool.asf.alaska.edu/BROWSE/SC/S1C_IW_GRDH_1SDV_20260808T155546_20260808T155611_008906_011AA5_ECA3.jpg",
+    "download_url": "https://datapool.asf.alaska.edu/GRD_HD/SC/S1C_IW_GRDH_1SDV_20260808T155546_20260808T155611_008906_011AA5_ECA3.zip",
+    "details": {
+      "centerLat": 29.9036,
+      "centerLon": 31.5734,
+      "stopTime": "2026-08-08T15:56:11Z",
+      "fileID": "S1C_IW_GRDH_1SDV_20260808T155546_20260808T155611_008906_011AA5_ECA3-GRD_HD",
+      "flightDirection": "ASCENDING",
+      "pathNumber": 58,
+      "processingLevel": "GRD_HD",
+      "url": "https://datapool.asf.alaska.edu/GRD_HD/SC/S1C_IW_GRDH_1SDV_20260808T155546_20260808T155611_008906_011AA5_ECA3.zip",
+      "startTime": "2026-08-08T15:55:46Z",
+      "sceneName": "S1C_IW_GRDH_1SDV_20260808T155546_20260808T155611_008906_011AA5_ECA3",
+      "browse": [
+        "https://datapool.asf.alaska.edu/BROWSE/SC/S1C_IW_GRDH_1SDV_20260808T155546_20260808T155611_008906_011AA5_ECA3.jpg"
+      ],
+      "platform": "Sentinel-1C",
+      "bytes": 978813827,
+      "md5sum": "479d3e040b55ff1864c3f506b8edd1ee",
+      "frameNumber": 93,
+      "granuleType": "SENTINEL_1C_FRAME",
+      "orbit": 8906,
+      "polarization": "VV+VH",
+      "processingDate": "2026-08-08T15:55:46Z",
+      "sensor": "C-SAR",
+      "groupID": "S1C_IWDV_0092_0099_008906_058",
+      "pgeVersion": "004.03",
+      "fileName": "S1C_IW_GRDH_1SDV_20260808T155546_20260808T155611_008906_011AA5_ECA3.zip",
+      "beamModeType": "IW",
+      "s3Urls": [
+        "s3://asf-ngap2w-p-s1-grd-7d1b4348/S1C_IW_GRDH_1SDV_20260808T155546_20260808T155611_008906_011AA5_ECA3.zip"
+      ],
+      "resolution_note": "Catalogue does not supply spatial resolution; pixel spacing is not resolution",
+      "download_auth": "NASA Earthdata account/token may be required"
+    },
+    "temporal_class": "historical"
+  }
+]

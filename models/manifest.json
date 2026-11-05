@@ -1,0 +1,20 @@
+[
+  {
+    "path": "models/yolox_nano.onnx",
+    "url": "https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_nano.onnx",
+    "bytes": 3659407,
+    "sha256": "c789161ed43c8269fcd4e67c67eeeb4e80c622da2eb296a20bc6007bd18a0b7d"
+  },
+  {
+    "path": "models/LICENSE-YOLOX",
+    "url": "https://raw.githubusercontent.com/Megvii-BaseDetection/YOLOX/main/LICENSE",
+    "bytes": 11371,
+    "sha256": "0ec3668d3274bcf29e8a29e9576d5a2cd96fc78d3c5bec4387355a796e5d9088"
+  },
+  {
+    "path": "research/dog.jpg",
+    "url": "https://raw.githubusercontent.com/Megvii-BaseDetection/YOLOX/main/assets/dog.jpg",
+    "bytes": 163759,
+    "sha256": "5a9522051c3cec2bbd2f6323fccba32e8fbf3ddcc2b3e2fd46b04c720bc6f866"
+  }
+]

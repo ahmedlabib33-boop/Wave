@@ -1,0 +1,51 @@
+[
+  {
+    "id": "egypt_official",
+    "url": "https://traffic.moi.gov.eg/Arabic/Pages/default.aspx",
+    "verified_at": "2026-11-05T05:59:55.808550+00:00",
+    "status_code": 200,
+    "error": null
+  },
+  {
+    "id": "tomtom_no_key",
+    "url": "https://api.tomtom.com/traffic/services/4/flowSegmentData/absolute/12/json?point=30.0878597,31.3413867&unit=KMPH",
+    "verified_at": "2026-11-05T05:59:55.809149+00:00",
+    "status_code": 401,
+    "error": "{\"detailedError\":{\"code\":\"Unauthorized\",\"message\":\"You are missing valid authentication credentials\"}}"
+  },
+  {
+    "id": "osm_policy",
+    "url": "https://operations.osmfoundation.org/policies/tiles/",
+    "verified_at": "2026-11-05T05:59:55.809745+00:00",
+    "status_code": 200,
+    "error": null
+  },
+  {
+    "id": "sensor_docs",
+    "url": "https://raw.githubusercontent.com/opendata-stuttgart/meta/master/API.md",
+    "verified_at": "2026-11-05T05:59:55.810246+00:00",
+    "status_code": 404,
+    "error": "404: Not Found"
+  },
+  {
+    "id": "opensky_docs",
+    "url": "https://openskynetwork.github.io/opensky-api/rest.html",
+    "verified_at": "2026-11-05T05:59:55.810618+00:00",
+    "status_code": 200,
+    "error": null
+  },
+  {
+    "id": "tomtom_markets",
+    "url": "https://docs.tomtom.com/traffic-api/documentation/tomtom-maps/v1/market-coverage",
+    "verified_at": "2026-11-05T05:59:55.811354+00:00",
+    "status_code": 404,
+    "error": "<!DOCTYPE html><html lang=\"en\" data-astro-cid-iopp6ar3><head><!-- Do not move this below other scripts as this will cause issue in resolving maplibre import (specific for firefox browser)\n        <script\n            src=\"https://unpkg.com/es-module-s"
+  },
+  {
+    "id": "frigate_speed",
+    "url": "https://docs.frigate.video/configuration/zones/",
+    "verified_at": "2026-11-05T05:59:55.812125+00:00",
+    "status_code": 200,
+    "error": null
+  }
+]

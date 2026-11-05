@@ -1,0 +1,72 @@
+[
+  {
+    "id": "umbra_registry",
+    "url": "https://registry.opendata.aws/umbra-opendata/",
+    "status": 404,
+    "bytes": 2304608,
+    "snippet": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewpor"
+  },
+  {
+    "id": "umbra_bucket",
+    "url": "https://umbra-open-data-catalog.s3.amazonaws.com/?list-type=2&max-keys=15",
+    "status": 200,
+    "bytes": 5902,
+    "snippet": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<ListBucketResult xmlns=\"http://s3.amazonaws.com/doc/2006-03-01/\"><Name>umbra-open-data-catalog</Name><Prefix><"
+  },
+  {
+    "id": "umbra_site",
+    "url": "https://umbra.space/open-data/",
+    "status": 200,
+    "bytes": 297299,
+    "snippet": "<!doctype html>\n<html dir=\"ltr\" lang=\"en-US\" prefix=\"og: https://ogp.me/ns#\" class=\"no-js\" itemtype=\"https://schema.org/WebPage\" itemscope>\n<head>\n\t<m"
+  },
+  {
+    "id": "tomtom_flow",
+    "url": "https://docs.tomtom.com/traffic-api/documentation/tomtom-maps/v1/traffic-flow/flow-segment-data",
+    "status": 200,
+    "bytes": 148231,
+    "snippet": "<!DOCTYPE html><html lang=\"en\" data-astro-cid-iopp6ar3><head><!-- Do not move this below other scripts as this will cause issue in resolving maplibre "
+  },
+  {
+    "id": "tomtom_coverage",
+    "url": "https://docs.tomtom.com/traffic-api/documentation/tomtom-maps/v1/traffic-flow/market-coverage",
+    "status": 404,
+    "bytes": 42842,
+    "snippet": "<!DOCTYPE html><html lang=\"en\" data-astro-cid-iopp6ar3><head><!-- Do not move this below other scripts as this will cause issue in resolving maplibre "
+  },
+  {
+    "id": "tomtom_pricing",
+    "url": "https://docs.tomtom.com/pricing",
+    "status": 200,
+    "bytes": 264297,
+    "snippet": "<!DOCTYPE html><html lang=\"en\" data-astro-cid-iopp6ar3><head><!-- Do not move this below other scripts as this will cause issue in resolving maplibre "
+  },
+  {
+    "id": "sample_hls",
+    "url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "status": 200,
+    "bytes": 752,
+    "snippet": "#EXTM3U\n#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2149280,CODECS=\"mp4a.40.2,avc1.64001f\",RESOLUTION=1280x720,NAME=\"720\"\nurl_0/193039199_mp4_h264_aac_hd"
+  },
+  {
+    "id": "yolox_model",
+    "url": "https://api.github.com/repos/Megvii-BaseDetection/YOLOX/releases/tags/0.1.1rc0",
+    "status": 200,
+    "bytes": 36014,
+    "snippet": "{\"url\":\"https://api.github.com/repos/Megvii-BaseDetection/YOLOX/releases/48035658\",\"assets_url\":\"https://api.github.com/repos/Megvii-BaseDetection/YOL"
+  },
+  {
+    "id": "sensor_community",
+    "url": "https://data.sensor.community/static/v2/data.dust.min.json",
+    "status": 200,
+    "bytes": 4332827,
+    "snippet": "[{\"id\":31266255781,\"sampling_rate\":null,\"timestamp\":\"2026-11-05 05:16:03\",\"location\":{\"id\":49,\"latitude\":\"48.53\",\"longitude\":\"9.2\",\"altitude\":\"373.1\","
+  },
+  {
+    "id": "stonesoup",
+    "url": "https://stonesoup.readthedocs.io/en/latest/",
+    "status": 200,
+    "bytes": 19492,
+    "snippet": "\n\n<!DOCTYPE html>\n<html class=\"writer-html5\" lang=\"en\" data-content_root=\"./\">\n<head>\n  <meta charset=\"utf-8\" />\n  <meta name=\"readthedocs-addons-api-"
+  }
+]

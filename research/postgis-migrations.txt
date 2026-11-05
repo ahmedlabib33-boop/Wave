@@ -1,0 +1,4 @@
+postgis 3.5 USE_GEOS=1 USE_PROJ=1 USE_STATS=1
+revision 2_postgis
+geography_column 1
+roundtrip passed

@@ -1,0 +1,482 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              29.931,
+              30.4666
+            ],
+            [
+              30.3624,
+              28.5087
+            ],
+            [
+              32.857,
+              28.7778
+            ],
+            [
+              32.4756,
+              30.7352
+            ],
+            [
+              29.931,
+              30.4666
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "centerLat": 29.6281,
+        "centerLon": 31.4059,
+        "stopTime": "2026-10-31T15:56:16Z",
+        "fileID": "S1C_IW_RAW__0SDV_20261031T155544_20261031T155616_010131_014387_D06E-RAW",
+        "flightDirection": "ASCENDING",
+        "pathNumber": 58,
+        "processingLevel": "RAW",
+        "url": "https://datapool.asf.alaska.edu/RAW/SC/S1C_IW_RAW__0SDV_20261031T155544_20261031T155616_010131_014387_D06E.zip",
+        "startTime": "2026-10-31T15:55:44Z",
+        "sceneName": "S1C_IW_RAW__0SDV_20261031T155544_20261031T155616_010131_014387_D06E",
+        "browse": null,
+        "platform": "Sentinel-1C",
+        "bytes": 1690099500,
+        "md5sum": "235f92e2d51fdcf183029a52c54631b6",
+        "frameNumber": 92,
+        "granuleType": "SENTINEL_1C_FRAME",
+        "orbit": 10131,
+        "polarization": "VV+VH",
+        "processingDate": "2026-10-31T15:55:44Z",
+        "sensor": "C-SAR",
+        "groupID": "S1C_IWDV_0093_0098_010131_058",
+        "pgeVersion": null,
+        "fileName": "S1C_IW_RAW__0SDV_20261031T155544_20261031T155616_010131_014387_D06E.zip",
+        "beamModeType": "IW",
+        "s3Urls": [
+          "s3://asf-ngap2w-p-s1-raw-98779950/S1C_IW_RAW__0SDV_20261031T155544_20261031T155616_010131_014387_D06E.zip"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              29.931,
+              30.4666
+            ],
+            [
+              30.3624,
+              28.5087
+            ],
+            [
+              32.857,
+              28.7778
+            ],
+            [
+              32.4756,
+              30.7352
+            ],
+            [
+              29.931,
+              30.4666
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "centerLat": 29.6281,
+        "centerLon": 31.4059,
+        "stopTime": "2026-10-31T15:56:16Z",
+        "fileID": "S1C_IW_RAW__0SDV_20261031T155544_20261031T155616_010131_014387_D06E-METADATA_RAW",
+        "flightDirection": "ASCENDING",
+        "pathNumber": 58,
+        "processingLevel": "METADATA_RAW",
+        "url": "https://datapool.asf.alaska.edu/METADATA_RAW/SC/S1C_IW_RAW__0SDV_20261031T155544_20261031T155616_010131_014387_D06E.iso.xml",
+        "startTime": "2026-10-31T15:55:44Z",
+        "sceneName": "S1C_IW_RAW__0SDV_20261031T155544_20261031T155616_010131_014387_D06E",
+        "browse": null,
+        "platform": "Sentinel-1C",
+        "bytes": 41302,
+        "md5sum": "6c1ae47c4bf025ef2c3c27acb80d0fee",
+        "frameNumber": 92,
+        "granuleType": "SENTINEL_1C_FRAME",
+        "orbit": 10131,
+        "polarization": "VV+VH",
+        "processingDate": "2026-10-31T15:55:44Z",
+        "sensor": "C-SAR",
+        "groupID": "S1C_IWDV_0093_0098_010131_058",
+        "pgeVersion": null,
+        "fileName": "S1C_IW_RAW__0SDV_20261031T155544_20261031T155616_010131_014387_D06E.iso.xml",
+        "beamModeType": "IW",
+        "s3Urls": [
+          "s3://asf-ngap2w-p-s1-xml-8cf7476b/S1C_IW_RAW__0SDV_20261031T155544_20261031T155616_010131_014387_D06E.iso.xml"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              30.411383,
+              28.841841
+            ],
+            [
+              33.030552,
+              29.259251
+            ],
+            [
+              32.701565,
+              30.940119
+            ],
+            [
+              30.035738,
+              30.525391
+            ],
+            [
+              30.411383,
+              28.841841
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "centerLat": 29.8982,
+        "centerLon": 31.5422,
+        "stopTime": "2026-10-31T15:56:14Z",
+        "fileID": "S1C_IW_SLC__1SDV_20261031T155546_20261031T155614_010131_014387_0E98-SLC",
+        "flightDirection": "ASCENDING",
+        "pathNumber": 58,
+        "processingLevel": "SLC",
+        "url": "https://datapool.asf.alaska.edu/SLC/SC/S1C_IW_SLC__1SDV_20261031T155546_20261031T155614_010131_014387_0E98.zip",
+        "startTime": "2026-10-31T15:55:46Z",
+        "sceneName": "S1C_IW_SLC__1SDV_20261031T155546_20261031T155614_010131_014387_0E98",
+        "browse": null,
+        "platform": "Sentinel-1C",
+        "bytes": 4591956627,
+        "md5sum": "f106cb7622a133f82023dc32f3251cc4",
+        "frameNumber": 93,
+        "granuleType": "SENTINEL_1C_FRAME",
+        "orbit": 10131,
+        "polarization": "VV+VH",
+        "processingDate": "2026-10-31T15:55:46Z",
+        "sensor": "C-SAR",
+        "groupID": "S1C_IWDV_0093_0098_010131_058",
+        "pgeVersion": "004.03",
+        "fileName": "S1C_IW_SLC__1SDV_20261031T155546_20261031T155614_010131_014387_0E98.zip",
+        "beamModeType": "IW",
+        "s3Urls": [
+          "s3://asf-ngap2w-p-s1-slc-7b420b89/S1C_IW_SLC__1SDV_20261031T155546_20261031T155614_010131_014387_0E98.zip"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              30.411383,
+              28.841841
+            ],
+            [
+              33.030552,
+              29.259251
+            ],
+            [
+              32.701565,
+              30.940119
+            ],
+            [
+              30.035738,
+              30.525391
+            ],
+            [
+              30.411383,
+              28.841841
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "centerLat": 29.8982,
+        "centerLon": 31.5422,
+        "stopTime": "2026-10-31T15:56:14Z",
+        "fileID": "S1C_IW_SLC__1SDV_20261031T155546_20261031T155614_010131_014387_0E98-METADATA_SLC",
+        "flightDirection": "ASCENDING",
+        "pathNumber": 58,
+        "processingLevel": "METADATA_SLC",
+        "url": "https://datapool.asf.alaska.edu/METADATA_SLC/SC/S1C_IW_SLC__1SDV_20261031T155546_20261031T155614_010131_014387_0E98.iso.xml",
+        "startTime": "2026-10-31T15:55:46Z",
+        "sceneName": "S1C_IW_SLC__1SDV_20261031T155546_20261031T155614_010131_014387_0E98",
+        "browse": null,
+        "platform": "Sentinel-1C",
+        "bytes": 67882,
+        "md5sum": "fcaddfea8fbedb1b6909824f01c463fd",
+        "frameNumber": 93,
+        "granuleType": "SENTINEL_1C_FRAME",
+        "orbit": 10131,
+        "polarization": "VV+VH",
+        "processingDate": "2026-10-31T15:55:46Z",
+        "sensor": "C-SAR",
+        "groupID": "S1C_IWDV_0093_0098_010131_058",
+        "pgeVersion": "004.03",
+        "fileName": "S1C_IW_SLC__1SDV_20261031T155546_20261031T155614_010131_014387_0E98.iso.xml",
+        "beamModeType": "IW",
+        "s3Urls": [
+          "s3://asf-ngap2w-p-s1-xml-8cf7476b/S1C_IW_SLC__1SDV_20261031T155546_20261031T155614_010131_014387_0E98.iso.xml"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              30.39081,
+              28.93059
+            ],
+            [
+              33.07832,
+              29.357668
+            ],
+            [
+              32.781944,
+              30.861784
+            ],
+            [
+              30.053148,
+              30.437395
+            ],
+            [
+              30.39081,
+              28.93059
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "centerLat": 29.9036,
+        "centerLon": 31.573,
+        "stopTime": "2026-10-31T15:56:12Z",
+        "fileID": "S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_BE63-METADATA_GRD_HD",
+        "flightDirection": "ASCENDING",
+        "pathNumber": 58,
+        "processingLevel": "METADATA_GRD_HD",
+        "url": "https://datapool.asf.alaska.edu/METADATA_GRD_HD/SC/S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_BE63.iso.xml",
+        "startTime": "2026-10-31T15:55:47Z",
+        "sceneName": "S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_BE63",
+        "browse": [
+          "https://datapool.asf.alaska.edu/BROWSE/SC/S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_BE63.jpg"
+        ],
+        "platform": "Sentinel-1C",
+        "bytes": 58847,
+        "md5sum": "3c8e21442d0ce313923309cd69343d4c",
+        "frameNumber": 93,
+        "granuleType": "SENTINEL_1C_FRAME",
+        "orbit": 10131,
+        "polarization": "VV+VH",
+        "processingDate": "2026-10-31T15:55:47Z",
+        "sensor": "C-SAR",
+        "groupID": "S1C_IWDV_0093_0098_010131_058",
+        "pgeVersion": "004.03",
+        "fileName": "S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_BE63.iso.xml",
+        "beamModeType": "IW",
+        "s3Urls": [
+          "s3://asf-ngap2w-p-s1-xml-8cf7476b/S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_BE63.iso.xml"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              30.39081,
+              28.93059
+            ],
+            [
+              33.07832,
+              29.357668
+            ],
+            [
+              32.781944,
+              30.861784
+            ],
+            [
+              30.053148,
+              30.437395
+            ],
+            [
+              30.39081,
+              28.93059
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "centerLat": 29.9036,
+        "centerLon": 31.573,
+        "stopTime": "2026-10-31T15:56:12Z",
+        "fileID": "S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_BE63-GRD_HD",
+        "flightDirection": "ASCENDING",
+        "pathNumber": 58,
+        "processingLevel": "GRD_HD",
+        "url": "https://datapool.asf.alaska.edu/GRD_HD/SC/S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_BE63.zip",
+        "startTime": "2026-10-31T15:55:47Z",
+        "sceneName": "S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_BE63",
+        "browse": [
+          "https://datapool.asf.alaska.edu/BROWSE/SC/S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_BE63.jpg"
+        ],
+        "platform": "Sentinel-1C",
+        "bytes": 973741618,
+        "md5sum": "71be74c6fccac48ca56c6adff1396703",
+        "frameNumber": 93,
+        "granuleType": "SENTINEL_1C_FRAME",
+        "orbit": 10131,
+        "polarization": "VV+VH",
+        "processingDate": "2026-10-31T15:55:47Z",
+        "sensor": "C-SAR",
+        "groupID": "S1C_IWDV_0093_0098_010131_058",
+        "pgeVersion": "004.03",
+        "fileName": "S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_BE63.zip",
+        "beamModeType": "IW",
+        "s3Urls": [
+          "s3://asf-ngap2w-p-s1-grd-7d1b4348/S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_BE63.zip"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              31.04371,
+              29.97976
+            ],
+            [
+              32.05819,
+              30.13883
+            ],
+            [
+              32.02202,
+              30.30488
+            ],
+            [
+              31.00638,
+              30.14599
+            ],
+            [
+              31.04371,
+              29.97976
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "centerLat": 30.142351891839816,
+        "centerLon": 31.532393753811363,
+        "stopTime": "2026-10-31T15:56:06Z",
+        "fileID": "OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0",
+        "flightDirection": "ASCENDING",
+        "pathNumber": 58,
+        "processingLevel": "RTC",
+        "url": "https://cumulus.asf.earthdatacloud.nasa.gov/OPERA/OPERA_L2_RTC-S1/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0.h5",
+        "startTime": "2026-10-31T15:56:02Z",
+        "sceneName": "OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0",
+        "browse": [
+          "https://cumulus.asf.earthdatacloud.nasa.gov/BROWSE/OPERA/OPERA_L2_RTC-S1/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0_BROWSE.png",
+          "s3://asf-cumulus-prod-opera-browse/OPERA_L2_RTC-S1/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0_BROWSE.png",
+          "https://cumulus.asf.earthdatacloud.nasa.gov/BROWSE/OPERA/OPERA_L2_RTC-S1/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0_BROWSE_low-res.png",
+          "s3://asf-cumulus-prod-opera-browse/OPERA_L2_RTC-S1/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0_BROWSE_low-res.png",
+          "https://cumulus.asf.earthdatacloud.nasa.gov/BROWSE/OPERA/OPERA_L2_RTC-S1/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0_BROWSE_thumbnail.png",
+          "s3://asf-cumulus-prod-opera-browse/OPERA_L2_RTC-S1/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0_BROWSE_thumbnail.png"
+        ],
+        "platform": "Sentinel-1C",
+        "bytes": {
+          "OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0.h5": {
+            "bytes": 110824,
+            "format": "HDF5"
+          },
+          "OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0_VH.tif": {
+            "bytes": 7443817,
+            "format": "GeoTIFF"
+          },
+          "OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0_VV.tif": {
+            "bytes": 7435269,
+            "format": "GeoTIFF"
+          },
+          "OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0_mask.tif": {
+            "bytes": 46031,
+            "format": "GeoTIFF"
+          },
+          "OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0.iso.xml": {
+            "bytes": 160052,
+            "format": "XML"
+          }
+        },
+        "md5sum": null,
+        "granuleType": null,
+        "orbit": 10131,
+        "polarization": [
+          "VV",
+          "VH"
+        ],
+        "processingDate": "2026-11-02T01:12:08Z",
+        "sensor": "C-SAR",
+        "groupID": "S1C_IWDV_0093_0098_010131_058",
+        "pgeVersion": "2.1.5",
+        "operaBurstID": "T058_122607_IW2",
+        "validityStartDate": null,
+        "subswath": "IW2",
+        "tileID": null,
+        "productVersion": "1.0",
+        "fileName": "OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0.h5",
+        "beamModeType": "IW",
+        "s3Urls": [
+          "s3://asf-cumulus-prod-opera-browse/OPERA_L2_RTC-S1/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0_BROWSE.png",
+          "s3://asf-cumulus-prod-opera-browse/OPERA_L2_RTC-S1/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0_BROWSE.png.md5",
+          "s3://asf-cumulus-prod-opera-browse/OPERA_L2_RTC-S1/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0_BROWSE_low-res.png",
+          "s3://asf-cumulus-prod-opera-browse/OPERA_L2_RTC-S1/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0_BROWSE_low-res.png.md5",
+          "s3://asf-cumulus-prod-opera-browse/OPERA_L2_RTC-S1/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0_BROWSE_thumbnail.png",
+          "s3://asf-cumulus-prod-opera-browse/OPERA_L2_RTC-S1/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0_BROWSE_thumbnail.png.md5",
+          "s3://asf-cumulus-prod-opera-products/OPERA_L2_RTC-S1/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0.h5",
+          "s3://asf-cumulus-prod-opera-products/OPERA_L2_RTC-S1/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0.h5.md5",
+          "s3://asf-cumulus-prod-opera-products/OPERA_L2_RTC-S1/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0.iso.xml",
+          "s3://asf-cumulus-prod-opera-products/OPERA_L2_RTC-S1/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0.iso.xml.md5",
+          "s3://asf-cumulus-prod-opera-products/OPERA_L2_RTC-S1/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0_VH.tif",
+          "s3://asf-cumulus-prod-opera-products/OPERA_L2_RTC-S1/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0_VH.tif.md5",
+          "s3://asf-cumulus-prod-opera-products/OPERA_L2_RTC-S1/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0_VV.tif",
+          "s3://asf-cumulus-prod-opera-products/OPERA_L2_RTC-S1/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0_VV.tif.md5",
+          "s3://asf-cumulus-prod-opera-products/OPERA_L2_RTC-S1/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0_mask.tif",
+          "s3://asf-cumulus-prod-opera-products/OPERA_L2_RTC-S1/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0_mask.tif.md5"
+        ],
+        "beamMode": "IW",
+        "additionalUrls": [
+          "https://cumulus.asf.earthdatacloud.nasa.gov/OPERA/OPERA_L2_RTC-S1/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0.iso.xml",
+          "https://cumulus.asf.earthdatacloud.nasa.gov/OPERA/OPERA_L2_RTC-S1/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0_VH.tif",
+          "https://cumulus.asf.earthdatacloud.nasa.gov/OPERA/OPERA_L2_RTC-S1/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0_VV.tif",
+          "https://cumulus.asf.earthdatacloud.nasa.gov/OPERA/OPERA_L2_RTC-S1/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0/OPERA_L2_RTC-S1_T058-122607-IW2_20261031T155602Z_20261102T010641Z_S1C_30_v1.0_mask.tif"
+        ],
+        "bistaticDelayCorrection": "TRUE",
+        "noiseCorrection": "TRUE",
+        "postProcessingFilter": "FALSE"
+      }
+    }
+  ]
+}

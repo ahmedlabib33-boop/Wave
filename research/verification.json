@@ -1,0 +1,432 @@
+[
+  {
+    "id": "adsb_docs",
+    "verified_at": "2026-11-05T05:17:55.244273+00:00",
+    "url": "https://api.adsb.lol/docs",
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 902,
+    "elapsed_ms": 2127
+  },
+  {
+    "id": "adsb_openapi",
+    "verified_at": "2026-11-05T05:17:55.245258+00:00",
+    "url": "https://api.adsb.lol/openapi.json",
+    "status_code": 404,
+    "content_type": "application/json",
+    "bytes": 22,
+    "elapsed_ms": 1366,
+    "error": "{\"detail\":\"Not Found\"}",
+    "keys": [
+      "detail"
+    ]
+  },
+  {
+    "id": "adsb_cairo",
+    "verified_at": "2026-11-05T05:17:55.246049+00:00",
+    "url": "https://api.adsb.lol/v2/point/30.0878597/31.3413867/3",
+    "status_code": 200,
+    "content_type": "application/json",
+    "bytes": 101,
+    "elapsed_ms": 491,
+    "keys": [
+      "ac",
+      "msg",
+      "now",
+      "total",
+      "ctime",
+      "ptime"
+    ],
+    "sample": {
+      "ac": [],
+      "msg": "No error",
+      "now": 1793855875500,
+      "total": 0,
+      "ctime": 1793855875500,
+      "ptime": 0
+    }
+  },
+  {
+    "id": "asf_docs",
+    "verified_at": "2026-11-05T05:17:55.246634+00:00",
+    "url": "https://docs.asf.alaska.edu/api/keywords/",
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 80095,
+    "elapsed_ms": 547
+  },
+  {
+    "id": "asf_cairo",
+    "verified_at": "2026-11-05T05:17:55.247154+00:00",
+    "url": "https://api.daac.asf.alaska.edu/services/search/param?platform=SENTINEL-1&intersectsWith=POINT%2831.3413867+30.0878597%29&output=geojson&maxResults=6&processingLevel=GRD_HD&end=2026-11-05T23%3A59%3A59Z",
+    "status_code": 200,
+    "content_type": "application/geo+json; charset=utf-8",
+    "bytes": 15393,
+    "elapsed_ms": 1371,
+    "keys": [
+      "type",
+      "features"
+    ],
+    "count": 6,
+    "sample": [
+      {
+        "centerLat": 29.9036,
+        "centerLon": 31.573,
+        "stopTime": "2026-10-31T15:56:12Z",
+        "fileID": "S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_BE63-GRD_HD",
+        "flightDirection": "ASCENDING",
+        "pathNumber": 58,
+        "processingLevel": "GRD_HD",
+        "url": "https://datapool.asf.alaska.edu/GRD_HD/SC/S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_BE63.zip",
+        "startTime": "2026-10-31T15:55:47Z",
+        "sceneName": "S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_BE63",
+        "browse": [
+          "https://datapool.asf.alaska.edu/BROWSE/SC/S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_BE63.jpg"
+        ],
+        "platform": "Sentinel-1C",
+        "bytes": 973741618,
+        "md5sum": "71be74c6fccac48ca56c6adff1396703",
+        "frameNumber": 93,
+        "granuleType": "SENTINEL_1C_FRAME",
+        "orbit": 10131,
+        "polarization": "VV+VH",
+        "processingDate": "2026-10-31T15:55:47Z",
+        "sensor": "C-SAR",
+        "groupID": "S1C_IWDV_0093_0098_010131_058",
+        "pgeVersion": "004.03",
+        "fileName": "S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_BE63.zip",
+        "beamModeType": "IW",
+        "s3Urls": [
+          "s3://asf-ngap2w-p-s1-grd-7d1b4348/S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_BE63.zip"
+        ]
+      },
+      {
+        "centerLat": 29.8723,
+        "centerLon": 31.5824,
+        "stopTime": "2026-10-25T15:56:25Z",
+        "fileID": "S1D_IW_GRDH_1SDV_20261025T155600_20261025T155625_005174_009D10_693E-GRD_HD",
+        "flightDirection": "ASCENDING",
+        "pathNumber": 58,
+        "processingLevel": "GRD_HD",
+        "url": "https://datapool.asf.alaska.edu/GRD_HD/SD/S1D_IW_GRDH_1SDV_20261025T155600_20261025T155625_005174_009D10_693E.zip",
+        "startTime": "2026-10-25T15:56:00Z",
+        "sceneName": "S1D_IW_GRDH_1SDV_20261025T155600_20261025T155625_005174_009D10_693E",
+        "browse": [
+          "https://datapool.asf.alaska.edu/BROWSE/SD/S1D_IW_GRDH_1SDV_20261025T155600_20261025T155625_005174_009D10_693E.jpg"
+        ],
+        "platform": "Sentinel-1D",
+        "bytes": 976074209,
+        "md5sum": "84637219fd61f2d1c5bcf04287a6f945",
+        "frameNumber": 93,
+        "granuleType": "SENTINEL_1D_FRAME",
+        "orbit": 5174,
+        "polarization": "VV+VH",
+        "processingDate": "2026-10-25T15:56:00Z",
+        "sensor": "C-SAR",
+        "groupID": "S1D_IWDV_0092_0099_005174_058",
+        "pgeVersion": "004.11",
+        "fileName": "S1D_IW_GRDH_1SDV_20261025T155600_20261025T155625_005174_009D10_693E.zip",
+        "beamModeType": "IW",
+        "s3Urls": [
+          "s3://asf-ngap2w-p-s1-grd-7d1b4348/S1D_IW_GRDH_1SDV_20261025T155600_20261025T155625_005174_009D10_693E.zip"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "asf_reference",
+    "verified_at": "2026-11-05T05:17:55.247497+00:00",
+    "url": "https://api.daac.asf.alaska.edu/services/search/param?platform=SENTINEL-1&intersectsWith=POINT%2831.3413867+30.0878597%29&output=geojson&maxResults=20&start=2026-10-31T00%3A00%3A00Z&end=2026-11-01T00%3A00%3A00Z",
+    "status_code": 200,
+    "content_type": "application/geo+json; charset=utf-8",
+    "bytes": 25210,
+    "elapsed_ms": 1654,
+    "keys": [
+      "type",
+      "features"
+    ],
+    "count": 7,
+    "sample": [
+      {
+        "centerLat": 29.6281,
+        "centerLon": 31.4059,
+        "stopTime": "2026-10-31T15:56:16Z",
+        "fileID": "S1C_IW_RAW__0SDV_20261031T155544_20261031T155616_010131_014387_D06E-RAW",
+        "flightDirection": "ASCENDING",
+        "pathNumber": 58,
+        "processingLevel": "RAW",
+        "url": "https://datapool.asf.alaska.edu/RAW/SC/S1C_IW_RAW__0SDV_20261031T155544_20261031T155616_010131_014387_D06E.zip",
+        "startTime": "2026-10-31T15:55:44Z",
+        "sceneName": "S1C_IW_RAW__0SDV_20261031T155544_20261031T155616_010131_014387_D06E",
+        "browse": null,
+        "platform": "Sentinel-1C",
+        "bytes": 1690099500,
+        "md5sum": "235f92e2d51fdcf183029a52c54631b6",
+        "frameNumber": 92,
+        "granuleType": "SENTINEL_1C_FRAME",
+        "orbit": 10131,
+        "polarization": "VV+VH",
+        "processingDate": "2026-10-31T15:55:44Z",
+        "sensor": "C-SAR",
+        "groupID": "S1C_IWDV_0093_0098_010131_058",
+        "pgeVersion": null,
+        "fileName": "S1C_IW_RAW__0SDV_20261031T155544_20261031T155616_010131_014387_D06E.zip",
+        "beamModeType": "IW",
+        "s3Urls": [
+          "s3://asf-ngap2w-p-s1-raw-98779950/S1C_IW_RAW__0SDV_20261031T155544_20261031T155616_010131_014387_D06E.zip"
+        ]
+      },
+      {
+        "centerLat": 29.6281,
+        "centerLon": 31.4059,
+        "stopTime": "2026-10-31T15:56:16Z",
+        "fileID": "S1C_IW_RAW__0SDV_20261031T155544_20261031T155616_010131_014387_D06E-METADATA_RAW",
+        "flightDirection": "ASCENDING",
+        "pathNumber": 58,
+        "processingLevel": "METADATA_RAW",
+        "url": "https://datapool.asf.alaska.edu/METADATA_RAW/SC/S1C_IW_RAW__0SDV_20261031T155544_20261031T155616_010131_014387_D06E.iso.xml",
+        "startTime": "2026-10-31T15:55:44Z",
+        "sceneName": "S1C_IW_RAW__0SDV_20261031T155544_20261031T155616_010131_014387_D06E",
+        "browse": null,
+        "platform": "Sentinel-1C",
+        "bytes": 41302,
+        "md5sum": "6c1ae47c4bf025ef2c3c27acb80d0fee",
+        "frameNumber": 92,
+        "granuleType": "SENTINEL_1C_FRAME",
+        "orbit": 10131,
+        "polarization": "VV+VH",
+        "processingDate": "2026-10-31T15:55:44Z",
+        "sensor": "C-SAR",
+        "groupID": "S1C_IWDV_0093_0098_010131_058",
+        "pgeVersion": null,
+        "fileName": "S1C_IW_RAW__0SDV_20261031T155544_20261031T155616_010131_014387_D06E.iso.xml",
+        "beamModeType": "IW",
+        "s3Urls": [
+          "s3://asf-ngap2w-p-s1-xml-8cf7476b/S1C_IW_RAW__0SDV_20261031T155544_20261031T155616_010131_014387_D06E.iso.xml"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "copernicus_docs",
+    "verified_at": "2026-11-05T05:17:55.247878+00:00",
+    "url": "https://documentation.dataspace.copernicus.eu/APIs/OData.html",
+    "status_code": 200,
+    "content_type": "text/html",
+    "bytes": 403682,
+    "elapsed_ms": 1432
+  },
+  {
+    "id": "copernicus_cairo",
+    "verified_at": "2026-11-05T05:17:55.249008+00:00",
+    "url": "https://catalogue.dataspace.copernicus.eu/odata/v1/Products?%24filter=Collection%2FName+eq+%27SENTINEL-1%27+and+OData.CSC.Intersects%28area%3Dgeography%27SRID%3D4326%3BPOINT%2831.3413867+30.0878597%29%27%29&%24top=3&%24orderby=ContentDate%2FStart+desc",
+    "status_code": 200,
+    "content_type": "application/json",
+    "bytes": 4063,
+    "elapsed_ms": 3276,
+    "keys": [
+      "@odata.context",
+      "value",
+      "@odata.nextLink"
+    ],
+    "sample": [
+      {
+        "@odata.mediaContentType": "application/octet-stream",
+        "Id": "30faa462-7bd0-49c6-9021-cd3368c6c533",
+        "Name": "S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_B99E_COG.SAFE",
+        "ContentType": "application/octet-stream",
+        "ContentLength": 1135721568,
+        "OriginDate": "2026-10-31T16:14:05.365937Z",
+        "PublicationDate": "2026-10-31T17:17:45.668742Z",
+        "ModificationDate": "2026-10-31T17:17:45.668742Z",
+        "Online": true,
+        "EvictionDate": "9999-12-31T23:59:59.999999Z",
+        "S3Path": "/eodata/Sentinel-1/SAR/IW_GRDH_1S-COG/2026/10/31/S1C_IW_GRDH_1SDV_20261031T155547_20261031T155612_010131_014387_B99E_COG.SAFE",
+        "Checksum": [
+          {
+            "Value": "5762fec39aa5e6366d705433d0b1764c",
+            "Algorithm": "MD5",
+            "ChecksumDate": "2026-10-31T17:17:42.345468Z"
+          },
+          {
+            "Value": "fe98009e361784e67980aac9de1e1baf32a4bd9a2c9df223012b213c7936c723",
+            "Algorithm": "BLAKE3",
+            "ChecksumDate": "2026-10-31T17:17:44.664778Z"
+          }
+        ],
+        "ContentDate": {
+          "Start": "2026-10-31T15:55:47.910545Z",
+          "End": "2026-10-31T15:56:12.909348Z"
+        },
+        "Footprint": "geography'SRID=4326;POLYGON ((30.053148 30.437395, 30.39081 28.93059, 33.07832 29.357668, 32.781944 30.861784, 30.053148 30.437395))'",
+        "GeoFootprint": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                30.053148,
+                30.437395
+              ],
+              [
+                30.39081,
+                28.93059
+              ],
+              [
+                33.07832,
+                29.357668
+              ],
+              [
+                32.781944,
+                30.861784
+              ],
+              [
+                30.053148,
+                30.437395
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "tomtom_docs",
+    "verified_at": "2026-11-05T05:17:55.866049+00:00",
+    "url": "https://docs.tomtom.com/traffic-api/documentation/tomtom-maps/v1/traffic-flow/vector-flow-tiles",
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 222018,
+    "elapsed_ms": 805
+  },
+  {
+    "id": "aisstream_docs",
+    "verified_at": "2026-11-05T05:17:55.912855+00:00",
+    "url": "https://aisstream.io/documentation",
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 79242,
+    "elapsed_ms": 1060
+  },
+  {
+    "id": "umbra_catalog",
+    "verified_at": "2026-11-05T05:17:56.725315+00:00",
+    "url": "https://umbra-open-data-catalog.s3.amazonaws.com/catalog.json",
+    "status_code": 404,
+    "content_type": "application/xml",
+    "bytes": 283,
+    "elapsed_ms": 431,
+    "error": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>NoSuchKey</Code><Message>The specified key does not exist.</Message><Key>catalog.json</Key><RequestId>EV6XRX1ZBKT822BA</RequestId><HostId>qb13THb/swi8VK+2lr7csVS2tt3TfJkvaeDR5VNFfI+0Do3PNu0rVOWd4txItlRDs1i0EBtVq80=</HostId></Error>"
+  },
+  {
+    "id": "umbra_docs",
+    "verified_at": "2026-11-05T05:17:56.738203+00:00",
+    "url": "https://raw.githubusercontent.com/umbra-space/open-data/main/README.md",
+    "status_code": 404,
+    "content_type": "text/plain; charset=utf-8",
+    "bytes": 14,
+    "elapsed_ms": 136,
+    "error": "404: Not Found"
+  },
+  {
+    "id": "overpass_cairo",
+    "verified_at": "2026-11-05T05:17:56.805996+00:00",
+    "url": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A15%5D%3Bnode%28around%3A5000%2C30.0878597%2C31.3413867%29%5B%22man_made%22%3D%22surveillance%22%5D%3Bout+tags+center+20%3B",
+    "status_code": 502,
+    "content_type": "text/plain",
+    "bytes": 534,
+    "elapsed_ms": 671,
+    "error": "# 502 Gateway Timeout\n\nThis Overpass API server is currently at capacity. All query workers are busy\nand the request queue is full.\n\n## What to do\n\nRetry your request using exponential backoff: wait a short interval, then retry.\nIf the request fails again, double the wait time and retry again.\n\n## For heavy or automated use\n\nThis public endpoint is intended for browser-based and human-operated tools.\nFor automated or high-volume use, run a local Overpass API instance:\n\nhttps://github.com/b1tw153/Overpass-API/blob/main/README.md\n"
+  },
+  {
+    "id": "openaq_docs",
+    "verified_at": "2026-11-05T05:17:56.899950+00:00",
+    "url": "https://docs.openaq.org/",
+    "status_code": 200,
+    "content_type": "text/html",
+    "bytes": 29486,
+    "elapsed_ms": 188
+  },
+  {
+    "id": "openaq_cairo",
+    "verified_at": "2026-11-05T05:17:56.995309+00:00",
+    "url": "https://api.openaq.org/v3/locations?coordinates=30.0878597%2C31.3413867&radius=5000&limit=10",
+    "status_code": 401,
+    "content_type": "application/json",
+    "bytes": 86,
+    "elapsed_ms": 268,
+    "error": "{\"message\": \"Unauthorized. A valid API key must be provided in the X-API-Key header.\"}",
+    "keys": [
+      "message"
+    ]
+  },
+  {
+    "id": "rainviewer",
+    "verified_at": "2026-11-05T05:17:57.021226+00:00",
+    "url": "https://api.rainviewer.com/public/weather-maps.json",
+    "status_code": 200,
+    "content_type": "application/json",
+    "bytes": 818,
+    "elapsed_ms": 511,
+    "keys": [
+      "version",
+      "generated",
+      "host",
+      "radar",
+      "satellite"
+    ]
+  },
+  {
+    "id": "frigate_docs",
+    "verified_at": "2026-11-05T05:17:57.110038+00:00",
+    "url": "https://docs.frigate.video/configuration/object_filters/",
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 70716,
+    "elapsed_ms": 286
+  },
+  {
+    "id": "onvif",
+    "verified_at": "2026-11-05T05:17:57.184189+00:00",
+    "url": "https://www.onvif.org/profiles/profile-s/",
+    "status_code": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 89043,
+    "elapsed_ms": 743
+  },
+  {
+    "id": "arkit",
+    "verified_at": "2026-11-05T05:17:57.284044+00:00",
+    "url": "https://developer.apple.com/documentation/arkit/ardepthdata",
+    "status_code": 200,
+    "content_type": "text/html",
+    "bytes": 18418,
+    "elapsed_ms": 208
+  },
+  {
+    "id": "nearbyinteraction",
+    "verified_at": "2026-11-05T05:17:57.415166+00:00",
+    "url": "https://developer.apple.com/documentation/nearbyinteraction",
+    "status_code": 200,
+    "content_type": "text/html",
+    "bytes": 18400,
+    "elapsed_ms": 219
+  },
+  {
+    "id": "radar_ti",
+    "verified_at": "2026-11-05T05:17:57.485035+00:00",
+    "url": "https://dev.ti.com/tirex/explore/node",
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 2037,
+    "elapsed_ms": 335
+  },
+  {
+    "id": "fusion_filterpy",
+    "verified_at": "2026-11-05T05:17:57.504538+00:00",
+    "url": "https://filterpy.readthedocs.io/en/latest/",
+    "status_code": 200,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 31839,
+    "elapsed_ms": 110
+  }
+]
