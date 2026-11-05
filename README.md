@@ -16,6 +16,8 @@ bash scripts/start.sh
 
 Open **http://127.0.0.1:8000**. Read the locally generated `data/access-token` file and enter it in the app. If you configure `APP_API_KEY` in `.env`, use that value instead. Provider keys are never included in the frontend. Keep `.env` and `data/` private. All application endpoints except the minimal health check require a token; `/docs` publishes the API schema.
 
+To run it from a laptop and use it on an iPhone or another phone on the same trusted Wi-Fi network, use [`docs/LOCAL_LAPTOP_MOBILE.md`](docs/LOCAL_LAPTOP_MOBILE.md). The laptop performs camera decoding/detection; the phone is the responsive client.
+
 The script installs dependencies, creates `.env` from `.env.example`, builds the frontend, migrates the database and starts one backend worker. The included official YOLOX nano weights are optional for camera processing; their source, SHA-256 and Apache-2.0 license are in `models/`.
 
 ## Windows
@@ -55,6 +57,7 @@ Health checks cover the database and application. Named volumes persist observat
 * Real **Sensor.Community** nearby station queries. No local stations were returned during verification.
 * **AISstream** WebSocket subscriber behind a configured API key; AIS unavailable-value codes are handled. No keyed live verification was possible.
 * Authorized **RTSP, HTTP video, HLS and ONVIF media-service** registration, time-bounded decoding in a subprocess, real YOLOX inference, conservative local tracking, independent ground-plane calibration validation and timestamp-gated physical speed estimates.
+* **Greater Cairo Street Viewer**: actual OpenStreetMap street metadata is loaded on demand; only authorized cameras with recorded street/view evidence may open an authenticated server-side video session. OpenCV/YOLOX overlays actual decoded frames and mapped Frigate cameras can supply annotated frames. Initial verified Greater Cairo live-feed count: **0**. See [street-viewer sources](docs/STREET_VIEWER_SOURCES.md) and [laptop/phone setup](docs/LOCAL_LAPTOP_MOBILE.md).
 * Authenticated REST and WebSocket ingestion, optional MQTT/TLS and serial JSONL workers, source plugins, deduplication, persistent history, data freshness and failure diagnostics.
 * Ten responsive PWA pages, English / Arabic, full RTL layout, honest empty states and a geographically positioned map.
 

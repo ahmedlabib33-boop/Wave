@@ -7,16 +7,15 @@ import os
 import time
 import uuid
 from datetime import timedelta
-import httpx
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy import select
 from sqlalchemy.orm import Session as DBSession
 from .camera_service import create_registered_camera
 from .cameras import capture_camera
-from .config import get_settings
 from .db import AppConfig, Camera, CameraCandidate, DiscoveryRun, Session, Source, aware, get_db, utcnow
 from .discovery_schemas import CandidateIn, IntegrateIn, InvestigationArea, PermissionIn
 from .schemas import CameraIn
+from .public_map import query_overpass
 
 router = APIRouter(prefix="/api/discovery", tags=["Camera investigation"])
 INVENTORY_SOURCE = "overpass_inventory"
@@ -111,20 +110,7 @@ def parse_inventory(data, area):
 
 async def fetch_inventory(area):
     query = f'[out:json][timeout:20];nwr["man_made"="surveillance"]({area.south},{area.west},{area.north},{area.east});out tags center 200;'
-    async with httpx.AsyncClient(timeout=httpx.Timeout(30, connect=8)) as client:
-        response = await client.post(
-            get_settings().overpass_endpoint,
-            data={"data": query},
-            headers={"Accept": "application/json", "User-Agent": "NileObserver/0.1 camera metadata investigation"},
-            follow_redirects=False,
-        )
-    if response.status_code == 429:
-        raise RuntimeError("Overpass returned HTTP 429; public service rate limit")
-    if response.status_code != 200:
-        raise RuntimeError(
-            f"Overpass returned HTTP {response.status_code}; no camera access or absence can be inferred"
-        )
-    return response.json()
+    return await query_overpass(query)
 
 
 @router.get("/area")

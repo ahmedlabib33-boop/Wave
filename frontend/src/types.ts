@@ -71,3 +71,53 @@ export interface Camera {
   fov_deg: number | null;
   calibration: Record<string, unknown> | null;
 }
+export interface Street {
+  id: string;
+  name: string;
+  geometry: GeoJSON.LineString;
+  source_ref: string;
+  details: Record<string, string>;
+  fetched_at: string;
+  click_distance_m?: number;
+}
+export interface StreetCamera {
+  camera_id: string;
+  name: string;
+  latitude: number | null;
+  longitude: number | null;
+  enabled: boolean;
+  protocol: string;
+  status: string;
+  error: string | null;
+  street_ids: string[];
+  footprint: GeoJSON.Polygon | null;
+  coverage_evidence: string | null;
+  live_declared: boolean;
+  playback_recent: boolean;
+  frigate_available: boolean;
+  decoded_frames: number;
+  rendered_frames: number;
+  match_basis?: string;
+  street_distance_m?: number;
+}
+export interface StreetViewerState {
+  area: { south: number; west: number; north: number; east: number };
+  streets: Street[];
+  cameras: StreetCamera[];
+  candidates: Array<{
+    id: string;
+    name: string;
+    provider: string;
+    latitude: number | null;
+    longitude: number | null;
+    source_ref: string | null;
+    camera_id: string | null;
+    permission_state: string;
+    verification_status: string;
+    details: Record<string, unknown>;
+  }>;
+  functioning_live_feeds: number;
+  count_basis: string;
+  providers: Array<Record<string, unknown>>;
+  coverage_complete: false;
+}

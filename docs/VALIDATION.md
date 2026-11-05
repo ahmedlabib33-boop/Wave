@@ -57,3 +57,11 @@ Camera speed tests use a controlled surveyed-plane fixture with known metre disp
 Desktop Chromium launched directly. WebKit initially lacked shared libraries and the managed user could not run the privileged dependency installer. Public Debian libraries were extracted into the user-owned Playwright runtime. The actual WebKit engine then passed all five mobile cases. Host-requirement preflight was bypassed only because the dependencies were installed in that isolated runtime; actual browser launch and rendering were not bypassed or mocked. Normal developer machines can use `playwright install --with-deps`.
 
 Repeated Docker builds on the managed VFS driver exhausted workspace disk during final packaging. Unused build cache was cleared and the build/browser checks repeated. No user sensor database or persistent observation was deleted to recover space.
+
+## Street Viewer continuation — 5 November 2026 UTC
+
+The additive Street Viewer checks used a separate SQLite copy with an explicitly labelled browser fixture; it was never an operational camera or a Cairo feed. The final backend suite completed with **83 passed and 4 skipped**. A clean desktop Chromium run completed with **8 passed** browser checks, including English/Arabic navigation, radar preservation, no invented objects, the Street Viewer selection path and no recent-playback assertion. A 430 × 739 touch-enabled mobile Chromium run completed without horizontal overflow; its screenshot and machine-readable result are in `research/street-viewer/browser/`.
+
+The actual street-metadata flow was also called against the disposable application: the public OSM map API returned 300 road segments around 30.0878597, 31.3413867, including an El Nozha Street record. It created zero camera records and marked coverage incomplete (`research/street-viewer/live-map-flow.json`). This establishes the real map integration only; it does not establish camera coverage.
+
+The managed sandbox could no longer launch a fresh Playwright WebKit process because the host's `libGLESv2.so.2` library was absent. The failure is recorded in the local browser artifacts. It did not prevent the responsive mobile Chromium validation, but a physical iPhone/Safari or a host with the WebKit dependency remains required for final Safari-engine confirmation.

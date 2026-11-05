@@ -172,6 +172,42 @@ class DiscoveryRun(Base):
     details: Mapped[dict] = mapped_column(JSON, default=dict)
 
 
+class StreetSegment(Base):
+    __tablename__ = "street_segments"
+    id: Mapped[str] = mapped_column(String(100), primary_key=True)
+    name: Mapped[str] = mapped_column(String(300))
+    geometry: Mapped[dict] = mapped_column(JSON)
+    source_ref: Mapped[str] = mapped_column(Text)
+    fetched_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+    details: Mapped[dict] = mapped_column(JSON, default=dict)
+
+
+class StreetQuery(Base):
+    __tablename__ = "street_queries"
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    fetched_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+    result: Mapped[dict] = mapped_column(JSON)
+
+
+class CameraView(Base):
+    __tablename__ = "camera_views"
+    camera_id: Mapped[str] = mapped_column(ForeignKey("cameras.id"), primary_key=True)
+    street_ids: Mapped[list] = mapped_column(JSON, default=list)
+    footprint: Mapped[dict | None] = mapped_column(JSON)
+    coverage_evidence: Mapped[str | None] = mapped_column(Text)
+    live_declared: Mapped[bool] = mapped_column(default=False)
+    status: Mapped[str] = mapped_column(String(40), default="not_checked")
+    checked_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    last_frame_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    playback_confirmed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    decoded_frames: Mapped[int] = mapped_column(default=0)
+    rendered_frames: Mapped[int] = mapped_column(default=0)
+    failures: Mapped[int] = mapped_column(default=0)
+    retry_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    error: Mapped[str | None] = mapped_column(Text)
+    configuration_hash: Mapped[str | None] = mapped_column(String(64))
+
+
 def make_engine(url):
     kwargs = (
         {"connect_args": {"check_same_thread": False, "timeout": 30, "autocommit": False}}

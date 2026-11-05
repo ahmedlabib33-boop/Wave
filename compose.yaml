@@ -2,7 +2,7 @@ services:
   app:
     build: .
     ports:
-      - "127.0.0.1:8080:8000"
+      - "${WAVE_BIND_ADDRESS:-127.0.0.1}:8080:8000"
     env_file:
       - .env
     environment:

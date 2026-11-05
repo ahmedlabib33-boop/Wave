@@ -6,7 +6,7 @@ Both the original multi-sensor platform and the camera/upstream investigation re
 |---|---|
 | FastAPI modular hub, normalized origins/times/null values | Operational; original API retained; new authenticated discovery and Frigate routes added |
 | SQLite, PostgreSQL/PostGIS, migrations | Operational; additive discovery migration verified on restored copies with old records unchanged |
-| React/TypeScript/MapLibre PWA, monochrome, English/Arabic RTL | Operational; original ten pages retained; regional investigation added inside Live Cameras |
+| React/TypeScript/MapLibre PWA, monochrome, English/Arabic RTL | Operational; original ten pages retained; Greater Cairo Street Viewer adds an eleventh responsive, fully translated map page |
 | Heliopolis default and 1–5 km exact radius | Preserved; Greater Cairo research bbox is separate |
 | Source registry, freshness, diagnostics, history | Operational; OpenAQ polling added; inventory remains metadata-only; old evidence preserved |
 | ADS-B aircraft | Existing real connector retained and live regression checked; receiver coverage still conditional |
@@ -14,6 +14,7 @@ Both the original multi-sensor platform and the camera/upstream investigation re
 | Traffic incidents / detailed road conditions | Pending adapter and keyed verification; not abandoned |
 | Individual vehicle speed | Existing surveyed-calibration/validated-timestamp estimator preserved; physical metrology validation needs an authorized surveyed camera/reference |
 | Authorized camera RTSP / HTTP / HLS / ONVIF / NVR | Existing tools retained; metadata → permission → real-frame check → registry integration added; physical RTSP/ONVIF hardware still needed |
+| Street-specific camera viewer | Operational for explicitly authorized registered cameras: actual OSM street geometry, recorded coverage evidence, one-use WebSocket ticket, bounded decoding, YOLOX/Frigate overlays and playback-health state. No geographic camera/object position is inferred from a frame. |
 | Object inference/tracking | Existing OpenCV/YOLOX/model preserved; Frigate event bridge added; latest-track/ended-track correctness improved |
 | Satellite SAR search/footprints/history | Existing ASF/CDSE/Umbra modules retained; historical labels and acquisition times preserved; full credentialed products/scientific interpretation still need inputs |
 | AIS vessel reports | Existing subscriber retained; live service needs a key and receiver coverage; richer static vessel metadata remains pending |
@@ -33,6 +34,7 @@ Both the original multi-sensor platform and the camera/upstream investigation re
 | Public camera discovery | Published map-metadata query implemented; actual service timeout recorded; no location tag treated as a public feed |
 | Permissions, accessibility and detection suitability | Recorded separately; denied/unknown candidates cannot connect; actual decoder check required before candidate integration |
 | Integrate verified authorized streams into existing hub | Same camera registration/decoder reused; real Mux compatibility-media path validated in an isolated DB, with no Cairo coordinates or detections |
+| Greater Cairo Street Viewer | Implemented incrementally in the same application. On-demand OSM metadata returned 300 road segments around El Nozha in a disposable verification run; it is street geometry, not camera coverage. |
 | Verified Greater Cairo street feeds | Still unresolved: no documented/authorized live Cairo street feed supplied or successfully verified; none fabricated |
 | No competing application | All source changes stay in the original project; disposable database copies are verification fixtures only |
 

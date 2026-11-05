@@ -72,7 +72,14 @@ for folder, dirs, names in os.walk(root):
             continue
         if rel.parts[0] == "research":
             continuation = "continuation" in rel.parts
-            if continuation:
+            street_viewer = "street-viewer" in rel.parts
+            if street_viewer:
+                # Keep compact, reviewable verification records. Raw provider pages,
+                # responses and Playwright traces stay local because they may change
+                # and can contain third-party material.
+                if path.suffix not in {".json", ".md", ".xml", ".txt", ".png"}:
+                    continue
+            elif continuation:
                 if "upstream" in rel.parts and name.endswith(".txt"):
                     continue
                 if name in {"openaq_openapi.txt", "openaq_latest.txt", "frigate_mqtt.txt", "greater_cairo_overpass.txt"}:

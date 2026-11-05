@@ -13,6 +13,8 @@ frontend/test-results/
 frontend/playwright-report/
 .DS_Store
 frontend/dist-continuation/
+research/street-viewer/*.html
+research/street-viewer/*.response
 research/continuation/**/browser-artifacts/
 research/continuation/upstream/*.txt
 research/continuation/openaq_openapi.txt

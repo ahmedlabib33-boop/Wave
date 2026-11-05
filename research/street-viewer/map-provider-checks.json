@@ -1,0 +1,30 @@
+[
+  {
+    "provider": "osm-map",
+    "url": "https://api.openstreetmap.org/api/0.6/map",
+    "status": 200,
+    "bytes": 2738674,
+    "latency_s": 1.6,
+    "content_type": "application/xml; charset=utf-8"
+  },
+  {
+    "provider": "nominatim",
+    "url": "https://nominatim.openstreetmap.org/search",
+    "status": 200,
+    "bytes": 1144,
+    "latency_s": 0.62,
+    "content_type": "application/json; charset=utf-8"
+  },
+  {
+    "provider": "overpass-kumi",
+    "url": "https://overpass.kumi.systems/api/interpreter",
+    "error": "ReadTimeout",
+    "latency_s": 23.04
+  },
+  {
+    "provider": "overpass-de",
+    "url": "https://overpass-api.de/api/interpreter",
+    "error": "ReadTimeout",
+    "latency_s": 22.58
+  }
+]

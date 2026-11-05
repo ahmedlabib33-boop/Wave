@@ -19,6 +19,7 @@ import {
   Globe,
   History as HistoryIcon,
   Layers,
+  Map,
   Menu,
   Plane,
   Radio,
@@ -41,11 +42,13 @@ const Satellite = lazy(() => import("./Satellite"));
 const Hub = lazy(() => import("./Hub"));
 const History = lazy(() => import("./History"));
 const SourceDiagnostics = lazy(() => import("./SourceDiagnostics"));
+const StreetViewer = lazy(() => import("./StreetViewer"));
 import { Action, Empty, Evidence, Notice, ObservationTable } from "./ui";
 
 const pages: [string, LucideIcon][] = [
   ["radar", Radar],
   ["cameras", Camera],
+  ["streetViewer", Map],
   ["traffic", TrafficCone],
   ["aircraft", Plane],
   ["marine", Ship],
@@ -708,6 +711,7 @@ function Workspace({
                 </>
               )}
               {page === "cameras" && <Cameras />}
+              {page === "streetViewer" && <StreetViewer />}
               {["aircraft", "marine"].includes(page) && (
                 <>
                   <Notice>

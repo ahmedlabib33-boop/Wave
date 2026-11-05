@@ -30,6 +30,12 @@ class Settings(BaseSettings):
     ] = "https://overpass-api.de/api/interpreter"
     frigate_camera_map: str = "{}"
     frigate_mqtt_topic: str = ""
+    frigate_base_url: SecretStr = SecretStr("")
+    frigate_api_token: SecretStr = SecretStr("")
+    camera_auto_validate: bool = True
+    camera_max_sessions: int = Field(2, ge=1, le=8)
+    camera_view_fps: int = Field(3, ge=1, le=8)
+    street_discovery_enabled: bool = True
     mqtt_host: str = ""
     mqtt_port: int = 8883
     mqtt_tls: bool = True

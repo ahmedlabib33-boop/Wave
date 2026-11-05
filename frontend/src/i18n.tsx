@@ -290,6 +290,36 @@ const en = {
   calibrationJSON: "Calibration JSON",
   payloadJSON: "Observation JSON",
   copyId: "Observation ID",
+  streetViewer: "Greater Cairo Street Viewer",
+  streetViewerNote:
+    "Click the map or search a street to load actual OpenStreetMap street metadata. Only an authorized camera with recorded view evidence can be offered as coverage; a nearby pin does not prove a view.",
+  functioningFeeds: "functioning Greater Cairo live feeds",
+  authorizedCameras: "authorized hub cameras",
+  notCoverageCensus: "Not a complete camera census",
+  streetSearch: "Find a Greater Cairo street",
+  streetSearchPlaceholder: "Example: El Nozha Street",
+  streetMatches: "Loaded streets — select one",
+  clickStreet: "Click a road to load it; click empty map to retrieve nearby streets",
+  selectedStreet: "Selected street",
+  noVerifiedStreetFeed: "No authorized, verified camera coverage is recorded for this street.",
+  nearbyOnly: "Nearby camera(s), but coverage of this street is unknown:",
+  mappedCandidates: "Mapped camera-site metadata, not stream access:",
+  declareCoverage: "Declare authorized camera coverage",
+  coverageDeclarationNote:
+    "Use an actual operator/site record. This does not estimate a camera view from distance, direction or pixels.",
+  coverageEvidence: "Coverage evidence / source record",
+  liveDeclared: "The operator declares this is a live feed",
+  recentPlayback: "Recent browser frame receipt recorded",
+  noRecentPlayback: "No recent browser playback evidence",
+  openViewer: "Open live viewer",
+  streetVideo: "Live camera viewer",
+  actualFrame: "Actual decoded frame",
+  detector: "Detection processor",
+  startLive: "Start live stream",
+  stop: "Stop",
+  detected: "detected",
+  streamEvidence:
+    "Frames are decoded on this server from an authorized source. Object boxes come from the selected engine; browser receipt is recorded separately from human viewing.",
 };
 type Key = keyof typeof en;
 const ar: Record<Key, string> = {
@@ -574,6 +604,36 @@ const ar: Record<Key, string> = {
   calibrationJSON: "معايرة بصيغة JSON",
   payloadJSON: "الرصد بصيغة JSON",
   copyId: "معرّف الرصد",
+  streetViewer: "عارض شوارع القاهرة الكبرى",
+  streetViewerNote:
+    "انقر الخريطة أو ابحث عن شارع لتحميل بيانات الشوارع الفعلية من OpenStreetMap. لا تُعرض الكاميرا كتغطية إلا بتصريح ودليل مسجل للرؤية؛ القرب من الشارع لا يثبت الرؤية.",
+  functioningFeeds: "تدفقات حية عاملة في القاهرة الكبرى",
+  authorizedCameras: "كاميرات المركز المصرح بها",
+  notCoverageCensus: "ليس حصرًا كاملًا للكاميرات",
+  streetSearch: "البحث عن شارع في القاهرة الكبرى",
+  streetSearchPlaceholder: "مثال: شارع النزهة",
+  streetMatches: "الشوارع المحملة — اختر شارعًا",
+  clickStreet: "انقر طريقًا لتحميله؛ وانقر مساحة فارغة لجلب الشوارع القريبة",
+  selectedStreet: "الشارع المحدد",
+  noVerifiedStreetFeed: "لا توجد تغطية كاميرا مصرح بها ومتحقق منها مسجلة لهذا الشارع.",
+  nearbyOnly: "كاميرات قريبة، لكن تغطيتها لهذا الشارع غير معروفة:",
+  mappedCandidates: "بيانات مواقع كاميرات مسجلة على الخريطة وليست وصولاً إلى بث:",
+  declareCoverage: "إقرار تغطية كاميرا مصرح بها",
+  coverageDeclarationNote:
+    "استخدم سجلًا فعليًا من المشغل أو الموقع. لا تُقدّر رؤية الكاميرا من المسافة أو الاتجاه أو البكسلات.",
+  coverageEvidence: "دليل التغطية / سجل المصدر",
+  liveDeclared: "يقر المشغل بأن هذا بث حي",
+  recentPlayback: "تم تسجيل استلام إطار حديث في المتصفح",
+  noRecentPlayback: "لا يوجد دليل تشغيل حديث في المتصفح",
+  openViewer: "فتح العارض الحي",
+  streetVideo: "عارض الكاميرا الحية",
+  actualFrame: "إطار مفكوك فعلي",
+  detector: "معالج الكشف",
+  startLive: "بدء البث الحي",
+  stop: "إيقاف",
+  detected: "كائنات مكتشفة",
+  streamEvidence:
+    "تُفك الإطارات على هذا الخادم من مصدر مصرح به. مربعات الكائنات من المحرك المحدد؛ ويُسجل استلام المتصفح منفصلاً عن مشاهدة الشخص.",
 };
 export const LanguageContext = createContext<"en" | "ar">("en");
 export function useT() {

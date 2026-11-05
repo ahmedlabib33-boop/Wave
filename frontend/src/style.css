@@ -1648,6 +1648,111 @@ select {
 [dir="rtl"] select {
   background-position: left 10px center;
 }
+
+.street-viewer {
+  max-width: 1500px;
+}
+.street-viewer-head {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border: 1px solid #303840;
+  margin: 20px 0;
+}
+.street-viewer-head > div {
+  padding: 20px;
+  min-width: 0;
+  border-inline-end: 1px solid #303840;
+}
+.street-viewer-head > div:last-child {
+  border-inline-end: 0;
+}
+.street-viewer-head strong,
+.street-viewer-head span,
+.street-viewer-head small {
+  display: block;
+}
+.street-viewer-head strong { font-size: 28px; font-weight: 400; }
+.street-viewer-head span { font-size: 11px; margin-top: 7px; }
+.street-viewer-head small { color: #87909b; font-size: 9px; line-height: 1.6; margin-top: 9px; }
+.street-search {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  margin: 20px 0;
+}
+.street-search label { flex: 1; }
+.street-map {
+  position: relative;
+  height: min(68vh, 760px);
+  min-height: 440px;
+  border: 1px solid #343a42;
+  background: #111;
+  overflow: hidden;
+}
+.street-map .map { height: 100%; width: 100%; }
+.street-map-hint {
+  position: absolute;
+  bottom: 12px;
+  inset-inline-start: 12px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  max-width: min(500px, calc(100% - 70px));
+  padding: 9px 11px;
+  background: #12161add;
+  border: 1px solid #404852;
+  color: #d2d8de;
+  font-size: 10px;
+  pointer-events: none;
+}
+.street-results { margin-top: 20px; }
+.street-choices { border: 1px solid #303840; padding: 16px; margin-top: 20px; }
+.street-choices h2 { font-size: 12px; font-weight: 500; margin-bottom: 12px; }
+.street-choices > div { display: flex; flex-wrap: wrap; gap: 8px; }
+.street-choices button { border: 1px solid #414a54; background: #171c21; color: #d2d8de; padding: 9px 11px; text-align: start; font-size: 10px; }
+.street-choices button:hover, .street-choices button.selected { background: #e6e9ec; color: #171b1f; }
+.street-results h2 { font-size: 23px; margin: 9px 0; }
+.street-camera-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin: 20px 0; }
+.street-camera-grid article { padding: 17px; }
+.street-camera-grid h3 { font-size: 13px; font-weight: 500; }
+.street-camera-grid p { font-size: 10px; line-height: 1.6; margin: 12px 0; }
+.coverage-editor { border-top: 1px solid #303840; padding-top: 20px; margin-top: 22px; max-width: 700px; }
+.coverage-editor label { margin: 16px 0; }
+.street-video {
+  position: fixed;
+  inset-inline-end: 20px;
+  bottom: 20px;
+  z-index: 90;
+  width: min(660px, calc(100vw - 40px));
+  max-height: calc(100dvh - 40px);
+  overflow: auto;
+  padding: 17px;
+  background: #151a20;
+  border: 1px solid #5c6670;
+  box-shadow: 0 20px 50px #000c;
+}
+.street-video header { display: flex; justify-content: space-between; gap: 16px; align-items: center; margin-bottom: 13px; }
+.street-video header > div { display: flex; gap: 9px; align-items: center; min-width: 0; }
+.street-video header strong { overflow-wrap: anywhere; font-size: 13px; }
+.street-frame { min-height: 220px; aspect-ratio: 16 / 9; position: relative; display: flex; align-items: center; justify-content: center; background: #060708; color: #65717d; border: 1px solid #323a44; }
+.street-frame img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.detection-count { position: absolute; top: 9px; inset-inline-start: 9px; padding: 5px 8px; background: #000c; color: #fff; font-size: 10px; }
+.street-video-meta { display: flex; flex-wrap: wrap; gap: 10px; padding: 11px 0; font-size: 9px; color: #9fa9b4; }
+.street-video .actions { align-items: flex-end; }
+.street-video .actions label { width: 170px; }
+.street-video .muted { font-size: 10px; line-height: 1.7; margin-top: 15px; }
+@media (max-width: 760px) {
+  .street-viewer-head, .street-camera-grid { grid-template-columns: 1fr; }
+  .street-viewer-head > div { border-inline-end: 0; border-bottom: 1px solid #303840; }
+  .street-viewer-head > div:last-child { border-bottom: 0; }
+  .street-search { align-items: stretch; flex-direction: column; }
+  .street-search .action-wrap, .street-search .button { width: 100%; }
+  .street-map { height: 56dvh; min-height: 370px; }
+  .street-video { inset-inline: 10px; bottom: 10px; width: auto; padding: 13px; }
+  .street-frame { min-height: 170px; }
+  .street-video .actions label { width: 100%; }
+}
 .radar-toolbar select {
   padding-inline-end: 30px;
   padding-block: 0;

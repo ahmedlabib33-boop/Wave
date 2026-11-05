@@ -7,10 +7,12 @@ export function Action({
   run,
   children,
   secondary = false,
+  disabled = false,
 }: {
   run: () => Promise<unknown>;
   children: ReactNode;
   secondary?: boolean;
+  disabled?: boolean;
 }) {
   const [busy, setBusy] = useState(false),
     [error, setError] = useState("");
@@ -20,7 +22,7 @@ export function Action({
       <button
         type="button"
         className={secondary ? "button secondary" : "button"}
-        disabled={busy}
+        disabled={busy || disabled}
         onClick={async () => {
           setBusy(true);
           setError("");

@@ -1,0 +1,18 @@
+{
+  "timestamp": "20261105T080722Z",
+  "project": "/workspace/nile-observer",
+  "head": "4f976212ec95a7dfd8b4548597e10b5f2c2cb7a5",
+  "checkpoint": "checkpoint/pre-street-viewer-20261105T080722Z",
+  "private_backup": "/workspace/private-backups/street-viewer-20261105T080722Z",
+  "postgres_backup_ok": true,
+  "counts": {
+    "sources": 15,
+    "scenes": 35,
+    "observations": 0,
+    "cameras": 0,
+    "app_config": 1,
+    "camera_candidates": 0,
+    "discovery_runs": 0
+  },
+  "tracked_worktree_clean_before_changes": true
+}

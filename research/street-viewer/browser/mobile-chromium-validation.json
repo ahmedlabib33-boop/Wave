@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-05T11:10:51.706Z",
+  "browser": "Chromium mobile emulation",
+  "viewport": "430x739 CSS px, touch enabled",
+  "base_url": "http://127.0.0.1:8002",
+  "street_viewer_loaded": true,
+  "horizontal_overflow": false,
+  "map_canvas_visible": true,
+  "status": "passed"
+}

@@ -24,6 +24,7 @@ from .calibration import fit_calibration
 from .channels import accept_channel, ais_worker, mqtt_worker, serial_worker
 from .config import get_settings
 from .discovery import router as discovery_router
+from .street_viewer import router as street_viewer_router, socket_router as street_viewer_socket_router, street_worker
 from .frigate import accept_frigate
 from .connectors.satellite import ASFConnector
 from .connectors.umbra import UmbraConnector
@@ -108,7 +109,7 @@ async def lifespan(app):
             job.status, job.error = "interrupted", "Service restarted; submit a new download"
         db.commit()
     if get_settings().polling_enabled:
-        for worker in (scheduler, ais_worker, mqtt_worker, serial_worker, camera_worker):
+        for worker in (scheduler, ais_worker, mqtt_worker, serial_worker, camera_worker, street_worker):
             launch(worker())
     yield
     tasks = list(JOBS)
@@ -132,6 +133,8 @@ app.add_middleware(
 )
 AUTH = [Depends(authorized)]
 app.include_router(discovery_router, dependencies=AUTH)
+app.include_router(street_viewer_router, dependencies=AUTH)
+app.include_router(street_viewer_socket_router)
 
 
 @app.post("/api/integrations/frigate", dependencies=AUTH, status_code=201)

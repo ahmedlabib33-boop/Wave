@@ -1,0 +1,20 @@
+{
+  "verified_at": "2026-11-05T11:07:05.325876+00:00",
+  "temporary_database": true,
+  "request": {
+    "latitude": 30.0878597,
+    "longitude": 31.3413867
+  },
+  "http_status": 200,
+  "provider": "https://api.openstreetmap.org/api/0.6/map",
+  "street_count_returned": 300,
+  "camera_records_added": 0,
+  "complete_coverage": false,
+  "first_street": {
+    "id": "osm:way:772878395",
+    "name": "\u0634\u0627\u0631\u0639 \u0627\u0644\u0646\u0632\u0647\u0647",
+    "source_ref": "https://www.openstreetmap.org/way/772878395",
+    "record_kind": null
+  },
+  "failed_attempts": []
+}
